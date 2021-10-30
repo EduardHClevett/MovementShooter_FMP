@@ -1,0 +1,1409 @@
+Using pre-set license
+Built from '2021.1/staging' branch; Version is '2021.1.17f1 (03b40fe07a36) revision 242703'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Pro; OS build 19043.1288; Version 2009; 64bit' Language: 'en' Physical Memory: 16313 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+D:\Unity Versions\2021.1.17f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+E:/Github Repos/MovementShooter_FMP
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+65270
+Successfully changed project path to: E:/Github Repos/MovementShooter_FMP
+E:/Github Repos/MovementShooter_FMP
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 133.05 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.1.17f1 (03b40fe07a36)
+[Subsystems] Discovering subsystems at path D:/Unity Versions/2021.1.17f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path E:/Github Repos/MovementShooter_FMP/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+d3d12: loaded!
+Direct3D:
+    Version:         Direct3D 12 [level 12.1]
+    Renderer:        NVIDIA GeForce RTX 2070 (ID=0x1f02)
+    Vendor:          NVIDIA
+    VRAM:            8031 MB
+    App VRAM Budget: 7263 MB
+    Driver:          30.0.14.9613
+d3d12: Profiler is enabled, but stable power state is not. GPU timing errors are expected.
+
+Initialize mono
+Mono path[0] = 'D:/Unity Versions/2021.1.17f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Unity Versions/2021.1.17f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'D:/Unity Versions/2021.1.17f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56336
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/Unity Versions/2021.1.17f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.000927 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 139.45 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.986 seconds
+Domain Reload Profiling:
+	ReloadAssembly (986ms)
+		BeginReloadAssembly (75ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (516ms)
+			LoadAssemblies (72ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (161ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (41ms)
+			SetupLoadedEditorAssemblies (269ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (140ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (93ms)
+				ProcessInitializeOnLoadMethodAttributes (29ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.004293 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 142.23 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.528 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1529ms)
+		BeginReloadAssembly (144ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (18ms)
+		EndReloadAssembly (1329ms)
+			LoadAssemblies (89ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (400ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (82ms)
+			SetupLoadedEditorAssemblies (660ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (142ms)
+				BeforeProcessingInitializeOnLoad (93ms)
+				ProcessInitializeOnLoadAttributes (343ms)
+				ProcessInitializeOnLoadMethodAttributes (76ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 1.00 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5050 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 199.1 MB.
+System memory in use after: 199.6 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 5510.
+Total: 4.519500 ms (FindLiveObjects: 0.464500 ms CreateObjectMapping: 0.182800 ms MarkObjects: 3.812400 ms  DeleteObjects: 0.058000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:srp/default-shader: 0d000000000000000000000000000000 -> 00a0da0d000000000000000000000000
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/HDRPDefaultResources/HDRenderPipelineAsset.asset
+  artifactKey: Guid(61f1cff6b350e834c8c66a14471f3938) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HDRPDefaultResources/HDRenderPipelineAsset.asset using Guid(61f1cff6b350e834c8c66a14471f3938) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53c030bc67089a6b81a0be346b1f0f75') in 0.037052 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000163 seconds.
+  path: Assets/HDRPDefaultResources
+  artifactKey: Guid(38f02be037e6ab24d98e455cfde5dc65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HDRPDefaultResources using Guid(38f02be037e6ab24d98e455cfde5dc65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac1aea90b0ebfe39f81e5b0a98935fec') in 0.006765 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000202 seconds.
+  path: Assets/HDRPDefaultResources/DefaultLookDevProfile.asset
+  artifactKey: Guid(0824527464773a548b0ccc6218fffc6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HDRPDefaultResources/DefaultLookDevProfile.asset using Guid(0824527464773a548b0ccc6218fffc6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c86952148dd6f0074e137a616a23d83d') in 0.006890 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000257 seconds.
+  path: Assets/HDRPDefaultResources/DefaultSettingsVolumeProfile.asset
+  artifactKey: Guid(cb0edddd9087a43468cde7d58b3c0df2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HDRPDefaultResources/DefaultSettingsVolumeProfile.asset using Guid(cb0edddd9087a43468cde7d58b3c0df2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed8dbf18f3ed81788108b6d4d28fc8e5') in 0.006889 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000241 seconds.
+  path: Assets/HDRPDefaultResources/FoliageDiffusionProfile.asset
+  artifactKey: Guid(67c24438f7fa4074593ebb11d833a840) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HDRPDefaultResources/FoliageDiffusionProfile.asset using Guid(67c24438f7fa4074593ebb11d833a840) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c47e2c62c4df4e0335e4b32a4912a00') in 0.006168 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000143 seconds.
+  path: Assets/HDRPDefaultResources/SkinDiffusionProfile.asset
+  artifactKey: Guid(8cb608d60ed0afd48a26fd43082ea304) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HDRPDefaultResources/SkinDiffusionProfile.asset using Guid(8cb608d60ed0afd48a26fd43082ea304) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fec7063c2855c137d67cf73bbce0170') in 0.006305 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 102.544073 seconds.
+  path: Assets/Materials
+  artifactKey: Guid(a67112d3b523f644f9c2e42325648c3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials using Guid(a67112d3b523f644f9c2e42325648c3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed2f8fcf2423e16652fd3462c41f254c') in 0.005592 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.830892 seconds.
+  path: Assets/Materials/Ground.mat
+  artifactKey: Guid(f21ac378bc4076c41a2f3999a274c83b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Ground.mat using Guid(f21ac378bc4076c41a2f3999a274c83b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+ -> (artifact id: '29777376504b7dc0d6e1f89f1787cc2e') in 7.362241 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000197 seconds.
+  path: Assets/Materials/Obstacles.mat
+  artifactKey: Guid(c4caad703a32d0d4281726b4aabd146c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Obstacles.mat using Guid(c4caad703a32d0d4281726b4aabd146c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '426a23410096dedcf65ea908295b24df') in 0.030654 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000182 seconds.
+  path: Assets/Materials/Weapon.mat
+  artifactKey: Guid(3d084a2369896ed4aba7923ae2b7df5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Weapon.mat using Guid(3d084a2369896ed4aba7923ae2b7df5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a62dcb6eccb9d7042b0b41c5bee9a93a') in 0.028043 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004418 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.98 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.414 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1414ms)
+		BeginReloadAssembly (184ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (23ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (48ms)
+		EndReloadAssembly (1176ms)
+			LoadAssemblies (89ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (388ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (66ms)
+			SetupLoadedEditorAssemblies (401ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (67ms)
+				ProcessInitializeOnLoadAttributes (317ms)
+				ProcessInitializeOnLoadMethodAttributes (8ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.99 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4938 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 210.4 MB.
+System memory in use after: 210.8 MB.
+
+Unloading 37 unused Assets to reduce memory usage. Loaded Objects now: 5685.
+Total: 5.469900 ms (FindLiveObjects: 0.459300 ms CreateObjectMapping: 0.160900 ms MarkObjects: 4.359400 ms  DeleteObjects: 0.489200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:srp/default-shader: 0d000000000000000000000000000000 -> 00a0da0d000000000000000000000000
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 4.998191 seconds.
+  path: Assets/Materials/Player.mat
+  artifactKey: Guid(94e08cd9c9da8f349945b20f38ab83de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Player.mat using Guid(94e08cd9c9da8f349945b20f38ab83de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe26131ff4614dd2d1fc80f502faf2ea') in 0.544222 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005004 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.26 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.535 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1535ms)
+		BeginReloadAssembly (164ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (24ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (54ms)
+		EndReloadAssembly (1314ms)
+			LoadAssemblies (101ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (410ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (70ms)
+			SetupLoadedEditorAssemblies (502ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (69ms)
+				ProcessInitializeOnLoadAttributes (413ms)
+				ProcessInitializeOnLoadMethodAttributes (11ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (26ms)
+Platform modules already initialized, skipping
+NullReferenceException: Object reference not set to an instance of an object
+  at UnityEngine.Rendering.HighDefinition.HDRenderPipelineAsset.get_defaultShader () [0x00000] in E:\Github Repos\MovementShooter_FMP\Library\PackageCache\com.unity.render-pipelines.high-definition@11.0.0\Runtime\RenderPipeline\HDRenderPipelineAsset.cs:304 
+
+(Filename: Library/PackageCache/com.unity.render-pipelines.high-definition@11.0.0/Runtime/RenderPipeline/HDRenderPipelineAsset.cs Line: 304)
+
+Refreshing native plugins compatible for Editor in 1.37 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4919 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 212.3 MB.
+System memory in use after: 212.7 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 5792.
+Total: 5.900400 ms (FindLiveObjects: 0.518900 ms CreateObjectMapping: 0.159900 ms MarkObjects: 5.189800 ms  DeleteObjects: 0.030400 ms)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at UnityEngine.Rendering.HighDefinition.HDRenderPipelineAsset.get_defaultShader () [0x00000] in E:\Github Repos\MovementShooter_FMP\Library\PackageCache\com.unity.render-pipelines.high-definition@11.0.0\Runtime\RenderPipeline\HDRenderPipelineAsset.cs:304 
+
+(Filename: Library/PackageCache/com.unity.render-pipelines.high-definition@11.0.0/Runtime/RenderPipeline/HDRenderPipelineAsset.cs Line: 304)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:srp/default-shader: 0d000000000000000000000000000000 -> 00a0da0d000000000000000000000000
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 71.634789 seconds.
+  path: Assets/HDRPDefaultResources/DefaultLookDevProfile.asset
+  artifactKey: Guid(0824527464773a548b0ccc6218fffc6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HDRPDefaultResources/DefaultLookDevProfile.asset using Guid(0824527464773a548b0ccc6218fffc6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc416f4098238810c3c899a51a96e3d6') in 0.014203 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 16.863048 seconds.
+  path: Packages/com.unity.render-pipelines.high-definition/Runtime/RenderPipelineResources/Texture/DefaultHDRISky.exr
+  artifactKey: Guid(8253d41e6e8b11a4cbe77a4f8f82934d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.high-definition/Runtime/RenderPipelineResources/Texture/DefaultHDRISky.exr using Guid(8253d41e6e8b11a4cbe77a4f8f82934d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd1a2b72637522c47b96fab6d1fddeda') in 0.097025 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 144.220654 seconds.
+  path: Assets/HDRPDefaultResources/DefaultLookDevProfile.asset
+  artifactKey: Guid(0824527464773a548b0ccc6218fffc6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HDRPDefaultResources/DefaultLookDevProfile.asset using Guid(0824527464773a548b0ccc6218fffc6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0275d7e82a8e71e247a6a17531c92ce4') in 0.003130 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000168 seconds.
+  path: Assets/HDRPDefaultResources/DefaultSettingsVolumeProfile.asset
+  artifactKey: Guid(cb0edddd9087a43468cde7d58b3c0df2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HDRPDefaultResources/DefaultSettingsVolumeProfile.asset using Guid(cb0edddd9087a43468cde7d58b3c0df2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '705ad25340a250db859a10268ceb4c1b') in 0.003446 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 33.273456 seconds.
+  path: Packages/com.unity.visualscripting/Editor/VisualScripting.Core/EditorAssetResources/Icons/Types/decimal@32x.png
+  artifactKey: Guid(8da0d6625de4f9749a015fe0221f81a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.visualscripting/Editor/VisualScripting.Core/EditorAssetResources/Icons/Types/decimal@32x.png using Guid(8da0d6625de4f9749a015fe0221f81a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02384ffd9d35620914370fb50207bf3d') in 0.070864 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000149 seconds.
+  path: Packages/com.unity.collab-proxy/Editor/Collaborate/Assets/Icons/deleted-file-dark@2x.png
+  artifactKey: Guid(a7d900a247e707e45a257328c3ee381e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.collab-proxy/Editor/Collaborate/Assets/Icons/deleted-file-dark@2x.png using Guid(a7d900a247e707e45a257328c3ee381e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '911467a1a500dd7c3baf85953fc0560f') in 0.010198 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000122 seconds.
+  path: Packages/com.unity.render-pipelines.high-definition/Runtime/RenderPipelineResources/Texture/Matcap/DefaultMatcap.png
+  artifactKey: Guid(e655445a13b501944a2641ea144edda5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.high-definition/Runtime/RenderPipelineResources/Texture/Matcap/DefaultMatcap.png using Guid(e655445a13b501944a2641ea144edda5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'befde9dba47402db64caee6e8503c169') in 0.011532 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000224 seconds.
+  path: Packages/com.unity.collab-proxy/Editor/Collaborate/Assets/Icons/deleted-file-dark.png
+  artifactKey: Guid(ce3ca6a541b5fbc4c80edb5195d78731) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.collab-proxy/Editor/Collaborate/Assets/Icons/deleted-file-dark.png using Guid(ce3ca6a541b5fbc4c80edb5195d78731) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a6137427055d1b3620472502c9d74a8') in 0.009003 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000146 seconds.
+  path: Packages/com.unity.render-pipelines.high-definition/Editor/RenderPipelineResources/Texture/LightUnitIcons/DecorativeLight@2x.png
+  artifactKey: Guid(ac6bd7230f54da84b8ad3a0e2b14b3d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.high-definition/Editor/RenderPipelineResources/Texture/LightUnitIcons/DecorativeLight@2x.png using Guid(ac6bd7230f54da84b8ad3a0e2b14b3d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '044616343a1267441aac006fa4d26874') in 0.009142 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000120 seconds.
+  path: Packages/com.unity.collab-proxy/Editor/Collaborate/Assets/Icons/deleted-file-light@2x.png
+  artifactKey: Guid(f1c735dde115d4f4c9ff5c633f07fbb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.collab-proxy/Editor/Collaborate/Assets/Icons/deleted-file-light@2x.png using Guid(f1c735dde115d4f4c9ff5c633f07fbb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c280bf79fd63e8789c59789279dec5f') in 0.008658 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000141 seconds.
+  path: Packages/com.unity.visualeffectgraph/Textures/DefaultParticle.tga
+  artifactKey: Guid(276d9e395ae18fe40a9b4988549f2349) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.visualeffectgraph/Textures/DefaultParticle.tga using Guid(276d9e395ae18fe40a9b4988549f2349) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13369dda4323d4083a7f8c73c1e207f0') in 0.011250 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000130 seconds.
+  path: Packages/com.unity.collab-proxy/Editor/Collaborate/Assets/Icons/deleted-file-light.png
+  artifactKey: Guid(bb678af880b2dd74cbd76186590c66da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.collab-proxy/Editor/Collaborate/Assets/Icons/deleted-file-light.png using Guid(bb678af880b2dd74cbd76186590c66da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31c5131bb87342cc9c9272285e3a4d3d') in 0.009243 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000120 seconds.
+  path: Packages/com.unity.render-pipelines.high-definition/Editor/RenderPipelineResources/Texture/LightUnitIcons/DecorativeLight.png
+  artifactKey: Guid(1e2ae1a12a2a1ff498cab6444b9cd394) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.high-definition/Editor/RenderPipelineResources/Texture/LightUnitIcons/DecorativeLight.png using Guid(1e2ae1a12a2a1ff498cab6444b9cd394) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '543633344a262d513893835db8b70457') in 0.008935 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000165 seconds.
+  path: Packages/com.unity.render-pipelines.high-definition/Runtime/RenderPipelineResources/Material/DefaultSkybox.exr
+  artifactKey: Guid(a615f6de0224d55408b4e74da3b0bac0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.high-definition/Runtime/RenderPipelineResources/Material/DefaultSkybox.exr using Guid(a615f6de0224d55408b4e74da3b0bac0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9519bd7f1e8f45d0a88757c27e2d0c6') in 0.015356 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.032428 seconds.
+  path: Packages/com.unity.render-pipelines.high-definition/Editor/RenderPipelineResources/Texture/DensityVolume.png
+  artifactKey: Guid(16796ce96bc102d4d963f22a60a69125) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.high-definition/Editor/RenderPipelineResources/Texture/DensityVolume.png using Guid(16796ce96bc102d4d963f22a60a69125) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'edff1b7bde5587df5233cc6c44b44464') in 0.010797 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000166 seconds.
+  path: Packages/com.unity.visualscripting/Editor/VisualScripting.Flow/EditorAssetResources/Icons/UnitCategories/Collections/Dictionaries@16x.png
+  artifactKey: Guid(1f61a583e892d4eb994e9c49aefcd62c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.visualscripting/Editor/VisualScripting.Flow/EditorAssetResources/Icons/UnitCategories/Collections/Dictionaries@16x.png using Guid(1f61a583e892d4eb994e9c49aefcd62c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1a0a12606604855f907d299028ae344') in 0.011644 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.212343 seconds.
+  path: Packages/com.unity.visualscripting/Editor/VisualScripting.Flow/EditorAssetResources/Icons/UnitCategories/Collections/Dictionaries@32x.png
+  artifactKey: Guid(fb31c143ccac84732a19571fbfb64d3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.visualscripting/Editor/VisualScripting.Flow/EditorAssetResources/Icons/UnitCategories/Collections/Dictionaries@32x.png using Guid(fb31c143ccac84732a19571fbfb64d3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '783ef19d8a55e70ee4665d361b60c074') in 0.010228 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000139 seconds.
+  path: Packages/com.unity.collab-proxy/Editor/Collaborate/Assets/Icons/diff-dark.png
+  artifactKey: Guid(06bb2a7fb040987409dae109d185de22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.collab-proxy/Editor/Collaborate/Assets/Icons/diff-dark.png using Guid(06bb2a7fb040987409dae109d185de22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '966ea192951d64dab6c4f6a0b06390e9') in 0.009919 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.213339 seconds.
+  path: Packages/com.unity.collab-proxy/Editor/Collaborate/Assets/Icons/diff-dark@2x.png
+  artifactKey: Guid(1875b6a8fb148514ab1d9494eae2dd9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.collab-proxy/Editor/Collaborate/Assets/Icons/diff-dark@2x.png using Guid(1875b6a8fb148514ab1d9494eae2dd9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9649b420e8c83e8e32e188b5ea86ca05') in 0.012389 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000285 seconds.
+  path: Packages/com.unity.collab-proxy/Editor/Collaborate/Assets/Icons/diff-light.png
+  artifactKey: Guid(f4d24f788ff8ef0448d273529dc5d9a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.collab-proxy/Editor/Collaborate/Assets/Icons/diff-light.png using Guid(f4d24f788ff8ef0448d273529dc5d9a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84f9d2897600b657d820273968e857e2') in 0.009490 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.025557 seconds.
+  path: Packages/com.unity.collab-proxy/Editor/Collaborate/Assets/Icons/diff-light@2x.png
+  artifactKey: Guid(56f45ee382e8dc847bd536ba8de7300b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.collab-proxy/Editor/Collaborate/Assets/Icons/diff-light@2x.png using Guid(56f45ee382e8dc847bd536ba8de7300b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94e5921888f71bb7f96b3f83bb77619b') in 0.010264 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000134 seconds.
+  path: Packages/com.unity.render-pipelines.high-definition/Editor/RenderPipelineResources/Texture/DiffusionProfileSettingsAsset.png
+  artifactKey: Guid(87c4629bc47a322429681210f0a229d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.high-definition/Editor/RenderPipelineResources/Texture/DiffusionProfileSettingsAsset.png using Guid(87c4629bc47a322429681210f0a229d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c331a57d5e5f81902e003b89acf95e4') in 0.011481 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.306121 seconds.
+  path: Packages/com.unity.render-pipelines.high-definition/Editor/RenderPipelineResources/Texture/LightUnitIcons/DirectSunlight.png
+  artifactKey: Guid(863ef838c25e51b4790fd6ac881ba895) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.high-definition/Editor/RenderPipelineResources/Texture/LightUnitIcons/DirectSunlight.png using Guid(863ef838c25e51b4790fd6ac881ba895) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '385a6276d3bee50bf764663a55f866f7') in 0.010859 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000195 seconds.
+  path: Packages/com.unity.visualscripting/Editor/VisualScripting.Core/EditorAssetResources/Icons/Enums/Ludiq.DistributeOperation/DistributeBottomEdges@32x.png
+  artifactKey: Guid(34bdd13e9d8ed4c8ea46e195e25f3629) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.visualscripting/Editor/VisualScripting.Core/EditorAssetResources/Icons/Enums/Ludiq.DistributeOperation/DistributeBottomEdges@32x.png using Guid(34bdd13e9d8ed4c8ea46e195e25f3629) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b99fb31d5045976356927e1b5df5b76') in 0.011866 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000177 seconds.
+  path: Packages/com.unity.visualscripting/Editor/VisualScripting.Core/EditorAssetResources/Icons/Enums/Ludiq.DistributeOperation/DistributeBottomEdges@16x.png
+  artifactKey: Guid(a12b04c8314814ee4ac74cfa5728fa25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.visualscripting/Editor/VisualScripting.Core/EditorAssetResources/Icons/Enums/Ludiq.DistributeOperation/DistributeBottomEdges@16x.png using Guid(a12b04c8314814ee4ac74cfa5728fa25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b9780c286b883c1a28ff58a7a9b70ff') in 0.010011 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000180 seconds.
+  path: Packages/com.unity.render-pipelines.high-definition/Editor/RenderPipelineResources/Texture/LightUnitIcons/DirectSunlight@2x.png
+  artifactKey: Guid(03ea000956f47584c872d8b4df47f5ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.high-definition/Editor/RenderPipelineResources/Texture/LightUnitIcons/DirectSunlight@2x.png using Guid(03ea000956f47584c872d8b4df47f5ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb160e96425e9e20cde5708f28a3189c') in 0.010988 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000199 seconds.
+  path: Packages/com.unity.visualscripting/Editor/VisualScripting.Core/EditorAssetResources/Icons/Enums/Ludiq.DistributeOperation/DistributeCenters@32x.png
+  artifactKey: Guid(52e1f72c15d0f4605b8f897da26e6072) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.visualscripting/Editor/VisualScripting.Core/EditorAssetResources/Icons/Enums/Ludiq.DistributeOperation/DistributeCenters@32x.png using Guid(52e1f72c15d0f4605b8f897da26e6072) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02529242f5e67a3ccdeff2006cfc3692') in 0.011223 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000170 seconds.
+  path: Packages/com.unity.visualscripting/Editor/VisualScripting.Core/EditorAssetResources/Icons/Enums/Ludiq.DistributeOperation/DistributeHorizontalGaps@32x.png
+  artifactKey: Guid(4d4affb95dba0994ca3450ba58f95527) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.visualscripting/Editor/VisualScripting.Core/EditorAssetResources/Icons/Enums/Ludiq.DistributeOperation/DistributeHorizontalGaps@32x.png using Guid(4d4affb95dba0994ca3450ba58f95527) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0186526613916888eedec3892692662') in 0.009635 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000292 seconds.
+  path: Packages/com.unity.visualscripting/Editor/VisualScripting.Core/EditorAssetResources/Icons/Enums/Ludiq.DistributeOperation/DistributeCenters@16x.png
+  artifactKey: Guid(220bb8ced97b74ceb888be62fe45a7f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.visualscripting/Editor/VisualScripting.Core/EditorAssetResources/Icons/Enums/Ludiq.DistributeOperation/DistributeCenters@16x.png using Guid(220bb8ced97b74ceb888be62fe45a7f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e941124a55df55205353edf943c3b7e') in 0.012135 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000192 seconds.
+  path: Packages/com.unity.visualscripting/Editor/VisualScripting.Core/EditorAssetResources/Icons/Enums/Ludiq.DistributeOperation/DistributeHorizontalGaps@64x.png
+  artifactKey: Guid(ecb54f78606f27049aeda7f8aa29ea9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.visualscripting/Editor/VisualScripting.Core/EditorAssetResources/Icons/Enums/Ludiq.DistributeOperation/DistributeHorizontalGaps@64x.png using Guid(ecb54f78606f27049aeda7f8aa29ea9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e28f3e790ddce3ec603f59c583771ce') in 0.030884 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000146 seconds.
+  path: Packages/com.unity.visualscripting/Editor/VisualScripting.Core/EditorAssetResources/Icons/Enums/Ludiq.DistributeOperation/DistributeHorizontalGaps_Pro@16x.png
+  artifactKey: Guid(aeaa751ba024d774ea628009c691481b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.visualscripting/Editor/VisualScripting.Core/EditorAssetResources/Icons/Enums/Ludiq.DistributeOperation/DistributeHorizontalGaps_Pro@16x.png using Guid(aeaa751ba024d774ea628009c691481b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d0fcefb08e01e02191fddd03991eaa1') in 0.012018 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000176 seconds.
+  path: Packages/com.unity.visualscripting/Editor/VisualScripting.Core/EditorAssetResources/Icons/Enums/Ludiq.DistributeOperation/DistributeHorizontalGaps@16x.png
+  artifactKey: Guid(0e315c666eda27b4190678766816ab4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.visualscripting/Editor/VisualScripting.Core/EditorAssetResources/Icons/Enums/Ludiq.DistributeOperation/DistributeHorizontalGaps@16x.png using Guid(0e315c666eda27b4190678766816ab4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fbbc2b945bbd1b08b67e9952662a7940') in 0.009443 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.124466 seconds.
+  path: Packages/com.unity.visualscripting/Editor/VisualScripting.Core/EditorAssetResources/Icons/Enums/Ludiq.DistributeOperation/DistributeHorizontalGaps_Pro@32x.png
+  artifactKey: Guid(2de236910b1d41a418126a6ce6d5d531) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.visualscripting/Editor/VisualScripting.Core/EditorAssetResources/Icons/Enums/Ludiq.DistributeOperation/DistributeHorizontalGaps_Pro@32x.png using Guid(2de236910b1d41a418126a6ce6d5d531) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04555d342743e92333b5faa187c19a67') in 0.008717 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000194 seconds.
+  path: Packages/com.unity.visualscripting/Editor/VisualScripting.Core/EditorAssetResources/Icons/Enums/Ludiq.DistributeOperation/DistributeLeftEdges@16x.png
+  artifactKey: Guid(dae3dd69f0a0c4235bd29ab91c5c65c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.visualscripting/Editor/VisualScripting.Core/EditorAssetResources/Icons/Enums/Ludiq.DistributeOperation/DistributeLeftEdges@16x.png using Guid(dae3dd69f0a0c4235bd29ab91c5c65c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cadd509f7825c4dedec3aec8a1e2c160') in 0.009949 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000159 seconds.
+  path: Packages/com.unity.visualscripting/Editor/VisualScripting.Core/EditorAssetResources/Icons/Enums/Ludiq.DistributeOperation/DistributeHorizontalGaps_Pro@64x.png
+  artifactKey: Guid(9bdc01b85caa15547b5d3d05cff545eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.visualscripting/Editor/VisualScripting.Core/EditorAssetResources/Icons/Enums/Ludiq.DistributeOperation/DistributeHorizontalGaps_Pro@64x.png using Guid(9bdc01b85caa15547b5d3d05cff545eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8ed4fc14d17def2830a7b9fa910cb08') in 0.009432 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000191 seconds.
+  path: Packages/com.unity.visualscripting/Editor/VisualScripting.Core/EditorAssetResources/Icons/Enums/Ludiq.DistributeOperation/DistributeLeftEdges@32x.png
+  artifactKey: Guid(09ba458e8f9ef4c9cb13d133970c555a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.visualscripting/Editor/VisualScripting.Core/EditorAssetResources/Icons/Enums/Ludiq.DistributeOperation/DistributeLeftEdges@32x.png using Guid(09ba458e8f9ef4c9cb13d133970c555a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fec69d4e4c4e23c125b10802f422c14') in 0.012027 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000234 seconds.
+  path: Packages/com.unity.visualscripting/Editor/VisualScripting.Core/EditorAssetResources/Icons/Enums/Ludiq.DistributeOperation/DistributeRightEdges@16x.png
+  artifactKey: Guid(428cc10d863ac42b2918bf68da9ebbf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.visualscripting/Editor/VisualScripting.Core/EditorAssetResources/Icons/Enums/Ludiq.DistributeOperation/DistributeRightEdges@16x.png using Guid(428cc10d863ac42b2918bf68da9ebbf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3816a8f586704b6d473cd5b718eab698') in 0.009328 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Packages/com.unity.visualscripting/Editor/VisualScripting.Core/EditorAssetResources/Icons/Enums/Ludiq.DistributeOperation/DistributeTopEdges@32x.png
+  artifactKey: Guid(96121dfd468404f7cb0aad7a62b1ef25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.visualscripting/Editor/VisualScripting.Core/EditorAssetResources/Icons/Enums/Ludiq.DistributeOperation/DistributeTopEdges@32x.png using Guid(96121dfd468404f7cb0aad7a62b1ef25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17f862e48c8672f79dc07c90501a700b') in 0.011406 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000160 seconds.
+  path: Packages/com.unity.visualscripting/Editor/VisualScripting.Core/EditorAssetResources/Icons/Enums/Ludiq.DistributeOperation/DistributeVerticalGaps@32x.png
+  artifactKey: Guid(5ee0aebac65b515439e92b837341a5e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.visualscripting/Editor/VisualScripting.Core/EditorAssetResources/Icons/Enums/Ludiq.DistributeOperation/DistributeVerticalGaps@32x.png using Guid(5ee0aebac65b515439e92b837341a5e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fa631c6963f61a734f0ab9b4e62841c') in 0.010037 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000197 seconds.
+  path: Packages/com.unity.visualscripting/Editor/VisualScripting.Core/EditorAssetResources/Icons/Enums/Ludiq.DistributeOperation/DistributeTopEdges@16x.png
+  artifactKey: Guid(48b1e56eacccc429fb9fbe77efa3c959) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.visualscripting/Editor/VisualScripting.Core/EditorAssetResources/Icons/Enums/Ludiq.DistributeOperation/DistributeTopEdges@16x.png using Guid(48b1e56eacccc429fb9fbe77efa3c959) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2e0b952bcd3a6fd08b5a5b3958b2ff4') in 0.009526 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000158 seconds.
+  path: Packages/com.unity.visualscripting/Editor/VisualScripting.Core/EditorAssetResources/Icons/Enums/Ludiq.DistributeOperation/DistributeMiddles@32x.png
+  artifactKey: Guid(6fa8a5483f6cc4d46bc586dbc41731c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.visualscripting/Editor/VisualScripting.Core/EditorAssetResources/Icons/Enums/Ludiq.DistributeOperation/DistributeMiddles@32x.png using Guid(6fa8a5483f6cc4d46bc586dbc41731c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '901b51feb586c8f7378a5c8d7029f5f4') in 0.011373 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000165 seconds.
+  path: Packages/com.unity.visualscripting/Editor/VisualScripting.Core/EditorAssetResources/Icons/Enums/Ludiq.DistributeOperation/DistributeVerticalGaps@16x.png
+  artifactKey: Guid(b26bd9ce6d71c674b83300d028164676) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.visualscripting/Editor/VisualScripting.Core/EditorAssetResources/Icons/Enums/Ludiq.DistributeOperation/DistributeVerticalGaps@16x.png using Guid(b26bd9ce6d71c674b83300d028164676) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c25c204fabf8ddff4298a8ef6a42ee36') in 0.010696 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000150 seconds.
+  path: Packages/com.unity.visualscripting/Editor/VisualScripting.Core/EditorAssetResources/Icons/Enums/Ludiq.DistributeOperation/DistributeRightEdges@32x.png
+  artifactKey: Guid(81d3697a6497446a2913b34a5b64e00f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.visualscripting/Editor/VisualScripting.Core/EditorAssetResources/Icons/Enums/Ludiq.DistributeOperation/DistributeRightEdges@32x.png using Guid(81d3697a6497446a2913b34a5b64e00f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f4ae5fe90bb75e38f2921fa30bab040') in 0.010000 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000159 seconds.
+  path: Packages/com.unity.visualscripting/Editor/VisualScripting.Core/EditorAssetResources/Icons/Enums/Ludiq.DistributeOperation/DistributeMiddles@16x.png
+  artifactKey: Guid(a7f198dcd6d224095a91d6af674e7df4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.visualscripting/Editor/VisualScripting.Core/EditorAssetResources/Icons/Enums/Ludiq.DistributeOperation/DistributeMiddles@16x.png using Guid(a7f198dcd6d224095a91d6af674e7df4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b13faebbe2b883de24df84607787dedf') in 0.010681 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.354454 seconds.
+  path: Assets/Skybox
+  artifactKey: Guid(47309c1368a4524428b49ebee0b85a68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Skybox using Guid(47309c1368a4524428b49ebee0b85a68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b958ba013be17848dfef704a522390ca') in 0.005229 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.434279 seconds.
+  path: Assets/Skybox/Materials
+  artifactKey: Guid(c24b7eb175a60b744b7defb86dbc1722) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Skybox/Materials using Guid(c24b7eb175a60b744b7defb86dbc1722) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ef91ea40a9026cf50b4243684b20000') in 0.002027 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.021434 seconds.
+  path: Assets/Skybox/Materials/Skybox_Daytime.mat
+  artifactKey: Guid(71f14a2d79f732f4d9893ef1b911f4ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Skybox/Materials/Skybox_Daytime.mat using Guid(71f14a2d79f732f4d9893ef1b911f4ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b) d3d12: upload buffer was full! Waited for COPY queue for 1.359 ms.
+d3d12: upload buffer was full! Waited for COPY queue for 1.362 ms.
+ -> (artifact id: '0cf078ed8d222d1222d349669299e2b4') in 0.101668 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000184 seconds.
+  path: Assets/Skybox/Materials/Skybox_Sunset.mat
+  artifactKey: Guid(4067de1a02072244798361060c5e7325) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Skybox/Materials/Skybox_Sunset.mat using Guid(4067de1a02072244798361060c5e7325) Importer(815301076,1909f56bfc062723c751e8b465ee728b) d3d12: upload buffer was full! Waited for COPY queue for 1.488 ms.
+d3d12: upload buffer was full! Waited for COPY queue for 1.358 ms.
+ -> (artifact id: '4a7fa9be7c3f6a771ead34c787b2c3f7') in 0.034647 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.864817 seconds.
+  path: Assets/Skybox/Cubemaps/daytime.hdr
+  artifactKey: Guid(1cde0e200e792cb4491204276a656490) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Skybox/Cubemaps/daytime.hdr using Guid(1cde0e200e792cb4491204276a656490) Importer(815301076,1909f56bfc062723c751e8b465ee728b) d3d12: upload buffer was full! Waited for COPY queue for 1.381 ms.
+d3d12: upload buffer was full! Waited for COPY queue for 1.374 ms.
+ -> (artifact id: 'e3e2a6883564dc5473aeaa5a281ef577') in 0.056099 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.290027 seconds.
+  path: Packages/com.unity.textmeshpro/Editor Resources/Textures/SectionHeader_Dark.psd
+  artifactKey: Guid(fb5730e24283d0c489e5c7d0bee023d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.textmeshpro/Editor Resources/Textures/SectionHeader_Dark.psd using Guid(fb5730e24283d0c489e5c7d0bee023d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbbe00a8340a90c0ed876af982402585') in 0.010069 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000130 seconds.
+  path: Packages/com.unity.textmeshpro/Editor Resources/Textures/SectionHeader_Light.psd
+  artifactKey: Guid(e3b0f810fdea84e40ab4ba20f256f7e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.textmeshpro/Editor Resources/Textures/SectionHeader_Light.psd using Guid(e3b0f810fdea84e40ab4ba20f256f7e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2ac5191fcaf90ba68e81229686cdbfd') in 0.010017 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000175 seconds.
+  path: Packages/com.unity.shadergraph/Editor/Resources/Icons/settingsbutton.png
+  artifactKey: Guid(c881a10bb6578f04ba6d52f6c3f0c9d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.shadergraph/Editor/Resources/Icons/settingsbutton.png using Guid(c881a10bb6578f04ba6d52f6c3f0c9d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4effec4d61b6a06457a9a791fcf9283') in 0.009281 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000175 seconds.
+  path: Packages/com.unity.shadergraph/Editor/Resources/Icons/Settings_Flyout_9slice.png
+  artifactKey: Guid(57517c89a809f44458493cef0310e46f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.shadergraph/Editor/Resources/Icons/Settings_Flyout_9slice.png using Guid(57517c89a809f44458493cef0310e46f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2804cfed44d867eb18f85144c4d061c') in 0.012860 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000210 seconds.
+  path: Packages/com.unity.shadergraph/Editor/Resources/Icons/SettingsIcons.png
+  artifactKey: Guid(53bf71ace226b574d88c828e8b631aae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.shadergraph/Editor/Resources/Icons/SettingsIcons.png using Guid(53bf71ace226b574d88c828e8b631aae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9228ead35f07d7dfbd64237077c26df2') in 0.011430 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000178 seconds.
+  path: Packages/com.unity.shadergraph/Editor/Resources/Icons/SettingsIcons_hover.png
+  artifactKey: Guid(6bfd5f3c15e1ee7498657be747544985) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.shadergraph/Editor/Resources/Icons/SettingsIcons_hover.png using Guid(6bfd5f3c15e1ee7498657be747544985) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e43201ae826542bfb0501f600f6c1853') in 0.009710 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000203 seconds.
+  path: Packages/com.unity.shadergraph/Editor/Resources/Icons/settings_button.png
+  artifactKey: Guid(3140f217cba5a6f4ca8d41675ac44819) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.shadergraph/Editor/Resources/Icons/settings_button.png using Guid(3140f217cba5a6f4ca8d41675ac44819) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8de65aa69322c76d72b87f5694456b30') in 0.009989 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000181 seconds.
+  path: Packages/com.unity.shadergraph/Editor/Resources/Icons/Settings_Flyout_9slice@2x.png
+  artifactKey: Guid(a6abafca3e442ca4d970a1f8a2c70b0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.shadergraph/Editor/Resources/Icons/Settings_Flyout_9slice@2x.png using Guid(a6abafca3e442ca4d970a1f8a2c70b0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1be62727b574ee47d5f024d9649837cf') in 0.010925 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000150 seconds.
+  path: Packages/com.unity.shadergraph/Editor/Resources/Icons/SettingsIcons@2x.png
+  artifactKey: Guid(66e0f20149bec7a4eaee2f2d8aec158a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.shadergraph/Editor/Resources/Icons/SettingsIcons@2x.png using Guid(66e0f20149bec7a4eaee2f2d8aec158a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31a815b2299587c31ec4651fc4170a83') in 0.011407 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000198 seconds.
+  path: Packages/com.unity.shadergraph/Editor/Resources/Icons/SettingsIcons_hover@2x.png
+  artifactKey: Guid(b1b079d053c3d0c41952dadf32a89ffd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.shadergraph/Editor/Resources/Icons/SettingsIcons_hover@2x.png using Guid(b1b079d053c3d0c41952dadf32a89ffd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0dbff85b9e6cbd19e4043dde85213b84') in 0.009506 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000283 seconds.
+  path: Packages/com.unity.visualscripting/Editor/VisualScripting.Core/EditorAssetResources/Icons/Windows/SetupWizard/SetupCompletePage@32x.png
+  artifactKey: Guid(578bc4401495c405c9e72ff9c523cd98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.visualscripting/Editor/VisualScripting.Core/EditorAssetResources/Icons/Windows/SetupWizard/SetupCompletePage@32x.png using Guid(578bc4401495c405c9e72ff9c523cd98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e57b34c8154f282afa881036cd86da57') in 0.009820 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.259093 seconds.
+  path: Packages/com.unity.render-pipelines.high-definition/Editor/RenderPipelineResources/Texture/LightUnitIcons/d_CloudySky@2x.png
+  artifactKey: Guid(088373792f5db604fa5b045cb5dff9c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.high-definition/Editor/RenderPipelineResources/Texture/LightUnitIcons/d_CloudySky@2x.png using Guid(088373792f5db604fa5b045cb5dff9c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd56b65520439c2a7a5c7572dff068ea0') in 0.009697 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000141 seconds.
+  path: Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/notondisk.png
+  artifactKey: Guid(b205f4b28f59dda49af458b35d8a3ff3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/notondisk.png using Guid(b205f4b28f59dda49af458b35d8a3ff3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b83b312542d31a5300aacc546430bc7') in 0.022744 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000170 seconds.
+  path: Packages/com.unity.visualscripting/Editor/VisualScripting.Core/EditorAssetResources/Icons/Types/UnityEngine.LayerMask@32x.png
+  artifactKey: Guid(c6204a9791d6c1d408272b5ca3ca674f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.visualscripting/Editor/VisualScripting.Core/EditorAssetResources/Icons/Types/UnityEngine.LayerMask@32x.png using Guid(c6204a9791d6c1d408272b5ca3ca674f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da1166f5ef47c6b98f4672074ba5a6fb') in 0.009348 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000261 seconds.
+  path: Packages/com.unity.visualscripting/Editor/VisualScripting.Core/EditorAssetResources/Icons/Types/UnityEngine.LayerMask@16x.png
+  artifactKey: Guid(b0e927b4c04d25446bb038c89712cc60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.visualscripting/Editor/VisualScripting.Core/EditorAssetResources/Icons/Types/UnityEngine.LayerMask@16x.png using Guid(b0e927b4c04d25446bb038c89712cc60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8c01e78c01614411e44ac25c63485b7') in 0.010678 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.378937 seconds.
+  path: Packages/com.unity.render-pipelines.high-definition/Editor/RenderPipelineResources/Texture/LightUnitIcons/d_BrightSky@2x.png
+  artifactKey: Guid(9a278b70c427e8e4caa47a45a5d59de8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.high-definition/Editor/RenderPipelineResources/Texture/LightUnitIcons/d_BrightSky@2x.png using Guid(9a278b70c427e8e4caa47a45a5d59de8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07cdbcf0cd870e3fb99390dc05adb008') in 0.010368 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000125 seconds.
+  path: Packages/com.unity.render-pipelines.high-definition/Editor/RenderPipelineResources/Texture/LightUnitIcons/d_ClearSky.png
+  artifactKey: Guid(76c10465276fcb9498b1fd312e3f74ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.high-definition/Editor/RenderPipelineResources/Texture/LightUnitIcons/d_ClearSky.png using Guid(76c10465276fcb9498b1fd312e3f74ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f98e798450a1008cc94d8a4d1b93c71') in 0.009558 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000235 seconds.
+  path: Packages/com.unity.render-pipelines.high-definition/Editor/RenderPipelineResources/Texture/LightUnitIcons/d_CloudySky.png
+  artifactKey: Guid(0c24a3ead3381ee4cb4574c5be266d87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.high-definition/Editor/RenderPipelineResources/Texture/LightUnitIcons/d_CloudySky.png using Guid(0c24a3ead3381ee4cb4574c5be266d87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd15c3047ff4b4bf1e6268adf5620b117') in 0.010799 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000157 seconds.
+  path: Packages/com.unity.render-pipelines.high-definition/Editor/RenderPipelineResources/Texture/LightUnitIcons/d_ClearSky@2x.png
+  artifactKey: Guid(490d69b278eff784b85feca736d57389) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.high-definition/Editor/RenderPipelineResources/Texture/LightUnitIcons/d_ClearSky@2x.png using Guid(490d69b278eff784b85feca736d57389) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '950d269c1adc077b0ae60eece5b5dc94') in 0.010637 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.109520 seconds.
+  path: Packages/com.unity.visualscripting/Editor/VisualScripting.Core/EditorAssetResources/Icons/Windows/AboutWindow/AboutPage@32x.png
+  artifactKey: Guid(14a8ae82d6c2846769a653bf9f4c0753) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.visualscripting/Editor/VisualScripting.Core/EditorAssetResources/Icons/Windows/AboutWindow/AboutPage@32x.png using Guid(14a8ae82d6c2846769a653bf9f4c0753) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0b9c8cda21c88091ca02a497123d2df') in 0.008773 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000143 seconds.
+  path: Packages/com.unity.render-pipelines.core/Editor/LookDev/Icons/Add.png
+  artifactKey: Guid(cbaeed03e5416aa4bae23110b63a0c7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.core/Editor/LookDev/Icons/Add.png using Guid(cbaeed03e5416aa4bae23110b63a0c7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebb343e4cb4566e5d6dcf5ac6ed8ba98') in 0.012507 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000188 seconds.
+  path: Packages/com.unity.visualscripting/Editor/VisualScripting.Core/EditorAssetResources/Icons/Windows/AboutWindow/AboutPluginsPage@32x.png
+  artifactKey: Guid(b9d75ee465bf243539414eab3b94ff02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.visualscripting/Editor/VisualScripting.Core/EditorAssetResources/Icons/Windows/AboutWindow/AboutPluginsPage@32x.png using Guid(b9d75ee465bf243539414eab3b94ff02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74b00b83da0ab2e33c5d3ad9b9f4abaf') in 0.011038 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000201 seconds.
+  path: Packages/com.unity.render-pipelines.core/Editor/LookDev/Icons/Add@2x.png
+  artifactKey: Guid(79aba0b290c471c4ba3d3f818d4e9b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.core/Editor/LookDev/Icons/Add@2x.png using Guid(79aba0b290c471c4ba3d3f818d4e9b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34bd3c674df18b9776a08e33ae3fb6d5') in 0.014475 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000164 seconds.
+  path: Packages/com.unity.visualscripting/Editor/VisualScripting.Core/EditorAssetResources/Icons/Windows/AboutWindow/AcknowledgementPage@32x.png
+  artifactKey: Guid(71ff4424a45a14d01aeb98f6e4673ddb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.visualscripting/Editor/VisualScripting.Core/EditorAssetResources/Icons/Windows/AboutWindow/AcknowledgementPage@32x.png using Guid(71ff4424a45a14d01aeb98f6e4673ddb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba74ed87c9414058d2a1e0c09a89b5ab') in 0.011001 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000200 seconds.
+  path: Packages/com.unity.collab-proxy/Editor/Collaborate/Assets/Icons/added-file-dark.png
+  artifactKey: Guid(1a4f52b613391cd449af3ad2e44affeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.collab-proxy/Editor/Collaborate/Assets/Icons/added-file-dark.png using Guid(1a4f52b613391cd449af3ad2e44affeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f16b08e92225f64f744e2dc6456aabcb') in 0.009534 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000172 seconds.
+  path: Packages/com.unity.collab-proxy/Editor/Collaborate/Assets/Icons/added-file-dark@2x.png
+  artifactKey: Guid(c223e0c507e2c6549a2cb97441b62cbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.collab-proxy/Editor/Collaborate/Assets/Icons/added-file-dark@2x.png using Guid(c223e0c507e2c6549a2cb97441b62cbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ee27801a9534d16dfb0c076bd6901e0') in 0.010616 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000208 seconds.
+  path: Packages/com.unity.collab-proxy/Editor/Collaborate/Assets/Icons/added-file-light@2x.png
+  artifactKey: Guid(ec2e3aa6d0ab8ce4eac29b56d65d61d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.collab-proxy/Editor/Collaborate/Assets/Icons/added-file-light@2x.png using Guid(ec2e3aa6d0ab8ce4eac29b56d65d61d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69adeaed8300228c16b3d109c23c32a0') in 0.011092 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000180 seconds.
+  path: Packages/com.unity.render-pipelines.core/Editor/Resources/Advanced_Pressed_mini.png
+  artifactKey: Guid(3e471b9fad7264146aa03aca58b27957) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.core/Editor/Resources/Advanced_Pressed_mini.png using Guid(3e471b9fad7264146aa03aca58b27957) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99e16b1687e756963cfba387fd3f539b') in 0.012603 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000194 seconds.
+  path: Packages/com.unity.collab-proxy/Editor/Collaborate/Assets/Icons/added-file-light.png
+  artifactKey: Guid(397fff6c3885f8343bb65714f0064b5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.collab-proxy/Editor/Collaborate/Assets/Icons/added-file-light.png using Guid(397fff6c3885f8343bb65714f0064b5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66ac98a8bffb2a5988b79a996d48fd29') in 0.009647 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 40.799475 seconds.
+  path: Assets/Skybox/Cubemaps
+  artifactKey: Guid(05ed5ae0357ba2b42acc61e9297be678) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Skybox/Cubemaps using Guid(05ed5ae0357ba2b42acc61e9297be678) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '458899779cb0093fc3491f28171500b8') in 0.005810 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.017583 seconds.
+  path: Assets/Skybox/Cubemaps/sunset.hdr
+  artifactKey: Guid(656a59a5ff93c46498416d97e5c16b66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Skybox/Cubemaps/sunset.hdr using Guid(656a59a5ff93c46498416d97e5c16b66) Importer(815301076,1909f56bfc062723c751e8b465ee728b) d3d12: upload buffer was full! Waited for COPY queue for 1.362 ms.
+d3d12: upload buffer was full! Waited for COPY queue for 1.351 ms.
+ -> (artifact id: '824816914d491e5aea1ab11958e00512') in 0.037248 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004680 seconds.
+Begin MonoManager ReloadAssembly
+d3d12: upload buffer was full! Waited for COPY queue for 1.678 ms.
+d3d12: upload buffer was full! Waited for COPY queue for 1.348 ms.
+d3d12: upload buffer was full! Waited for COPY queue for 1.473 ms.
+d3d12: upload buffer was full! Waited for COPY queue for 1.309 ms.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.25 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor/Src/SceneManager/EditorSceneManager.cpp line 672]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor/Src/SceneManager/EditorSceneManager.cpp line 672]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor/Src/SceneManager/EditorSceneManager.cpp line 672]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor/Src/SceneManager/EditorSceneManager.cpp line 672]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor/Src/SceneManager/EditorSceneManager.cpp line 672]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor/Src/SceneManager/EditorSceneManager.cpp line 672]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor/Src/SceneManager/EditorSceneManager.cpp line 672]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor/Src/SceneManager/EditorSceneManager.cpp line 672]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor/Src/SceneManager/EditorSceneManager.cpp line 672]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor/Src/SceneManager/EditorSceneManager.cpp line 672]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor/Src/SceneManager/EditorSceneManager.cpp line 672]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.561 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1561ms)
+		BeginReloadAssembly (128ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (14ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (43ms)
+		EndReloadAssembly (1372ms)
+			LoadAssemblies (91ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (400ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (69ms)
+			SetupLoadedEditorAssemblies (431ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (72ms)
+				ProcessInitializeOnLoadAttributes (341ms)
+				ProcessInitializeOnLoadMethodAttributes (8ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (35ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.04 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5158 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 337.0 MB.
+System memory in use after: 331.9 MB.
+
+Unloading 187 unused Assets to reduce memory usage. Loaded Objects now: 6885.
+Total: 6.925200 ms (FindLiveObjects: 0.749800 ms CreateObjectMapping: 0.170700 ms MarkObjects: 4.582800 ms  DeleteObjects: 1.420900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:srp/default-shader: 0d000000000000000000000000000000 -> 00a0da0d000000000000000000000000
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 449.782961 seconds.
+  path: Assets/Skybox/Cubemaps/Materials
+  artifactKey: Guid(fd0806521643c1a4e82105f6608202a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Skybox/Cubemaps/Materials using Guid(fd0806521643c1a4e82105f6608202a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16aa9de3c51aa0b4c765a3078c980b0a') in 0.011541 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.036240 seconds.
+  path: Assets/Skybox/Cubemaps/Materials/daytime.mat
+  artifactKey: Guid(259cf8e43a5c6374aa6ff2c98be7cd35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Skybox/Cubemaps/Materials/daytime.mat using Guid(259cf8e43a5c6374aa6ff2c98be7cd35) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.MaterialEditor:GetPreviewRendererUtility ()
+UnityEditor.MaterialEditor:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor/Src/SceneManager/EditorSceneManager.cpp line 672]
+
+ -> (artifact id: 'b3b4e5c578e3eb3cce99e888f7504526') in 0.517525 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004921 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.06 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor/Src/SceneManager/EditorSceneManager.cpp line 672]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor/Src/SceneManager/EditorSceneManager.cpp line 672]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor/Src/SceneManager/EditorSceneManager.cpp line 672]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor/Src/SceneManager/EditorSceneManager.cpp line 672]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor/Src/SceneManager/EditorSceneManager.cpp line 672]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor/Src/SceneManager/EditorSceneManager.cpp line 672]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor/Src/SceneManager/EditorSceneManager.cpp line 672]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor/Src/SceneManager/EditorSceneManager.cpp line 672]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor/Src/SceneManager/EditorSceneManager.cpp line 672]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor/Src/SceneManager/EditorSceneManager.cpp line 672]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor/Src/SceneManager/EditorSceneManager.cpp line 672]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.389 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1389ms)
+		BeginReloadAssembly (139ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (28ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (44ms)
+		EndReloadAssembly (1196ms)
+			LoadAssemblies (88ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (387ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (70ms)
+			SetupLoadedEditorAssemblies (410ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (67ms)
+				ProcessInitializeOnLoadAttributes (325ms)
+				ProcessInitializeOnLoadMethodAttributes (8ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (38ms)
+Platform modules already initialized, skipping
+NullReferenceException: Object reference not set to an instance of an object
+  at UnityEngine.Rendering.HighDefinition.HDRenderPipelineAsset.get_defaultShader () [0x00000] in E:\Github Repos\MovementShooter_FMP\Library\PackageCache\com.unity.render-pipelines.high-definition@11.0.0\Runtime\RenderPipeline\HDRenderPipelineAsset.cs:304 
+
+(Filename: Library/PackageCache/com.unity.render-pipelines.high-definition@11.0.0/Runtime/RenderPipeline/HDRenderPipelineAsset.cs Line: 304)
+
+Refreshing native plugins compatible for Editor in 1.07 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4919 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 309.4 MB.
+System memory in use after: 309.9 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 6991.
+Total: 4.835900 ms (FindLiveObjects: 0.586400 ms CreateObjectMapping: 0.160100 ms MarkObjects: 4.067700 ms  DeleteObjects: 0.020600 ms)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at UnityEngine.Rendering.HighDefinition.HDRenderPipelineAsset.get_defaultShader () [0x00000] in E:\Github Repos\MovementShooter_FMP\Library\PackageCache\com.unity.render-pipelines.high-definition@11.0.0\Runtime\RenderPipeline\HDRenderPipelineAsset.cs:304 
+
+(Filename: Library/PackageCache/com.unity.render-pipelines.high-definition@11.0.0/Runtime/RenderPipeline/HDRenderPipelineAsset.cs Line: 304)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:srp/default-shader: 0d000000000000000000000000000000 -> 00a0da0d000000000000000000000000
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004695 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.02 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor/Src/SceneManager/EditorSceneManager.cpp line 672]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor/Src/SceneManager/EditorSceneManager.cpp line 672]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor/Src/SceneManager/EditorSceneManager.cpp line 672]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor/Src/SceneManager/EditorSceneManager.cpp line 672]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor/Src/SceneManager/EditorSceneManager.cpp line 672]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor/Src/SceneManager/EditorSceneManager.cpp line 672]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor/Src/SceneManager/EditorSceneManager.cpp line 672]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor/Src/SceneManager/EditorSceneManager.cpp line 672]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor/Src/SceneManager/EditorSceneManager.cpp line 672]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor/Src/SceneManager/EditorSceneManager.cpp line 672]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor/Src/SceneManager/EditorSceneManager.cpp line 672]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.448 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1448ms)
+		BeginReloadAssembly (123ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (11ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (39ms)
+		EndReloadAssembly (1268ms)
+			LoadAssemblies (88ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (385ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (69ms)
+			SetupLoadedEditorAssemblies (429ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (68ms)
+				ProcessInitializeOnLoadAttributes (345ms)
+				ProcessInitializeOnLoadMethodAttributes (8ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (35ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.08 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5087 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 337.5 MB.
+System memory in use after: 338.0 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 7162.
+Total: 5.650200 ms (FindLiveObjects: 0.590500 ms CreateObjectMapping: 0.167700 ms MarkObjects: 4.866500 ms  DeleteObjects: 0.024000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 158.663993 seconds.
+  path: Assets/HDRPDefaultResources/DefaultLookDevProfile.asset
+  artifactKey: Guid(0824527464773a548b0ccc6218fffc6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HDRPDefaultResources/DefaultLookDevProfile.asset using Guid(0824527464773a548b0ccc6218fffc6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a12989d5e87602ad26d1f11844d204a7') in 0.013465 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000165 seconds.
+  path: Assets/HDRPDefaultResources/DefaultSettingsVolumeProfile.asset
+  artifactKey: Guid(cb0edddd9087a43468cde7d58b3c0df2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HDRPDefaultResources/DefaultSettingsVolumeProfile.asset using Guid(cb0edddd9087a43468cde7d58b3c0df2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1599ece70cf8b5455350df71491e78bc') in 0.002695 seconds 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
