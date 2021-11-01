@@ -485,7 +485,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77d429d40f68f31419334a9998db85b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponSO: {fileID: 11400000, guid: 6696733d310ba2c4094abfce93af958f, type: 2}
+  weaponOne: {fileID: 11400000, guid: b5179fd7f7501f54eaf1033364e4f7b7, type: 2}
+  weaponTwo: {fileID: 11400000, guid: 6696733d310ba2c4094abfce93af958f, type: 2}
+  currentWeapon: {fileID: 0}
   localMesh: {fileID: 143581044}
 --- !u!23 &143581043
 MeshRenderer:
