@@ -1,13 +1,4 @@
 Base path: 'D:/Unity Versions/2021.1.17f1/Editor/Data', plugins path 'D:/Unity Versions/2021.1.17f1/Editor/Data/PlaybackEngines'
 Cmd: initializeCompiler
 
-Cmd: compileComputeKernel
-  insize=10750 file=E:/Github Repos/MovementShooter_FMP/Library/PackageCache/com.unity.render-pipelines.high-definition@11.0.0/Runtime/Lighting/LightLoop/Deferred.compute kernel=Deferred_Indirect_Fptl_Variant3 cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<SHADE_OPAQUE_ENTRY=Deferred_Indirect_Fptl_Variant3>,<USE_INDIRECT=1>,<VARIANT=3>,<UNITY_VERSION=202119> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SCREEN_SPACE_SHADOWS_ON SHADOW_MEDIUM SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=16385 forceDXC=0 forceFXC=0 ok=1 outsize=43282
-
-Cmd: compileComputeKernel
-  insize=10750 file=E:/Github Repos/MovementShooter_FMP/Library/PackageCache/com.unity.render-pipelines.high-definition@11.0.0/Runtime/Lighting/LightLoop/Deferred.compute kernel=Deferred_Indirect_Fptl_Variant16 cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<SHADE_OPAQUE_ENTRY=Deferred_Indirect_Fptl_Variant16>,<USE_INDIRECT=1>,<VARIANT=16>,<UNITY_VERSION=202119> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SCREEN_SPACE_SHADOWS_ON SHADOW_MEDIUM SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=16385 forceDXC=0 forceFXC=0 ok=1 outsize=54092
-
-Cmd: compileComputeKernel
-  insize=10750 file=E:/Github Repos/MovementShooter_FMP/Library/PackageCache/com.unity.render-pipelines.high-definition@11.0.0/Runtime/Lighting/LightLoop/Deferred.compute kernel=Deferred_Indirect_Fptl_Variant25 cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<SHADE_OPAQUE_ENTRY=Deferred_Indirect_Fptl_Variant25>,<USE_INDIRECT=1>,<VARIANT=25>,<UNITY_VERSION=202119> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SCREEN_SPACE_SHADOWS_ON SHADOW_MEDIUM SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=16385 forceDXC=0 forceFXC=0 ok=1 outsize=37615
-
 Cmd: shutdown
