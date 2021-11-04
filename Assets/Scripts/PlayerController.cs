@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 
@@ -10,6 +11,8 @@ public class PlayerController : MonoBehaviour
 
     public Transform playerCam;
     public Transform orientation;
+
+    public PlayerInputs inputs = new PlayerInputs();
     #endregion
 
     #region Controls
@@ -42,7 +45,6 @@ public class PlayerController : MonoBehaviour
     public float jumpForce = 550f;
 
     //Inputs
-    float x, y;
     bool jumping, sprinting, crouching;
 
     //Sliding
@@ -56,6 +58,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     bool isWallRunning;
     public float maxWallRunCamTilt, wallRunCamTilt;
+
+    InputBinding leftBind
     #endregion
 
     #region Functions
@@ -63,6 +67,16 @@ public class PlayerController : MonoBehaviour
     void Awake()
     {
         rb = GetComponent<Rigidbody>();
+    }
+
+    private void OnEnable()
+    {
+        inputs.Enable();
+    }
+
+    private void OnDisable()
+    {
+        inputs.Disable();
     }
 
     private void Start()
@@ -74,7 +88,7 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        Movement();
+        Movement(inputs.InGame.Move.ReadValue<Vector2>());
     }
 
     private void Update()
@@ -88,8 +102,6 @@ public class PlayerController : MonoBehaviour
     //Gets all input values and assigns them appropriately
     void ReadInputs()
     {
-        x = Input.GetAxisRaw("Horizontal");
-        y = Input.GetAxisRaw("Vertical");
         jumping = Input.GetButton("Jump");
         crouching = Input.GetButton("Crouch");
         sprinting = Input.GetButton("Sprint");
@@ -123,7 +135,7 @@ public class PlayerController : MonoBehaviour
         transform.position = new Vector3(transform.position.x, transform.position.y + 0.5f, transform.position.z);
     }
 
-    void Movement()
+    public void Movement(Vector2 input)
     {
         //Added gravity
         rb.AddForce(Vector3.down * Time.deltaTime * 10);
@@ -133,7 +145,7 @@ public class PlayerController : MonoBehaviour
         float xMag = mag.x, yMag = mag.y;
 
         //Adding relative counter-impulses to make movement feel snappier
-        Drag(x, y, mag);
+        Drag(input.x, input.y, mag);
 
         //Jump
         if (canJump && jumping) Jump();
@@ -146,10 +158,10 @@ public class PlayerController : MonoBehaviour
         }
         
         //Ensures the input won't exceed max speed
-        if (x > 0 && xMag > maxSpeed) x = 0;
-        if (x < 0 && xMag < -maxSpeed) x = 0;
-        if (y > 0 && yMag > maxSpeed) y = 0;
-        if (y < 0 && yMag < -maxSpeed) y = 0;
+        if (input.x > 0 && xMag > maxSpeed) input.x = 0;
+        if (input.x < 0 && xMag < -maxSpeed) input.x = 0;
+        if (input.y > 0 && yMag > maxSpeed) input.y = 0;
+        if (input.y < 0 && yMag < -maxSpeed) input.y = 0;
 
         float multiplier = 1f, multiplierV = 1f;
 
@@ -162,8 +174,8 @@ public class PlayerController : MonoBehaviour
 
         if (grounded && crouching) multiplierV = 0;
 
-        rb.AddForce(orientation.transform.forward * y * moveImpulse * Time.deltaTime * multiplier * multiplierV);
-        rb.AddForce(orientation.transform.right * x * moveImpulse * Time.deltaTime * multiplier);
+        rb.AddForce(orientation.transform.forward * input.y * moveImpulse * Time.deltaTime * multiplier * multiplierV);
+        rb.AddForce(orientation.transform.right * input.x * moveImpulse * Time.deltaTime * multiplier);
     }
 
     void Jump()
@@ -315,8 +327,8 @@ public class PlayerController : MonoBehaviour
 
     void WallRunInput()
     {
-        if (Input.GetKey(KeyCode.D) && isWallRight) StartWallRun();
-        if (Input.GetKey(KeyCode.A) && isWallLeft) StartWallRun();
+        if (inputs.InGame.Move./*something input &&*/isWallRight) StartWallRun();
+        if (/*something input &&*/isWallLeft) StartWallRun();
     }
 
     void StartWallRun()
