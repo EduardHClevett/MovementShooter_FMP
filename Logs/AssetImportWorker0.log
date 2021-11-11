@@ -2766,3 +2766,64 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 5200.646502 seconds.
+  path: Assets/InputSystem/PlayerInputs.inputactions
+  artifactKey: Guid(f1cfc3f20fc913542b4676c02583fea3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/InputSystem/PlayerInputs.inputactions using Guid(f1cfc3f20fc913542b4676c02583fea3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '540c5f84e8aedb4858a4d219e0e252d0') in 0.028827 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.481829 seconds.
+  path: Assets/Scripts/Enums
+  artifactKey: Guid(300606f16687fd44bb748b143990a930) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Enums using Guid(300606f16687fd44bb748b143990a930) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2ddf5794524a411cfb2627513ae74f6') in 0.005606 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.780174 seconds.
+  path: Assets/Scripts/Enums/WeaponEnums.cs
+  artifactKey: Guid(f7da16015ee41a74aa8f11af5c9c59b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Enums/WeaponEnums.cs using Guid(f7da16015ee41a74aa8f11af5c9c59b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eba155fc0f35008c506c87b4f95ca3a6') in 0.007870 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.082132 seconds.
+  path: Assets/Scripts/Inheritables/Interfaces
+  artifactKey: Guid(1d7edb10056e45740907aa3162611c94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Inheritables/Interfaces using Guid(1d7edb10056e45740907aa3162611c94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc4ea1ee06ed37fe89e007bb34b73630') in 0.006103 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.972196 seconds.
+  path: Assets/Scripts/Scriptable Objects
+  artifactKey: Guid(0aba107091d433542924ac5f4e0fcbfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Scriptable Objects using Guid(0aba107091d433542924ac5f4e0fcbfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d5d7960604a765a6c97afdc15d2cfa1') in 0.005870 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.047545 seconds.
+  path: Assets/Scripts/Scriptable Objects/Source Scripts
+  artifactKey: Guid(8507460a7a8378141b4476807fecdffe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Scriptable Objects/Source Scripts using Guid(8507460a7a8378141b4476807fecdffe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd77796ae75b19fec32a9b546f81a5916') in 0.006358 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.592053 seconds.
+  path: Assets/Scripts/Scriptable Objects/Source Scripts/WeaponSO.cs
+  artifactKey: Guid(e2a8f74cc2c8e3a438f37e984e137c10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Scriptable Objects/Source Scripts/WeaponSO.cs using Guid(e2a8f74cc2c8e3a438f37e984e137c10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0dc96797f553849e7958e6362dd3f33') in 0.005953 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 115.222151 seconds.
+  path: Assets/Scripts/Scriptable Objects/Weapons
+  artifactKey: Guid(dc5baf0cbc15cc543b454bd517eb41c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Scriptable Objects/Weapons using Guid(dc5baf0cbc15cc543b454bd517eb41c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '894f7c4eefa1a3fb129f9ededf15f7b0') in 0.006321 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.070483 seconds.
+  path: Assets/Scripts/Scriptable Objects/Weapons/AssaultRifleTest.asset
+  artifactKey: Guid(6696733d310ba2c4094abfce93af958f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Scriptable Objects/Weapons/AssaultRifleTest.asset using Guid(6696733d310ba2c4094abfce93af958f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '836de175acce9ab57f4c7c86c2ff86d0') in 0.121756 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000197 seconds.
+  path: Assets/Scripts/Scriptable Objects/Weapons/ShotgunTest.asset
+  artifactKey: Guid(b5179fd7f7501f54eaf1033364e4f7b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Scriptable Objects/Weapons/ShotgunTest.asset using Guid(b5179fd7f7501f54eaf1033364e4f7b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06607b35f1e7f8bd7c84370e5a0dd3d2') in 0.007024 seconds 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
