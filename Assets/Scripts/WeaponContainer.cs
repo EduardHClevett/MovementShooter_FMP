@@ -29,12 +29,4 @@ public class WeaponContainer : MonoBehaviour
         transform.localRotation = Quaternion.Euler(currentWeapon.meshRotation);
         transform.localScale = currentWeapon.meshScale;
     }
-
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Alpha1))
-            EquipWeapon(weaponOne);
-        if (Input.GetKeyDown(KeyCode.Alpha2))
-            EquipWeapon(weaponTwo);
-    }
 }

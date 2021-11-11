@@ -53,8 +53,8 @@ public class @PlayerInputs : IInputActionCollection, IDisposable
                 {
                     ""name"": ""Look"",
                     ""type"": ""Value"",
-                    ""id"": ""28bc374e-50bb-4936-86ad-1eed48df97ff"",
-                    ""expectedControlType"": """",
+                    ""id"": ""5539fb83-c388-4d2b-90b0-06e1f66a7cd3"",
+                    ""expectedControlType"": ""Vector2"",
                     ""processors"": """",
                     ""interactions"": """"
                 }
@@ -149,37 +149,15 @@ public class @PlayerInputs : IInputActionCollection, IDisposable
                     ""isPartOfComposite"": false
                 },
                 {
-                    ""name"": ""1D Axis"",
-                    ""id"": ""e3331d0d-a73a-4f70-93fc-bd2cca540d81"",
-                    ""path"": ""1DAxis"",
+                    ""name"": """",
+                    ""id"": ""88a30b34-ef79-4b1d-968a-f95ea9a89a8d"",
+                    ""path"": ""<Mouse>/delta"",
                     ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
+                    ""processors"": ""ScaleVector2(x=0.5,y=0.5)"",
+                    ""groups"": ""KBM"",
                     ""action"": ""Look"",
-                    ""isComposite"": true,
+                    ""isComposite"": false,
                     ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": ""negative"",
-                    ""id"": ""a8bf6d7f-e0d2-49cd-b135-4acda9d97b7a"",
-                    ""path"": """",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""KBM"",
-                    ""action"": ""Look"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""positive"",
-                    ""id"": ""b54bbd88-632d-4f4d-ad1d-c7ac71f1802f"",
-                    ""path"": """",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""KBM"",
-                    ""action"": ""Look"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
                 }
             ]
         }

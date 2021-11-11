@@ -12,7 +12,7 @@ public class PlayerController : MonoBehaviour
     public Transform playerCam;
     public Transform orientation;
 
-    public PlayerInputs inputs = new PlayerInputs();
+    public PlayerInputs inputs;
     #endregion
 
     #region Controls
@@ -58,15 +58,24 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     bool isWallRunning;
     public float maxWallRunCamTilt, wallRunCamTilt;
-
-    InputBinding leftBind
     #endregion
 
     #region Functions
 
     void Awake()
     {
+        inputs = new PlayerInputs();
         rb = GetComponent<Rigidbody>();
+
+        inputs.InGame.Jump.started += _ => jumping = true;
+        inputs.InGame.Jump.canceled += _ => jumping = false;
+
+
+        inputs.InGame.Sprint.started += _ => maxSpeed = sprintMaxSpeed;
+        inputs.InGame.Sprint.canceled += _ => maxSpeed = walkMaxSpeed;
+
+        inputs.InGame.Crouch.started += _ => StartCrouch();
+        inputs.InGame.Crouch.canceled += _ => StopCrouch();
     }
 
     private void OnEnable()
@@ -93,30 +102,13 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        ReadInputs();
-        Look();
+        Look(inputs.InGame.Look.ReadValue<Vector2>());
         WallRunInput();
         CheckForWall();
     }
 
     //Gets all input values and assigns them appropriately
-    void ReadInputs()
-    {
-        jumping = Input.GetButton("Jump");
-        crouching = Input.GetButton("Crouch");
-        sprinting = Input.GetButton("Sprint");
 
-        //Crouch
-        if (Input.GetButtonDown("Crouch"))
-            StartCrouch();
-        if(Input.GetButtonUp("Crouch"))
-            StopCrouch();
-
-        if (sprinting)
-            maxSpeed = sprintMaxSpeed;
-        else
-            maxSpeed = walkMaxSpeed;
-    }
 
     void StartCrouch()
     {
@@ -201,15 +193,15 @@ public class PlayerController : MonoBehaviour
         {
             canJump = false;
 
-            if(isWallLeft && !Input.GetKey(KeyCode.D) || isWallRight && !Input.GetKey(KeyCode.A))
+            if(isWallLeft && !Keyboard.current.dKey.wasPressedThisFrame || isWallRight && !Keyboard.current.aKey.wasPressedThisFrame)
             {
                 rb.AddForce(Vector2.up * jumpForce * 1.5f);
                 rb.AddForce(normalVector * jumpForce * 0.5f);
             }
 
-            if (isWallRight || isWallLeft && Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D)) rb.AddForce(-orientation.up * jumpForce);
-            if (isWallRight && Input.GetKey(KeyCode.A)) rb.AddForce(-orientation.right * jumpForce * 3.2f);
-            if (isWallLeft && Input.GetKey(KeyCode.D)) rb.AddForce(orientation.right * jumpForce * 3.2f);
+            if (isWallRight || isWallLeft && Keyboard.current.aKey.wasPressedThisFrame || Keyboard.current.dKey.wasPressedThisFrame) rb.AddForce(-orientation.up * jumpForce);
+            if (isWallRight && Keyboard.current.aKey.wasPressedThisFrame) rb.AddForce(-orientation.right * jumpForce * 3.2f);
+            if (isWallLeft && Keyboard.current.dKey.wasPressedThisFrame) rb.AddForce(orientation.right * jumpForce * 3.2f);
 
             rb.AddForce(orientation.forward * jumpForce);
 
@@ -223,10 +215,10 @@ public class PlayerController : MonoBehaviour
     }
 
     float desiredX;
-    void Look()
+    void Look(Vector2 input)
     {
-        float mouseX = Input.GetAxis("Mouse X") * sensitivity * Time.fixedDeltaTime * sensMultiplier;
-        float mouseY = Input.GetAxis("Mouse Y") * sensitivity * Time.fixedDeltaTime * sensMultiplier;
+        float mouseX = input.x * sensitivity * Time.fixedDeltaTime * sensMultiplier;
+        float mouseY = input.y * sensitivity * Time.fixedDeltaTime * sensMultiplier;
 
         Vector3 rot = playerCam.transform.localRotation.eulerAngles;
         desiredX = rot.y + mouseX;
@@ -327,8 +319,8 @@ public class PlayerController : MonoBehaviour
 
     void WallRunInput()
     {
-        if (inputs.InGame.Move./*something input &&*/isWallRight) StartWallRun();
-        if (/*something input &&*/isWallLeft) StartWallRun();
+        if (Keyboard.current.dKey.wasPressedThisFrame && isWallRight) StartWallRun();
+        if (Keyboard.current.aKey.wasPressedThisFrame && isWallLeft) StartWallRun();
     }
 
     void StartWallRun()
