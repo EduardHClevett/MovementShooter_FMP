@@ -12,12 +12,24 @@ public class WeaponSO : ScriptableObject
     public float damage;
     public float headshotMultiplier;
     public WeaponEnums.FireMode fireMode;
+    public float fireRate;
+    public int burstCount;
     [Space]
     public int maxMagAmmo;
     public int maxReserveAmmo;
     public WeaponEnums.ReloadType reloadMode;
+    public float reloadTime;
     [Space]
     public Mesh weaponMesh;
     public Vector3 meshScale, meshRotation, meshPosition;
+    [Space]
+    public GameObject projectile;
+    public Vector3 muzzlePointOffset;
+    public float projectileVelocity;
+    #endregion
+
+    #region Runtime Stats
+    public int currentMagAmmo;
+    public int currentReserveAmmo;
     #endregion
 }
