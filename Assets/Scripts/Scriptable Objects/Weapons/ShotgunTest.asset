@@ -29,6 +29,6 @@ MonoBehaviour:
   meshPosition: {x: 0.35, y: -0.3, z: 0.5}
   projectile: {fileID: 1479425826790611232, guid: 577615f959bb98a44a39baaf2dccb2c8, type: 3}
   muzzlePointOffset: {x: 0, y: 0, z: 0.75}
-  projectileVelocity: 0
-  currentMagAmmo: 7
-  currentReserveAmmo: 64
+  projectileVelocity: 10
+  currentMagAmmo: 5
+  currentReserveAmmo: 56

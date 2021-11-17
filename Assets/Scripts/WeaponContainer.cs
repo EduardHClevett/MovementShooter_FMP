@@ -125,6 +125,8 @@ public class WeaponContainer : MonoBehaviour
 
                 GameObject bullet = Instantiate(currentWeapon.projectile, muzzlePoint.position, Quaternion.identity);
 
+                bullet.GetComponent<Projectile>().SetStats(currentWeapon.damage, currentWeapon.projectileVelocity);
+
                 currentWeapon.currentMagAmmo--;
 
                 fireTimer = 0f;

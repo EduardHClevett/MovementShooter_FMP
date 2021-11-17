@@ -16,9 +16,9 @@ MonoBehaviour:
   weaponClass: 2
   damage: 50
   headshotMultiplier: 1.5
-  fireMode: 1
+  fireMode: 0
   fireRate: 5
-  burstCount: 3
+  burstCount: 0
   maxMagAmmo: 30
   maxReserveAmmo: 120
   reloadMode: 0
@@ -27,8 +27,8 @@ MonoBehaviour:
   meshScale: {x: 0.2, y: 0.2, z: 0.6}
   meshRotation: {x: 0, y: 0, z: 0}
   meshPosition: {x: 0.35, y: -0.3, z: 0.5}
-  projectile: {fileID: 1479425826790611232, guid: 577615f959bb98a44a39baaf2dccb2c8, type: 3}
+  projectile: {fileID: 1261468657680383683, guid: c02ff28c1a5d2af4d90a054013b41cdb, type: 3}
   muzzlePointOffset: {x: 0, y: 0, z: 0.75}
-  projectileVelocity: 0
-  currentMagAmmo: 27
+  projectileVelocity: 10
+  currentMagAmmo: 30
   currentReserveAmmo: 120
