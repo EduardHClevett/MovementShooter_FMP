@@ -125,7 +125,9 @@ public class WeaponContainer : MonoBehaviour
 
                 GameObject bullet = Instantiate(currentWeapon.projectile, muzzlePoint.position, Quaternion.identity);
 
-                bullet.GetComponent<Projectile>().SetStats(currentWeapon.damage, currentWeapon.projectileVelocity);
+                Vector3 dir = muzzlePoint.forward;
+
+                bullet.GetComponent<Projectile>().SetStats(dir, currentWeapon.damage, currentWeapon.projectileVelocity);
 
                 currentWeapon.currentMagAmmo--;
 
@@ -152,33 +154,51 @@ public class WeaponContainer : MonoBehaviour
 
         isReloading = true;
 
-        //Original Logic
-
-        yield return new WaitForSeconds(currentWeapon.reloadTime);
-
-        if((currentWeapon.currentReserveAmmo < currentWeapon.maxMagAmmo) && ((currentWeapon.currentMagAmmo + currentWeapon.currentReserveAmmo) <= currentWeapon.maxMagAmmo))
-        {
-            currentWeapon.currentMagAmmo += currentWeapon.currentReserveAmmo;
-            currentWeapon.currentReserveAmmo = 0;
-        }
-        else
-        {
-            currentWeapon.currentMagAmmo = currentWeapon.maxMagAmmo;
-            currentWeapon.currentReserveAmmo -= shotsFired;
-        }
-
         //New Logic
         
         switch(currentWeapon.reloadMode)
         {
             case WeaponEnums.ReloadType.Magazine:
                 //Magazine Here
+                yield return new WaitForSeconds(currentWeapon.reloadTime);
+
+                if ((currentWeapon.currentReserveAmmo < currentWeapon.maxMagAmmo) && ((currentWeapon.currentMagAmmo + currentWeapon.currentReserveAmmo) <= currentWeapon.maxMagAmmo))
+                {
+                    currentWeapon.currentMagAmmo += currentWeapon.currentReserveAmmo;
+                    currentWeapon.currentReserveAmmo = 0;
+                }
+                else
+                {
+                    currentWeapon.currentMagAmmo = currentWeapon.maxMagAmmo;
+                    currentWeapon.currentReserveAmmo -= shotsFired;
+                }
                 break;
             case WeaponEnums.ReloadType.Insertion:
                 //Insertion Here
+                while (currentWeapon.currentMagAmmo != currentWeapon.maxMagAmmo)
+                {
+                    if (currentWeapon.currentReserveAmmo > 0)
+                    {
+                        yield return new WaitForSeconds(currentWeapon.reloadTime);
+                        currentWeapon.currentMagAmmo++;
+                        currentWeapon.currentReserveAmmo--;
+                    }
+                    else { break; }
+                }
                 break;
             case WeaponEnums.ReloadType.Recharge:
                 //Recharge Here
+                float reloadStep = currentWeapon.reloadTime / currentWeapon.maxMagAmmo;
+                float t = reloadStep * currentWeapon.currentMagAmmo;
+                
+                while(t < currentWeapon.reloadTime - reloadStep)
+                {
+                    yield return new WaitForSeconds(reloadStep);
+                    t += reloadStep;
+                    currentWeapon.currentMagAmmo++;
+                    currentWeapon.currentReserveAmmo--;
+                }
+
                 break;
         }
 

@@ -18,6 +18,7 @@ public class WeaponSO : ScriptableObject
     public int maxMagAmmo;
     public int maxReserveAmmo;
     public WeaponEnums.ReloadType reloadMode;
+    [Tooltip("Timing works differently between reload modes. \nMagazine and recharge uses the time as the full duration. \nInsertion uses it as time per cartridge of ammunition.")]
     public float reloadTime;
     [Space]
     public Mesh weaponMesh;
