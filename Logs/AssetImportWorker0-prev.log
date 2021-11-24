@@ -1,131 +1,131 @@
 Using pre-set license
 Built from '2021.1/staging' branch; Version is '2021.1.17f1 (03b40fe07a36) revision 242703'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Pro; OS build 19043.1348; Version 2009; 64bit' Language: 'en' Physical Memory: 16313 MB
+OS: 'Windows 10 Home; OS build 19042.1348; Version 2009; 64bit' Language: 'en' Physical Memory: 16366 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
-D:\Unity Versions\2021.1.17f1\Editor\Unity.exe
+C:\Program Files\Unity\Hub\Editor\2021.1.17f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-E:/Github Repos/MovementShooter_FMP
+C:/Brief03/MovementShooter_FMP
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-58574
-Successfully changed project path to: E:/Github Repos/MovementShooter_FMP
-E:/Github Repos/MovementShooter_FMP
+55271
+Successfully changed project path to: C:/Brief03/MovementShooter_FMP
+C:/Brief03/MovementShooter_FMP
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 169.13 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 254.42 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.1.17f1 (03b40fe07a36)
-[Subsystems] Discovering subsystems at path D:/Unity Versions/2021.1.17f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path E:/Github Repos/MovementShooter_FMP/Assets
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.1.17f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Brief03/MovementShooter_FMP/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 d3d12: loaded!
 Direct3D:
     Version:         Direct3D 12 [level 12.1]
-    Renderer:        NVIDIA GeForce RTX 2070 (ID=0x1f02)
+    Renderer:        NVIDIA GeForce GTX 1060 3GB (ID=0x1b84)
     Vendor:          NVIDIA
-    VRAM:            8031 MB
-    App VRAM Budget: 7263 MB
+    VRAM:            2988 MB
+    App VRAM Budget: 2539 MB
     Driver:          30.0.14.9649
 d3d12: Profiler is enabled, but stable power state is not. GPU timing errors are expected.
 
 Initialize mono
-Mono path[0] = 'D:/Unity Versions/2021.1.17f1/Editor/Data/Managed'
-Mono path[1] = 'D:/Unity Versions/2021.1.17f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = 'D:/Unity Versions/2021.1.17f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56808
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.1.17f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.1.17f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.1.17f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56076
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: D:/Unity Versions/2021.1.17f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.000998 seconds.
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.1.17f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.005400 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 160.59 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 255.89 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.036 seconds
+- Completed reload, in  2.810 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1036ms)
-		BeginReloadAssembly (56ms)
+	ReloadAssembly (2810ms)
+		BeginReloadAssembly (128ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (548ms)
-			LoadAssemblies (55ms)
+		EndReloadAssembly (988ms)
+			LoadAssemblies (122ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (171ms)
+			SetupTypeCache (344ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (30ms)
-			SetupLoadedEditorAssemblies (303ms)
+			RebuildScriptCaches (58ms)
+			SetupLoadedEditorAssemblies (497ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
+				InitializePlatformSupportModulesInManaged (10ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (161ms)
-				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (102ms)
-				ProcessInitializeOnLoadMethodAttributes (32ms)
+				RefreshPlugins (256ms)
+				BeforeProcessingInitializeOnLoad (2ms)
+				ProcessInitializeOnLoadAttributes (177ms)
+				ProcessInitializeOnLoadMethodAttributes (51ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.007169 seconds.
+Registered in 0.019984 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image E:\Github Repos\MovementShooter_FMP\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image E:\Github Repos\MovementShooter_FMP\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image C:\Brief03\MovementShooter_FMP\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Brief03\MovementShooter_FMP\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 162.91 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 263.29 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-d3d12: upload buffer was full! Waited for COPY queue for 1.198 ms.
-d3d12: upload buffer was full! Waited for COPY queue for 1.087 ms.
+d3d12: upload buffer was full! Waited for COPY queue for 2.121 ms.
+d3d12: upload buffer was full! Waited for COPY queue for 2.577 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  3.926 seconds
+- Completed reload, in  4.462 seconds
 Domain Reload Profiling:
-	ReloadAssembly (3927ms)
-		BeginReloadAssembly (152ms)
+	ReloadAssembly (4463ms)
+		BeginReloadAssembly (294ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
+			DisableScriptedObjects (9ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (20ms)
-		EndReloadAssembly (3718ms)
-			LoadAssemblies (160ms)
+			CreateAndSetChildDomain (34ms)
+		EndReloadAssembly (4033ms)
+			LoadAssemblies (210ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (467ms)
+			SetupTypeCache (889ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (89ms)
-			SetupLoadedEditorAssemblies (2898ms)
+			RebuildScriptCaches (171ms)
+			SetupLoadedEditorAssemblies (2568ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
+				InitializePlatformSupportModulesInManaged (7ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (163ms)
-				BeforeProcessingInitializeOnLoad (112ms)
-				ProcessInitializeOnLoadAttributes (1041ms)
-				ProcessInitializeOnLoadMethodAttributes (1575ms)
-				AfterProcessingInitializeOnLoad (2ms)
+				RefreshPlugins (263ms)
+				BeforeProcessingInitializeOnLoad (220ms)
+				ProcessInitializeOnLoadAttributes (1699ms)
+				ProcessInitializeOnLoadMethodAttributes (358ms)
+				AfterProcessingInitializeOnLoad (21ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
+			AwakeInstancesAfterBackupRestoration (12ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.21 seconds
-Refreshing native plugins compatible for Editor in 1.15 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 1.83 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5902 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 306.5 MB.
-System memory in use after: 306.9 MB.
+Unloading 5903 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 295.4 MB.
+System memory in use after: 295.9 MB.
 
-Unloading 30 unused Assets to reduce memory usage. Loaded Objects now: 6359.
-Total: 5.224100 ms (FindLiveObjects: 0.495900 ms CreateObjectMapping: 0.175800 ms MarkObjects: 4.484600 ms  DeleteObjects: 0.066300 ms)
+Unloading 30 unused Assets to reduce memory usage. Loaded Objects now: 6358.
+Total: 8.467200 ms (FindLiveObjects: 0.955600 ms CreateObjectMapping: 0.428500 ms MarkObjects: 6.992700 ms  DeleteObjects: 0.089000 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -139,68 +139,83 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Scripts/Scriptable Objects/Weapons/ShotgunTest.asset
-  artifactKey: Guid(b5179fd7f7501f54eaf1033364e4f7b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Scriptable Objects/Weapons/ShotgunTest.asset using Guid(b5179fd7f7501f54eaf1033364e4f7b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3204fb33311a7ba55333b2343ad776a') in 0.111359 seconds 
+  path: Assets/Scenes/GreyBoxScene/Scene
+  artifactKey: Guid(bd3fceb53ee4a5d46bd25e2c1eee6a4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/GreyBoxScene/Scene using Guid(bd3fceb53ee4a5d46bd25e2c1eee6a4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d722ef279d0a662e1a584c3e3e41a49') in 0.017669 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000206 seconds.
-  path: Assets/Scripts/Scriptable Objects/Weapons/AssaultRifleTest.asset
-  artifactKey: Guid(6696733d310ba2c4094abfce93af958f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Scriptable Objects/Weapons/AssaultRifleTest.asset using Guid(6696733d310ba2c4094abfce93af958f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '193f15ae5ee17a6ca2e64f4a0eafdbef') in 0.022870 seconds 
+  Time since last request: 15.051498 seconds.
+  path: Assets/Scenes/GreyBoxScene/Models
+  artifactKey: Guid(edba711a2b9f2904eb436f90c28d8205) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/GreyBoxScene/Models using Guid(edba711a2b9f2904eb436f90c28d8205) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b59cd0767401f3aecf177aca4171155') in 0.006011 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 120.375363 seconds.
-  path: Assets/Scripts/WeaponContainer.cs
-  artifactKey: Guid(77d429d40f68f31419334a9998db85b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/WeaponContainer.cs using Guid(77d429d40f68f31419334a9998db85b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9979419acfeb48e410325f98e1eaba6d') in 0.009805 seconds 
+  Time since last request: 19.380964 seconds.
+  path: Assets/Scenes/GreyBoxScene/Models/VoidStructure01.fbx
+  artifactKey: Guid(a98d548671c568349919d7ce73978fed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/GreyBoxScene/Models/VoidStructure01.fbx using Guid(a98d548671c568349919d7ce73978fed) Importer(815301076,1909f56bfc062723c751e8b465ee728b) d3d12: upload buffer was full! Waited for COPY queue for 4.974 ms.
+d3d12: upload buffer was full! Waited for COPY queue for 6.126 ms.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
+ -> (artifact id: 'aa69249a9f62e982ef0f864886c288a0') in 4.941926 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 105.687365 seconds.
+  path: Assets/Scenes/GreyBoxScene/Models/VoidStructure01.fbx
+  artifactKey: Guid(a98d548671c568349919d7ce73978fed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/GreyBoxScene/Models/VoidStructure01.fbx using Guid(a98d548671c568349919d7ce73978fed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e7ca6ef10561c8c0957057f1ffc18d4') in 0.094083 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.199264 seconds.
+Registered in 0.515867 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image E:\Github Repos\MovementShooter_FMP\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image E:\Github Repos\MovementShooter_FMP\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image C:\Brief03\MovementShooter_FMP\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Brief03\MovementShooter_FMP\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.27 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.84 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  3.718 seconds
+- Completed reload, in  9.425 seconds
 Domain Reload Profiling:
-	ReloadAssembly (3718ms)
-		BeginReloadAssembly (941ms)
+	ReloadAssembly (9426ms)
+		BeginReloadAssembly (2106ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
+			DisableScriptedObjects (43ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (50ms)
-		EndReloadAssembly (2721ms)
-			LoadAssemblies (1999ms)
+			CreateAndSetChildDomain (96ms)
+		EndReloadAssembly (7191ms)
+			LoadAssemblies (3631ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (472ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (74ms)
-			SetupLoadedEditorAssemblies (636ms)
+			SetupTypeCache (984ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (142ms)
+			SetupLoadedEditorAssemblies (1752ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (91ms)
-				ProcessInitializeOnLoadAttributes (527ms)
-				ProcessInitializeOnLoadMethodAttributes (8ms)
-				AfterProcessingInitializeOnLoad (2ms)
-				EditorAssembliesLoaded (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (169ms)
+				ProcessInitializeOnLoadAttributes (1535ms)
+				ProcessInitializeOnLoadMethodAttributes (15ms)
+				AfterProcessingInitializeOnLoad (21ms)
+				EditorAssembliesLoaded (1ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (14ms)
+			AwakeInstancesAfterBackupRestoration (19ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.53 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.76 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5597 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 303.1 MB.
-System memory in use after: 303.6 MB.
+Unloading 5613 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 302.6 MB.
+System memory in use after: 303.1 MB.
 
-Unloading 23 unused Assets to reduce memory usage. Loaded Objects now: 6364.
-Total: 6.967700 ms (FindLiveObjects: 0.598200 ms CreateObjectMapping: 0.235900 ms MarkObjects: 6.089800 ms  DeleteObjects: 0.042400 ms)
+Unloading 23 unused Assets to reduce memory usage. Loaded Objects now: 6540.
+Total: 8.273400 ms (FindLiveObjects: 0.847000 ms CreateObjectMapping: 0.342600 ms MarkObjects: 7.029700 ms  DeleteObjects: 0.052200 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -213,52 +228,87 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
+Received Import Request.
+  Time since last request: 1864.855057 seconds.
+  path: Assets/Starfield Skybox/Skybox.mat
+  artifactKey: Guid(81f714daf7144784b8a2f42f1cd30927) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Starfield Skybox/Skybox.mat using Guid(81f714daf7144784b8a2f42f1cd30927) Importer(815301076,1909f56bfc062723c751e8b465ee728b) d3d12: upload buffer was full! Waited for COPY queue for 6.188 ms.
+d3d12: upload buffer was full! Waited for COPY queue for 2.459 ms.
+d3d12: upload buffer was full! Waited for COPY queue for 6.180 ms.
+d3d12: upload buffer was full! Waited for COPY queue for 2.290 ms.
+d3d12: upload buffer was full! Waited for COPY queue for 6.226 ms.
+d3d12: upload buffer was full! Waited for COPY queue for 2.209 ms.
+d3d12: upload buffer was full! Waited for COPY queue for 6.184 ms.
+d3d12: upload buffer was full! Waited for COPY queue for 2.302 ms.
+d3d12: upload buffer was full! Waited for COPY queue for 6.166 ms.
+d3d12: upload buffer was full! Waited for COPY queue for 2.207 ms.
+d3d12: upload buffer was full! Waited for COPY queue for 6.200 ms.
+ -> (artifact id: '32e34f410e6c2429543fdfc0fb18d5ae') in 1.455294 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 410.970670 seconds.
+  path: Assets/Prefabs
+  artifactKey: Guid(e30b16bab9549bf4c851487baa8f5970) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs using Guid(e30b16bab9549bf4c851487baa8f5970) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9323fe240d398f6ea27a16c59435fb73') in 0.006131 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.381353 seconds.
+  path: Assets/Prefabs/Player
+  artifactKey: Guid(c2793e29f37e18b48b0915ed77563413) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player using Guid(c2793e29f37e18b48b0915ed77563413) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66483df83d65da13af9e83ccb8fffa91') in 0.005648 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 31.918117 seconds.
+  path: Assets/Scenes/GreyBoxScene/Starfield Skybox/Demo
+  artifactKey: Guid(7a4470ba344bcbb44bb67e3c01170b5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/GreyBoxScene/Starfield Skybox/Demo using Guid(7a4470ba344bcbb44bb67e3c01170b5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16937b481119c7c28714a9b2697e2860') in 0.009170 seconds 
+========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.007512 seconds.
+Registered in 0.025763 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image E:\Github Repos\MovementShooter_FMP\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image E:\Github Repos\MovementShooter_FMP\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image C:\Brief03\MovementShooter_FMP\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Brief03\MovementShooter_FMP\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.15 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.81 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.670 seconds
+- Completed reload, in  3.265 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1670ms)
-		BeginReloadAssembly (147ms)
+	ReloadAssembly (3265ms)
+		BeginReloadAssembly (288ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
+			DisableScriptedObjects (39ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (55ms)
-		EndReloadAssembly (1459ms)
-			LoadAssemblies (124ms)
+			CreateAndSetChildDomain (92ms)
+		EndReloadAssembly (2847ms)
+			LoadAssemblies (208ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (492ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (88ms)
-			SetupLoadedEditorAssemblies (588ms)
+			SetupTypeCache (856ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (136ms)
+			SetupLoadedEditorAssemblies (1105ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (84ms)
-				ProcessInitializeOnLoadAttributes (487ms)
-				ProcessInitializeOnLoadMethodAttributes (9ms)
-				AfterProcessingInitializeOnLoad (2ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (3ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (165ms)
+				ProcessInitializeOnLoadAttributes (888ms)
+				ProcessInitializeOnLoadMethodAttributes (14ms)
+				AfterProcessingInitializeOnLoad (25ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (15ms)
+			AwakeInstancesAfterBackupRestoration (38ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.19 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.83 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5597 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 315.2 MB.
-System memory in use after: 315.6 MB.
+Unloading 5599 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 302.4 MB.
+System memory in use after: 302.9 MB.
 
-Unloading 23 unused Assets to reduce memory usage. Loaded Objects now: 6367.
-Total: 4.642500 ms (FindLiveObjects: 0.477700 ms CreateObjectMapping: 0.181800 ms MarkObjects: 3.945400 ms  DeleteObjects: 0.036200 ms)
+Unloading 23 unused Assets to reduce memory usage. Loaded Objects now: 6647.
+Total: 8.368100 ms (FindLiveObjects: 0.912600 ms CreateObjectMapping: 0.363500 ms MarkObjects: 6.958300 ms  DeleteObjects: 0.132100 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -270,4 +320,800 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 143.812912 seconds.
+  path: Assets/Scenes/GreyBoxScene/Starfield Skybox/Demo/Textures/Left_Tex.png
+  artifactKey: Guid(80f1020b68f9b794994187bf41ba9d21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/GreyBoxScene/Starfield Skybox/Demo/Textures/Left_Tex.png using Guid(80f1020b68f9b794994187bf41ba9d21) Importer(815301076,1909f56bfc062723c751e8b465ee728b) d3d12: upload buffer was full! Waited for COPY queue for 3.408 ms.
+ -> (artifact id: '451179086c869250a9ce3b609ee51eed') in 0.148845 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000480 seconds.
+  path: Assets/Scenes/GreyBoxScene/Starfield Skybox/Demo/Textures/Back_Tex.png
+  artifactKey: Guid(b692a498a0379a341872703d288b04af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/GreyBoxScene/Starfield Skybox/Demo/Textures/Back_Tex.png using Guid(b692a498a0379a341872703d288b04af) Importer(815301076,1909f56bfc062723c751e8b465ee728b) d3d12: upload buffer was full! Waited for COPY queue for 3.550 ms.
+ -> (artifact id: 'de7aad0376b4ccac25b19b4d2d0e1517') in 0.057287 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000472 seconds.
+  path: Assets/Scenes/GreyBoxScene/Starfield Skybox/Demo/Textures
+  artifactKey: Guid(a1ac2873c4eb8d64db33d7df8acb9188) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/GreyBoxScene/Starfield Skybox/Demo/Textures using Guid(a1ac2873c4eb8d64db33d7df8acb9188) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd50602cc1f4d40694b0bc7d383bf1b94') in 0.005841 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000633 seconds.
+  path: Assets/Scenes/GreyBoxScene/Starfield Skybox/Demo/Textures/Right_Tex.png
+  artifactKey: Guid(411c36f0804e8c248a3f6470ca50cd85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/GreyBoxScene/Starfield Skybox/Demo/Textures/Right_Tex.png using Guid(411c36f0804e8c248a3f6470ca50cd85) Importer(815301076,1909f56bfc062723c751e8b465ee728b) d3d12: upload buffer was full! Waited for COPY queue for 3.529 ms.
+ -> (artifact id: '4dc4c316ad5a37ecbdaabc084a301dff') in 0.086631 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000621 seconds.
+  path: Assets/Scenes/GreyBoxScene/Starfield Skybox/Demo/Textures/Front_Tex.png
+  artifactKey: Guid(a5e005e6ff4298340b2ff009a5991908) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/GreyBoxScene/Starfield Skybox/Demo/Textures/Front_Tex.png using Guid(a5e005e6ff4298340b2ff009a5991908) Importer(815301076,1909f56bfc062723c751e8b465ee728b) d3d12: upload buffer was full! Waited for COPY queue for 3.406 ms.
+ -> (artifact id: '65561329e4f71be00c8bb537f4b295b2') in 0.056401 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000528 seconds.
+  path: Assets/Scenes/GreyBoxScene/Starfield Skybox/Demo/Textures/Up_Tex.png
+  artifactKey: Guid(8313f24c5bda59240aabef5e6c46f9a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/GreyBoxScene/Starfield Skybox/Demo/Textures/Up_Tex.png using Guid(8313f24c5bda59240aabef5e6c46f9a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) d3d12: upload buffer was full! Waited for COPY queue for 3.290 ms.
+ -> (artifact id: '1e23a38d032fed4a3920249646c3cdbe') in 0.062497 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000654 seconds.
+  path: Assets/Scenes/GreyBoxScene/Starfield Skybox/Demo/Textures/Down_Tex.png
+  artifactKey: Guid(a3b2b45ab4da8b343ad09a56207d3910) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/GreyBoxScene/Starfield Skybox/Demo/Textures/Down_Tex.png using Guid(a3b2b45ab4da8b343ad09a56207d3910) Importer(815301076,1909f56bfc062723c751e8b465ee728b) d3d12: upload buffer was full! Waited for COPY queue for 3.269 ms.
+ -> (artifact id: 'a5f8fde1812048c14abd7dc9c647b486') in 0.087765 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 74.038449 seconds.
+  path: Assets/Scenes/GreyBoxScene/Starfield Skybox
+  artifactKey: Guid(06264396c3bba354d86fe0b8f0efc3aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/GreyBoxScene/Starfield Skybox using Guid(06264396c3bba354d86fe0b8f0efc3aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da0639d5bb6f2cfc32d2b82f2730f68a') in 0.006490 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 380.433085 seconds.
+  path: Assets/Skybox/Cubemaps/daytime.hdr
+  artifactKey: Guid(1cde0e200e792cb4491204276a656490) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Skybox/Cubemaps/daytime.hdr using Guid(1cde0e200e792cb4491204276a656490) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04174d462f670b0020112d4c61e67d28') in 0.129879 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 73.258703 seconds.
+  path: Assets/Skybox/Cubemaps/sunset.hdr
+  artifactKey: Guid(656a59a5ff93c46498416d97e5c16b66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Skybox/Cubemaps/sunset.hdr using Guid(656a59a5ff93c46498416d97e5c16b66) Importer(815301076,1909f56bfc062723c751e8b465ee728b) d3d12: upload buffer was full! Waited for COPY queue for 3.158 ms.
+d3d12: upload buffer was full! Waited for COPY queue for 3.179 ms.
+ -> (artifact id: '8943d1ae974ac6a421744adfd30a611b') in 0.119553 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 26.441938 seconds.
+  path: Assets/Scenes/GreyBoxScene/Starfield Skybox/Skybox.mat
+  artifactKey: Guid(81f714daf7144784b8a2f42f1cd30927) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/GreyBoxScene/Starfield Skybox/Skybox.mat using Guid(81f714daf7144784b8a2f42f1cd30927) Importer(815301076,1909f56bfc062723c751e8b465ee728b) d3d12: upload buffer was full! Waited for COPY queue for 3.098 ms.
+d3d12: upload buffer was full! Waited for COPY queue for 1.165 ms.
+d3d12: upload buffer was full! Waited for COPY queue for 3.166 ms.
+d3d12: upload buffer was full! Waited for COPY queue for 1.335 ms.
+d3d12: upload buffer was full! Waited for COPY queue for 3.236 ms.
+d3d12: upload buffer was full! Waited for COPY queue for 1.190 ms.
+d3d12: upload buffer was full! Waited for COPY queue for 3.120 ms.
+d3d12: upload buffer was full! Waited for COPY queue for 1.383 ms.
+d3d12: upload buffer was full! Waited for COPY queue for 3.232 ms.
+d3d12: upload buffer was full! Waited for COPY queue for 1.146 ms.
+d3d12: upload buffer was full! Waited for COPY queue for 3.138 ms.
+ -> (artifact id: '8eaa7656e0d687896d98d1d3635b9f55') in 1.292495 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.087971 seconds.
+  path: Assets/Scenes/SampleScene
+  artifactKey: Guid(1a89a4ffd1ebc15409dff1132638c6f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SampleScene using Guid(1a89a4ffd1ebc15409dff1132638c6f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74c5cdf921ce97f6dabd38a210c0ed18') in 0.005872 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.051213 seconds.
+  path: Assets/Scenes/SampleScene/LightingData.asset
+  artifactKey: Guid(63206149b6f0a1b46a0e9a25529e8588) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SampleScene/LightingData.asset using Guid(63206149b6f0a1b46a0e9a25529e8588) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e495d47a7fe5ed8570bd963c424eabd') in 0.009499 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.173346 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SampleScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce839511c8e36bc334e701b28d1b2a3b') in 0.008659 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 37.645609 seconds.
+  path: Assets/Prefabs/Player/Player.prefab
+  artifactKey: Guid(1227a0bc4613ffd4b846538f7cb33077) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player/Player.prefab using Guid(1227a0bc4613ffd4b846538f7cb33077) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d4ee096cb397cd1a6aa4022f95ac6b2') in 0.111847 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.877942 seconds.
+  path: Assets/Prefabs/Player/CameraContainer.prefab
+  artifactKey: Guid(c2aa039e3965f5441a299d4c5eea4383) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player/CameraContainer.prefab using Guid(c2aa039e3965f5441a299d4c5eea4383) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3632d06637a60b8c8c3100ca8f47007') in 0.039187 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.155992 seconds.
+  path: Assets/Prefabs/Player/GameManager.prefab
+  artifactKey: Guid(6d5f87819fc50b1439b9bb6c5c6c27b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player/GameManager.prefab using Guid(6d5f87819fc50b1439b9bb6c5c6c27b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0638deedeba1427ffc7db7543ce79ec') in 0.009479 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 27.866378 seconds.
+  path: Assets/Scenes/GreyBoxScene/Scene/VoidSpaceGreyBOx.unity
+  artifactKey: Guid(b7344cfa68b5449479fa30ed7a55f5c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/GreyBoxScene/Scene/VoidSpaceGreyBOx.unity using Guid(b7344cfa68b5449479fa30ed7a55f5c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a741eafa82c3530cba61ba2601a0c6c5') in 0.006518 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 425.973268 seconds.
+  path: Assets/Scenes/GreyBoxScene/Models/VoidTeleporter.fbx
+  artifactKey: Guid(b19efe63de8e0b140ad66e791efbb140) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/GreyBoxScene/Models/VoidTeleporter.fbx using Guid(b19efe63de8e0b140ad66e791efbb140) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8361cc9e2b647fc0b4ed5569ea4293c2') in 0.244592 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 192.429238 seconds.
+  path: Assets/Scenes/GreyBoxScene/Models/VoidCrator.fbx
+  artifactKey: Guid(d78ca265f09d5134396bc63d279e3ed9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/GreyBoxScene/Models/VoidCrator.fbx using Guid(d78ca265f09d5134396bc63d279e3ed9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '894aee71d717f533b14e09b9ff3723e5') in 0.078769 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 220.566859 seconds.
+  path: Assets/Scenes/GreyBoxScene/Models/Crator.mat
+  artifactKey: Guid(a3b5bc421e0ef2c4f8471797c0234771) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/GreyBoxScene/Models/Crator.mat using Guid(a3b5bc421e0ef2c4f8471797c0234771) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38527e2d07aa891fc0c7564b84965134') in 0.032258 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 487.962031 seconds.
+  path: Assets/Scenes/GreyBoxScene/Models/SpaceRock01.fbx
+  artifactKey: Guid(f6d1766a3e655a842a1a48cc1bdde73f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/GreyBoxScene/Models/SpaceRock01.fbx using Guid(f6d1766a3e655a842a1a48cc1bdde73f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e507c499ff550db20ed0df30b60ae7cc') in 0.079871 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000556 seconds.
+  path: Assets/Scenes/GreyBoxScene/Models/SpaceRock02.fbx
+  artifactKey: Guid(5ef5d36d115085c43bddb870ab657734) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/GreyBoxScene/Models/SpaceRock02.fbx using Guid(5ef5d36d115085c43bddb870ab657734) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc47a2881fa921d486b016eb094b0470') in 0.048116 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000748 seconds.
+  path: Assets/Scenes/GreyBoxScene/Models/VoidStructure02.fbx
+  artifactKey: Guid(630e7bf12abb1914ca14ce903472377c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/GreyBoxScene/Models/VoidStructure02.fbx using Guid(630e7bf12abb1914ca14ce903472377c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcb04a3f7fe2ba970b83d22fc52ee1b4') in 0.036452 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000717 seconds.
+  path: Assets/Scenes/GreyBoxScene/Models/VoidStructure03.fbx
+  artifactKey: Guid(90f53e4ecb3845c4ea6f0c04d9e140b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/GreyBoxScene/Models/VoidStructure03.fbx using Guid(90f53e4ecb3845c4ea6f0c04d9e140b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9d0971d121e157beedcd2eb6feb0b2d') in 0.094461 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 191.901876 seconds.
+  path: Assets/Scenes/GreyBoxScene/Models/Crator.mat
+  artifactKey: Guid(a3b5bc421e0ef2c4f8471797c0234771) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/GreyBoxScene/Models/Crator.mat using Guid(a3b5bc421e0ef2c4f8471797c0234771) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab3175f4217843290ed13d3d11e4aac3') in 0.058642 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 53.391196 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SampleScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f7e6fa84f51052526330af2bb2533c5') in 0.005689 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 13.853053 seconds.
+  path: Assets/Scenes/GreyBoxScene/Scene/VoidSpaceGreyBOx.unity
+  artifactKey: Guid(b7344cfa68b5449479fa30ed7a55f5c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/GreyBoxScene/Scene/VoidSpaceGreyBOx.unity using Guid(b7344cfa68b5449479fa30ed7a55f5c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '213026051271ec9eb7515aba05e55d39') in 0.005383 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 88.701527 seconds.
+  path: Assets/Scenes/GreyBoxScene/Starfield Skybox/Demo/SkyBox.mat
+  artifactKey: Guid(0170f267dbaf4f346bb63358ccbbb715) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/GreyBoxScene/Starfield Skybox/Demo/SkyBox.mat using Guid(0170f267dbaf4f346bb63358ccbbb715) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '014b7834389222e25081b79f6d803444') in 0.041775 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 412.993963 seconds.
+  path: Assets/Scenes/GreyBoxScene/Starfield Skybox/Demo/DemoScene.unity
+  artifactKey: Guid(47cd513b8c4397e4ca272a1ff269d933) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/GreyBoxScene/Starfield Skybox/Demo/DemoScene.unity using Guid(47cd513b8c4397e4ca272a1ff269d933) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8309dc444f5a248109a328172029538e') in 0.006704 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 41.179461 seconds.
+  path: Assets/Scenes/GreyBoxScene/Scene/VoidSpaceGreyBOx.unity
+  artifactKey: Guid(b7344cfa68b5449479fa30ed7a55f5c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/GreyBoxScene/Scene/VoidSpaceGreyBOx.unity using Guid(b7344cfa68b5449479fa30ed7a55f5c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5def15083142f488ad170eeb342511de') in 0.005701 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.422213 seconds.
+  path: Assets/Scenes/GreyBoxScene/Starfield Skybox/Skybox.mat
+  artifactKey: Guid(81f714daf7144784b8a2f42f1cd30927) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/GreyBoxScene/Starfield Skybox/Skybox.mat using Guid(81f714daf7144784b8a2f42f1cd30927) Importer(815301076,1909f56bfc062723c751e8b465ee728b) d3d12: upload buffer was full! Waited for COPY queue for 3.147 ms.
+d3d12: upload buffer was full! Waited for COPY queue for 1.417 ms.
+d3d12: upload buffer was full! Waited for COPY queue for 3.129 ms.
+d3d12: upload buffer was full! Waited for COPY queue for 1.213 ms.
+d3d12: upload buffer was full! Waited for COPY queue for 3.216 ms.
+d3d12: upload buffer was full! Waited for COPY queue for 1.174 ms.
+d3d12: upload buffer was full! Waited for COPY queue for 3.083 ms.
+d3d12: upload buffer was full! Waited for COPY queue for 0.001 ms.
+d3d12: upload buffer was full! Waited for COPY queue for 2.538 ms.
+d3d12: upload buffer was full! Waited for COPY queue for 0.001 ms.
+d3d12: upload buffer was full! Waited for COPY queue for 2.327 ms.
+ -> (artifact id: '2c3f716d79a837bc7606cf84c1a27ed8') in 0.243520 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.020918 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Brief03\MovementShooter_FMP\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Brief03\MovementShooter_FMP\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+d3d12: upload buffer was full! Waited for COPY queue for 5.976 ms.
+d3d12: upload buffer was full! Waited for COPY queue for 1.945 ms.
+d3d12: upload buffer was full! Waited for COPY queue for 6.398 ms.
+d3d12: upload buffer was full! Waited for COPY queue for 1.701 ms.
+d3d12: upload buffer was full! Waited for COPY queue for 6.149 ms.
+d3d12: upload buffer was full! Waited for COPY queue for 0.001 ms.
+d3d12: upload buffer was full! Waited for COPY queue for 6.089 ms.
+d3d12: upload buffer was full! Waited for COPY queue for 1.886 ms.
+d3d12: upload buffer was full! Waited for COPY queue for 6.153 ms.
+d3d12: upload buffer was full! Waited for COPY queue for 6.376 ms.
+d3d12: upload buffer was full! Waited for COPY queue for 6.417 ms.
+d3d12: upload buffer was full! Waited for COPY queue for 1.640 ms.
+d3d12: upload buffer was full! Waited for COPY queue for 6.119 ms.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.83 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  4.335 seconds
+Domain Reload Profiling:
+	ReloadAssembly (4336ms)
+		BeginReloadAssembly (525ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (96ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (219ms)
+		EndReloadAssembly (3668ms)
+			LoadAssemblies (338ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (964ms)
+			ReleaseScriptCaches (4ms)
+			RebuildScriptCaches (150ms)
+			SetupLoadedEditorAssemblies (1199ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (194ms)
+				ProcessInitializeOnLoadAttributes (958ms)
+				ProcessInitializeOnLoadMethodAttributes (14ms)
+				AfterProcessingInitializeOnLoad (19ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (55ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.77 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5606 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 466.6 MB.
+System memory in use after: 467.0 MB.
+
+Unloading 23 unused Assets to reduce memory usage. Loaded Objects now: 6878.
+Total: 9.002400 ms (FindLiveObjects: 0.963800 ms CreateObjectMapping: 0.418800 ms MarkObjects: 7.579900 ms  DeleteObjects: 0.038500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 434.942087 seconds.
+  path: Assets/Scenes/GreyBoxScene/Starfield Skybox/Skybox.mat
+  artifactKey: Guid(81f714daf7144784b8a2f42f1cd30927) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/GreyBoxScene/Starfield Skybox/Skybox.mat using Guid(81f714daf7144784b8a2f42f1cd30927) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd0793d9363c5fab2691e9771b9fdd86') in 1.012248 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1364.540202 seconds.
+  path: Assets/Skybox/Cubemaps
+  artifactKey: Guid(05ed5ae0357ba2b42acc61e9297be678) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Skybox/Cubemaps using Guid(05ed5ae0357ba2b42acc61e9297be678) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dec3f1fc3dac7a5b636f27c39f9bcdcc') in 0.006177 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.364738 seconds.
+  path: Assets/SkySerie Freebie/6SidedFluffball.mat
+  artifactKey: Guid(efd1c33efd2d58340b88804268e6833f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SkySerie Freebie/6SidedFluffball.mat using Guid(efd1c33efd2d58340b88804268e6833f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '096c937de8eef1eb6f1e4ab96c78a27e') in 0.077528 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000695 seconds.
+  path: Assets/SkySerie Freebie/CosmicCoolCloud.mat
+  artifactKey: Guid(f531e09e2ad2fb440b4eed7605863143) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SkySerie Freebie/CosmicCoolCloud.mat using Guid(f531e09e2ad2fb440b4eed7605863143) Importer(815301076,1909f56bfc062723c751e8b465ee728b) d3d12: upload buffer was full! Waited for COPY queue for 0.002 ms.
+ -> (artifact id: '86fe720a31a2572ad4bd4a6064311f3c') in 0.122069 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000569 seconds.
+  path: Assets/SkySerie Freebie/6SidedMegaSun.mat
+  artifactKey: Guid(c52c5d7968fa6c9499b0b5752f899bfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SkySerie Freebie/6SidedMegaSun.mat using Guid(c52c5d7968fa6c9499b0b5752f899bfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13288a4ab6555fcad7aaad15d3ac83fb') in 0.065928 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000522 seconds.
+  path: Assets/SkySerie Freebie/DayInTheClouds.mat
+  artifactKey: Guid(3e5399bd195de7649b874f58c1b9f8a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SkySerie Freebie/DayInTheClouds.mat using Guid(3e5399bd195de7649b874f58c1b9f8a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) d3d12: upload buffer was full! Waited for COPY queue for 3.136 ms.
+d3d12: upload buffer was full! Waited for COPY queue for 3.135 ms.
+ -> (artifact id: '2ed8679331a074fed5bfd539871b8282') in 0.163387 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000695 seconds.
+  path: Assets/SkySerie Freebie/Cloudymorning.mat
+  artifactKey: Guid(d9dca9ae1786c394f9e79c637aa9a7bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SkySerie Freebie/Cloudymorning.mat using Guid(d9dca9ae1786c394f9e79c637aa9a7bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) d3d12: upload buffer was full! Waited for COPY queue for 10.000 ms.
+d3d12: upload buffer was full! Waited for COPY queue for 3.422 ms.
+ -> (artifact id: 'fbc9761be1926cc219fa0ce94af0ba0e') in 0.103562 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000546 seconds.
+  path: Assets/SkySerie Freebie/CoriolisNight4k.mat
+  artifactKey: Guid(d4454f71d85928744be7771e2143dab7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SkySerie Freebie/CoriolisNight4k.mat using Guid(d4454f71d85928744be7771e2143dab7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) d3d12: upload buffer was full! Waited for COPY queue for 3.352 ms.
+d3d12: upload buffer was full! Waited for COPY queue for 3.334 ms.
+ -> (artifact id: 'd4bc9c04bf0d7281eec4266fd4da5130') in 0.473759 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000605 seconds.
+  path: Assets/SkySerie Freebie/DarkStorm.mat
+  artifactKey: Guid(2039a0ad0a9d05549928b70362f54902) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SkySerie Freebie/DarkStorm.mat using Guid(2039a0ad0a9d05549928b70362f54902) Importer(815301076,1909f56bfc062723c751e8b465ee728b) d3d12: upload buffer was full! Waited for COPY queue for 3.181 ms.
+d3d12: upload buffer was full! Waited for COPY queue for 3.252 ms.
+ -> (artifact id: 'e6db75cf8057850a70e84856a183b70a') in 0.107561 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000586 seconds.
+  path: Assets/SkySerie Freebie/AmbienceExposure.mat
+  artifactKey: Guid(72deae4d18418f94688abef8e8483df0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SkySerie Freebie/AmbienceExposure.mat using Guid(72deae4d18418f94688abef8e8483df0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) d3d12: upload buffer was full! Waited for COPY queue for 2.509 ms.
+d3d12: upload buffer was full! Waited for COPY queue for 2.417 ms.
+ -> (artifact id: '3b651fad73320d49a807cd2ba83c6ff1') in 0.094442 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000576 seconds.
+  path: Assets/SkySerie Freebie/CloudedSunGlow.mat
+  artifactKey: Guid(e391f00234292cc4f935308c11cf0e54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SkySerie Freebie/CloudedSunGlow.mat using Guid(e391f00234292cc4f935308c11cf0e54) Importer(815301076,1909f56bfc062723c751e8b465ee728b) d3d12: upload buffer was full! Waited for COPY queue for 2.410 ms.
+d3d12: upload buffer was full! Waited for COPY queue for 1.542 ms.
+ -> (artifact id: '337f729fcc700f626ec5e3d05b709005') in 0.382823 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000684 seconds.
+  path: Assets/SkySerie Freebie/FluffballDay.mat
+  artifactKey: Guid(20d4f77b9022eab48b4d94599ed4bf82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SkySerie Freebie/FluffballDay.mat using Guid(20d4f77b9022eab48b4d94599ed4bf82) Importer(815301076,1909f56bfc062723c751e8b465ee728b) d3d12: upload buffer was full! Waited for COPY queue for 1.879 ms.
+d3d12: upload buffer was full! Waited for COPY queue for 2.310 ms.
+ -> (artifact id: '99577cc6c86d5393bd7c57b057917d72') in 0.093898 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000634 seconds.
+  path: Assets/SkySerie Freebie/CasualDay.mat
+  artifactKey: Guid(85cf0b004bc4a654b9e501efcce47902) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SkySerie Freebie/CasualDay.mat using Guid(85cf0b004bc4a654b9e501efcce47902) Importer(815301076,1909f56bfc062723c751e8b465ee728b) d3d12: upload buffer was full! Waited for COPY queue for 2.509 ms.
+d3d12: upload buffer was full! Waited for COPY queue for 2.583 ms.
+ -> (artifact id: '14ef0d14dba68c6b49ef5e2f748144c9') in 0.171994 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.343852 seconds.
+  path: Assets/SkySerie Freebie/HighFantasy.mat
+  artifactKey: Guid(e2341a9d03e86ec4290c72b1e22bbc7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SkySerie Freebie/HighFantasy.mat using Guid(e2341a9d03e86ec4290c72b1e22bbc7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) d3d12: upload buffer was full! Waited for COPY queue for 2.519 ms.
+d3d12: upload buffer was full! Waited for COPY queue for 2.774 ms.
+ -> (artifact id: '2ecb639810afb4441fe2be0968063bb0') in 0.098774 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000572 seconds.
+  path: Assets/SkySerie Freebie/MegaSun.mat
+  artifactKey: Guid(cede08c9fc471e64884909cd4bbeaf59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SkySerie Freebie/MegaSun.mat using Guid(cede08c9fc471e64884909cd4bbeaf59) Importer(815301076,1909f56bfc062723c751e8b465ee728b) d3d12: upload buffer was full! Waited for COPY queue for 2.073 ms.
+d3d12: upload buffer was full! Waited for COPY queue for 2.643 ms.
+ -> (artifact id: '285979961cef8089f97c79c0eeb42c40') in 0.356282 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000593 seconds.
+  path: Assets/SkySerie Freebie/SunlessCirruscover.mat
+  artifactKey: Guid(4e154bf235e41704bbd6bbc6fd6c63f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SkySerie Freebie/SunlessCirruscover.mat using Guid(4e154bf235e41704bbd6bbc6fd6c63f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) d3d12: upload buffer was full! Waited for COPY queue for 2.518 ms.
+d3d12: upload buffer was full! Waited for COPY queue for 2.296 ms.
+ -> (artifact id: '85bffd97e1ae8f17fb5d2a84d802b4c0') in 0.413946 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000498 seconds.
+  path: Assets/SkySerie Freebie/SkyhighFluffycloudField.mat
+  artifactKey: Guid(f15c336556dd74f40aaca655f7767970) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SkySerie Freebie/SkyhighFluffycloudField.mat using Guid(f15c336556dd74f40aaca655f7767970) Importer(815301076,1909f56bfc062723c751e8b465ee728b) d3d12: upload buffer was full! Waited for COPY queue for 2.163 ms.
+d3d12: upload buffer was full! Waited for COPY queue for 2.602 ms.
+ -> (artifact id: '5cb3248f502f840191230ac44006c746') in 0.433451 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000586 seconds.
+  path: Assets/SkySerie Freebie/UnderTheSea4k.mat
+  artifactKey: Guid(119ec07f1c7ed204db46bd8465fd5a50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SkySerie Freebie/UnderTheSea4k.mat using Guid(119ec07f1c7ed204db46bd8465fd5a50) Importer(815301076,1909f56bfc062723c751e8b465ee728b) d3d12: upload buffer was full! Waited for COPY queue for 2.448 ms.
+d3d12: upload buffer was full! Waited for COPY queue for 2.501 ms.
+ -> (artifact id: '408445bf13a1506a8b8e0eb942925317') in 0.381829 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000665 seconds.
+  path: Assets/SkySerie Freebie/UnearthlyRed.mat
+  artifactKey: Guid(5d133deeaa66ed445853e946ff25e073) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SkySerie Freebie/UnearthlyRed.mat using Guid(5d133deeaa66ed445853e946ff25e073) Importer(815301076,1909f56bfc062723c751e8b465ee728b) d3d12: upload buffer was full! Waited for COPY queue for 2.499 ms.
+d3d12: upload buffer was full! Waited for COPY queue for 2.516 ms.
+ -> (artifact id: 'ff6f19020f4025daff447c719d49ee31') in 0.425891 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000570 seconds.
+  path: Assets/SkySerie Freebie/PlanetaryEarth.mat
+  artifactKey: Guid(16bc8a9d5451ca44d8f70575adbece3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SkySerie Freebie/PlanetaryEarth.mat using Guid(16bc8a9d5451ca44d8f70575adbece3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) d3d12: upload buffer was full! Waited for COPY queue for 2.143 ms.
+d3d12: upload buffer was full! Waited for COPY queue for 2.526 ms.
+ -> (artifact id: '5cb81f61d5ccbc6c1ea4ed86e1123677') in 0.542081 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.959362 seconds.
+  path: Assets/SkySerie Freebie/FreebieHdri
+  artifactKey: Guid(d78fe5a22bec38d43bbe7e846ac3925a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SkySerie Freebie/FreebieHdri using Guid(d78fe5a22bec38d43bbe7e846ac3925a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '147fe7560c84c2b5ee4bc990834f537c') in 0.005752 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003014 seconds.
+  path: Assets/SkySerie Freebie/FreebieHdri/AmbienceExposure4k.hdr
+  artifactKey: Guid(c9bc6cdb7a2e78b4c85ae74715b0a355) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SkySerie Freebie/FreebieHdri/AmbienceExposure4k.hdr using Guid(c9bc6cdb7a2e78b4c85ae74715b0a355) Importer(815301076,1909f56bfc062723c751e8b465ee728b) d3d12: upload buffer was full! Waited for COPY queue for 3.183 ms.
+d3d12: upload buffer was full! Waited for COPY queue for 3.259 ms.
+ -> (artifact id: '7c10b3d1da46f6bbba55f9db005ed933') in 0.189896 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000508 seconds.
+  path: Assets/SkySerie Freebie/FreebieHdri/CasualDay4K.hdr
+  artifactKey: Guid(1153dc89e66880c4eb7adc16ba588855) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SkySerie Freebie/FreebieHdri/CasualDay4K.hdr using Guid(1153dc89e66880c4eb7adc16ba588855) Importer(815301076,1909f56bfc062723c751e8b465ee728b) d3d12: upload buffer was full! Waited for COPY queue for 3.149 ms.
+d3d12: upload buffer was full! Waited for COPY queue for 3.180 ms.
+ -> (artifact id: 'fd7b68f67a2e1cd10da4d8ad5ab25fc4') in 0.126106 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000667 seconds.
+  path: Assets/SkySerie Freebie/FreebieHdri/CosmicCoolCloudBack.hdr
+  artifactKey: Guid(a779becf00399924184cd13e046a100e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SkySerie Freebie/FreebieHdri/CosmicCoolCloudBack.hdr using Guid(a779becf00399924184cd13e046a100e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '797a9c3ff5e2ad0d92410674daf8b88a') in 0.029088 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000626 seconds.
+  path: Assets/SkySerie Freebie/FreebieHdri/CosmicCoolCloudRight.hdr
+  artifactKey: Guid(438e868ac8cccca4e81873838a67c003) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SkySerie Freebie/FreebieHdri/CosmicCoolCloudRight.hdr using Guid(438e868ac8cccca4e81873838a67c003) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd0b01f0350e41695d5b6610bf6be9e5') in 0.025772 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000532 seconds.
+  path: Assets/SkySerie Freebie/FreebieHdri/CosmicCoolCloudTop.hdr
+  artifactKey: Guid(a199da0432efa6a489df8883d1f3bfe0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SkySerie Freebie/FreebieHdri/CosmicCoolCloudTop.hdr using Guid(a199da0432efa6a489df8883d1f3bfe0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b84fc0289709457f7d18e811042f450a') in 0.025695 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000678 seconds.
+  path: Assets/SkySerie Freebie/FreebieHdri/CosmicCoolCloudLeft.hdr
+  artifactKey: Guid(740f96d568f4f3e40b049c40f11603e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SkySerie Freebie/FreebieHdri/CosmicCoolCloudLeft.hdr using Guid(740f96d568f4f3e40b049c40f11603e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cf17fd42fcc4fa4d69b47d8fd6d98ad') in 0.024911 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000566 seconds.
+  path: Assets/SkySerie Freebie/FreebieHdri/DayInTheClouds4k.hdr
+  artifactKey: Guid(90196f2c2d8d2f2448717676e1a09894) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SkySerie Freebie/FreebieHdri/DayInTheClouds4k.hdr using Guid(90196f2c2d8d2f2448717676e1a09894) Importer(815301076,1909f56bfc062723c751e8b465ee728b) d3d12: upload buffer was full! Waited for COPY queue for 5.077 ms.
+d3d12: upload buffer was full! Waited for COPY queue for 3.201 ms.
+ -> (artifact id: '88cf11baa79b1d96e2b52fdf45279130') in 0.144058 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000644 seconds.
+  path: Assets/SkySerie Freebie/FreebieHdri/CloudedSunGlow4k.hdr
+  artifactKey: Guid(12c15a8e5a294be45819b1dd4b9b08d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SkySerie Freebie/FreebieHdri/CloudedSunGlow4k.hdr using Guid(12c15a8e5a294be45819b1dd4b9b08d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) d3d12: upload buffer was full! Waited for COPY queue for 3.382 ms.
+d3d12: upload buffer was full! Waited for COPY queue for 3.171 ms.
+ -> (artifact id: '5608eb7814e77464e4cbab7e73dcaf72') in 0.494287 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000599 seconds.
+  path: Assets/SkySerie Freebie/FreebieHdri/CoriolisNight4k.hdr
+  artifactKey: Guid(354036e57ae357148aed267204ce73a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SkySerie Freebie/FreebieHdri/CoriolisNight4k.hdr using Guid(354036e57ae357148aed267204ce73a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) d3d12: upload buffer was full! Waited for COPY queue for 3.328 ms.
+d3d12: upload buffer was full! Waited for COPY queue for 3.266 ms.
+ -> (artifact id: 'ffb7ac3ce6b1850c53f1a3c6a9a98381') in 0.509499 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000530 seconds.
+  path: Assets/SkySerie Freebie/FreebieHdri/FluffballDayBack.hdr
+  artifactKey: Guid(50762494be58d144d98d179cd6ba1470) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SkySerie Freebie/FreebieHdri/FluffballDayBack.hdr using Guid(50762494be58d144d98d179cd6ba1470) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd6965a6c4360713e4f5fb871bf8ccb3') in 0.019110 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000769 seconds.
+  path: Assets/SkySerie Freebie/FreebieHdri/CosmicCoolCloudFront.hdr
+  artifactKey: Guid(d822c5eff7d42f04691027bc8c2b0716) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SkySerie Freebie/FreebieHdri/CosmicCoolCloudFront.hdr using Guid(d822c5eff7d42f04691027bc8c2b0716) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ea98445c3522baebe129edea9c840cb') in 0.021518 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000485 seconds.
+  path: Assets/SkySerie Freebie/FreebieHdri/CosmicCoolCloudBottom.hdr
+  artifactKey: Guid(94b877781ad034640abce933599b6f2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SkySerie Freebie/FreebieHdri/CosmicCoolCloudBottom.hdr using Guid(94b877781ad034640abce933599b6f2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab24c504cf65a8f68ecb7cef8dcabf1d') in 0.035963 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000632 seconds.
+  path: Assets/SkySerie Freebie/FreebieHdri/Cloudymorning4k.hdr
+  artifactKey: Guid(3b5d67736d7b8ad4f8da4d58eaef0b98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SkySerie Freebie/FreebieHdri/Cloudymorning4k.hdr using Guid(3b5d67736d7b8ad4f8da4d58eaef0b98) Importer(815301076,1909f56bfc062723c751e8b465ee728b) d3d12: upload buffer was full! Waited for COPY queue for 4.674 ms.
+d3d12: upload buffer was full! Waited for COPY queue for 3.212 ms.
+ -> (artifact id: '74fa17358cc8f459eabed17925691eae') in 0.084504 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000667 seconds.
+  path: Assets/SkySerie Freebie/FreebieHdri/FluffballDayBottom.hdr
+  artifactKey: Guid(42e0664ae4c5c424ebcd980a10687e18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SkySerie Freebie/FreebieHdri/FluffballDayBottom.hdr using Guid(42e0664ae4c5c424ebcd980a10687e18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96dae261af2e715e5e748e17bc3ce332') in 0.018866 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000658 seconds.
+  path: Assets/SkySerie Freebie/FreebieHdri/FluffballDay4k.hdr
+  artifactKey: Guid(3e80b688af9b1d84ea52c5d36bb1cbbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SkySerie Freebie/FreebieHdri/FluffballDay4k.hdr using Guid(3e80b688af9b1d84ea52c5d36bb1cbbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) d3d12: upload buffer was full! Waited for COPY queue for 3.131 ms.
+d3d12: upload buffer was full! Waited for COPY queue for 3.257 ms.
+ -> (artifact id: 'd52037b80133f6095ed1876b286967a9') in 0.385306 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000823 seconds.
+  path: Assets/SkySerie Freebie/FreebieHdri/DarkStorm4K.hdr
+  artifactKey: Guid(762f22ba43541df4e95e0e7126e8d96c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SkySerie Freebie/FreebieHdri/DarkStorm4K.hdr using Guid(762f22ba43541df4e95e0e7126e8d96c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) d3d12: upload buffer was full! Waited for COPY queue for 3.288 ms.
+d3d12: upload buffer was full! Waited for COPY queue for 3.274 ms.
+ -> (artifact id: 'f7eba610f6c81c1dbf1159f6d1263b42') in 0.390636 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 119.963128 seconds.
+  path: Assets/SkySerie Freebie/FreebieHdri/FluffballDayFront.hdr
+  artifactKey: Guid(4499836ec803a0443834895abc208fba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SkySerie Freebie/FreebieHdri/FluffballDayFront.hdr using Guid(4499836ec803a0443834895abc208fba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae8130fd9dfb8de1408577f70ccbda8f') in 0.022132 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000634 seconds.
+  path: Assets/SkySerie Freebie/FreebieHdri/FluffballDayLeft.hdr
+  artifactKey: Guid(a78d8299279fda54098aca1c72ecfae1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SkySerie Freebie/FreebieHdri/FluffballDayLeft.hdr using Guid(a78d8299279fda54098aca1c72ecfae1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12af5cc45f8d5d8d870f755f46b3b609') in 0.028519 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002153 seconds.
+  path: Assets/SkySerie Freebie/FreebieHdri/FluffballDayRight.hdr
+  artifactKey: Guid(669daa4bd63e4204dacb9aa01a164a7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SkySerie Freebie/FreebieHdri/FluffballDayRight.hdr using Guid(669daa4bd63e4204dacb9aa01a164a7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd020f383b2f514264444073754927141') in 0.064383 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.328307 seconds.
+  path: Assets/SkySerie Freebie/FreebieHdri/FluffballDayTop.hdr
+  artifactKey: Guid(c769857dc541ab7449d1352d7ff46ce8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SkySerie Freebie/FreebieHdri/FluffballDayTop.hdr using Guid(c769857dc541ab7449d1352d7ff46ce8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f639b1f9f7ce8fd56507614d060c23d') in 0.019558 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000675 seconds.
+  path: Assets/SkySerie Freebie/FreebieHdri/HighFantasy4k.hdr
+  artifactKey: Guid(6e998e53d0a82bb45928cd08a0fcfff3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SkySerie Freebie/FreebieHdri/HighFantasy4k.hdr using Guid(6e998e53d0a82bb45928cd08a0fcfff3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) d3d12: upload buffer was full! Waited for COPY queue for 3.275 ms.
+d3d12: upload buffer was full! Waited for COPY queue for 3.209 ms.
+ -> (artifact id: 'da7269b88490b9db07d8733b73c38800') in 0.083329 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000544 seconds.
+  path: Assets/SkySerie Freebie/FreebieHdri/MegaSun4k.hdr
+  artifactKey: Guid(8967f190ed29c46418093a47d66daee8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SkySerie Freebie/FreebieHdri/MegaSun4k.hdr using Guid(8967f190ed29c46418093a47d66daee8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) d3d12: upload buffer was full! Waited for COPY queue for 3.279 ms.
+d3d12: upload buffer was full! Waited for COPY queue for 3.217 ms.
+ -> (artifact id: 'b2d31781a2611257bda9a54cfdca2cf8') in 0.072825 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.053014 seconds.
+  path: Assets/SkySerie Freebie/FreebieHdri/MegaSunBack.hdr
+  artifactKey: Guid(4e52cbaf92b83a94cb86bed75ed34652) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SkySerie Freebie/FreebieHdri/MegaSunBack.hdr using Guid(4e52cbaf92b83a94cb86bed75ed34652) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '739f94dec0be22c08ae0bab03fb673b3') in 0.087906 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000602 seconds.
+  path: Assets/SkySerie Freebie/FreebieHdri/MegaSunFront.hdr
+  artifactKey: Guid(b915aaf1fa7dbd54a9e60e42712933a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SkySerie Freebie/FreebieHdri/MegaSunFront.hdr using Guid(b915aaf1fa7dbd54a9e60e42712933a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44c575b6a3a1fe6e2029df03f92b931d') in 0.019514 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000519 seconds.
+  path: Assets/SkySerie Freebie/FreebieHdri/MegaSunBottom.hdr
+  artifactKey: Guid(3de85f3af41435a4c8f9d237bc1f19ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SkySerie Freebie/FreebieHdri/MegaSunBottom.hdr using Guid(3de85f3af41435a4c8f9d237bc1f19ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a84c429f75018f960fe3da14cc727ba0') in 0.018651 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 20.866634 seconds.
+  path: Assets/SkySerie Freebie/FreebieHdri/MegaSunLeft.hdr
+  artifactKey: Guid(7f0373fb8ec72a142898c7984aada4b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SkySerie Freebie/FreebieHdri/MegaSunLeft.hdr using Guid(7f0373fb8ec72a142898c7984aada4b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'feb323c30b7b149ad01b3624cc53ef11') in 0.067333 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000565 seconds.
+  path: Assets/SkySerie Freebie/FreebieHdri/MegaSunRight.hdr
+  artifactKey: Guid(f5760fc943c5eb643a2291630888f6a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SkySerie Freebie/FreebieHdri/MegaSunRight.hdr using Guid(f5760fc943c5eb643a2291630888f6a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01b75a3f86b811dce1224bbc7961794e') in 0.018800 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000515 seconds.
+  path: Assets/SkySerie Freebie/FreebieHdri/MegaSunTop.hdr
+  artifactKey: Guid(47d70ba0d1c1c3e4ab451b6bc37b0ebe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SkySerie Freebie/FreebieHdri/MegaSunTop.hdr using Guid(47d70ba0d1c1c3e4ab451b6bc37b0ebe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e38e7e2dbb75b38222c2db9e8bc85ec3') in 0.020011 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000504 seconds.
+  path: Assets/SkySerie Freebie/FreebieHdri/SkyhighFluffycloudField4k.hdr
+  artifactKey: Guid(18a0be10f0f64ac4c9f679d68e2cf857) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SkySerie Freebie/FreebieHdri/SkyhighFluffycloudField4k.hdr using Guid(18a0be10f0f64ac4c9f679d68e2cf857) Importer(815301076,1909f56bfc062723c751e8b465ee728b) d3d12: upload buffer was full! Waited for COPY queue for 3.581 ms.
+d3d12: upload buffer was full! Waited for COPY queue for 7.834 ms.
+ -> (artifact id: 'caded13b0556233a13db864557ee17f9') in 0.085890 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000657 seconds.
+  path: Assets/SkySerie Freebie/FreebieHdri/PlanetaryEarth4k.hdr
+  artifactKey: Guid(3675d0c3c874f6b479bab57eb7e68c90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SkySerie Freebie/FreebieHdri/PlanetaryEarth4k.hdr using Guid(3675d0c3c874f6b479bab57eb7e68c90) Importer(815301076,1909f56bfc062723c751e8b465ee728b) d3d12: upload buffer was full! Waited for COPY queue for 3.151 ms.
+d3d12: upload buffer was full! Waited for COPY queue for 3.158 ms.
+ -> (artifact id: 'aedcd0197fc1f75eba6072438e0f1864') in 0.072258 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 67.833051 seconds.
+  path: Assets/SkySerie Freebie/FreebieHdri/SunlessCirruscover4k.hdr
+  artifactKey: Guid(99af420a4ccafa74abdc47436d8b0685) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SkySerie Freebie/FreebieHdri/SunlessCirruscover4k.hdr using Guid(99af420a4ccafa74abdc47436d8b0685) Importer(815301076,1909f56bfc062723c751e8b465ee728b) d3d12: upload buffer was full! Waited for COPY queue for 3.274 ms.
+d3d12: upload buffer was full! Waited for COPY queue for 3.143 ms.
+ -> (artifact id: '5a925180a47fa4e134374281b04366f2') in 0.370128 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000726 seconds.
+  path: Assets/SkySerie Freebie/FreebieHdri/UnderTheSea4k.hdr
+  artifactKey: Guid(26cddb2a3a1bc804d8e9ca09b109793a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SkySerie Freebie/FreebieHdri/UnderTheSea4k.hdr using Guid(26cddb2a3a1bc804d8e9ca09b109793a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) d3d12: upload buffer was full! Waited for COPY queue for 3.146 ms.
+d3d12: upload buffer was full! Waited for COPY queue for 3.141 ms.
+ -> (artifact id: '80f54db600c62705599b8274d1b1d650') in 0.086494 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000694 seconds.
+  path: Assets/SkySerie Freebie/FreebieHdri/UnearthlyRed4k.hdr
+  artifactKey: Guid(a3de28b69b48944438c87668bd722ae7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SkySerie Freebie/FreebieHdri/UnearthlyRed4k.hdr using Guid(a3de28b69b48944438c87668bd722ae7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) d3d12: upload buffer was full! Waited for COPY queue for 8.821 ms.
+d3d12: upload buffer was full! Waited for COPY queue for 3.222 ms.
+ -> (artifact id: '4a6e48489e14790c518a67924c012864') in 0.092702 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 932.401294 seconds.
+  path: Assets/XR/XRGeneralSettings.asset
+  artifactKey: Guid(20ad3ad7e64a5ef4e9702e58d6fba4e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/XR/XRGeneralSettings.asset using Guid(20ad3ad7e64a5ef4e9702e58d6fba4e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0f580d1a4d58f93be99a2624258fc78') in 0.035193 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 66.919820 seconds.
+  path: Assets/Scenes/GreyBoxScene/HDRI-II.hdr
+  artifactKey: Guid(a9802acece493054d86201875997d163) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/GreyBoxScene/HDRI-II.hdr using Guid(a9802acece493054d86201875997d163) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de3b96419c0b64f52e0000d68471e377') in 0.094365 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 67.116381 seconds.
+  path: Assets/Scenes/GreyBoxScene/HDRI-II.hdr
+  artifactKey: Guid(a9802acece493054d86201875997d163) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/GreyBoxScene/HDRI-II.hdr using Guid(a9802acece493054d86201875997d163) Importer(815301076,1909f56bfc062723c751e8b465ee728b) d3d12: upload buffer was full! Waited for COPY queue for 6.317 ms.
+d3d12: upload buffer was full! Waited for COPY queue for 6.421 ms.
+ -> (artifact id: 'f2a614cb223a4c5e3aed186479f271f0') in 0.118845 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 85.212171 seconds.
+  path: Assets/Scenes/GreyBoxScene/Materials/HDRI-II.mat
+  artifactKey: Guid(3fee8d6d6ab1622469529175427d4e63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/GreyBoxScene/Materials/HDRI-II.mat using Guid(3fee8d6d6ab1622469529175427d4e63) Importer(815301076,1909f56bfc062723c751e8b465ee728b) d3d12: upload buffer was full! Waited for COPY queue for 3.113 ms.
+d3d12: upload buffer was full! Waited for COPY queue for 3.222 ms.
+ -> (artifact id: '98fee223e833b24cd11892e25f356119') in 0.078171 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 140.814149 seconds.
+  path: Assets/Scenes/GreyBoxScene/HDRI-II.hdr
+  artifactKey: Guid(a9802acece493054d86201875997d163) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/GreyBoxScene/HDRI-II.hdr using Guid(a9802acece493054d86201875997d163) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df73ae99eb342f377b59841e0ed5edfe') in 0.389215 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.109506 seconds.
+  path: Assets/Scenes/GreyBoxScene/Scene/VoidSpaceGreyBOx/Sky and Fog Settings Profile 1.asset
+  artifactKey: Guid(0f5df780ffeb6c84d9ffbc914bef4403) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/GreyBoxScene/Scene/VoidSpaceGreyBOx/Sky and Fog Settings Profile 1.asset using Guid(0f5df780ffeb6c84d9ffbc914bef4403) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '883461a5ed676e5584d16b5a422bb761') in 0.012295 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000478 seconds.
+  path: Assets/Scenes/GreyBoxScene/Scene/VoidSpaceGreyBOx/Sky and Fog Settings Profile.asset
+  artifactKey: Guid(9164da043aff7e843bb656989236b017) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/GreyBoxScene/Scene/VoidSpaceGreyBOx/Sky and Fog Settings Profile.asset using Guid(9164da043aff7e843bb656989236b017) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22a7e935939b7471c33701026d1a9209') in 0.012303 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 27.362613 seconds.
+  path: Assets/Scenes/GreyBoxScene/Skybox
+  artifactKey: Guid(47309c1368a4524428b49ebee0b85a68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/GreyBoxScene/Skybox using Guid(47309c1368a4524428b49ebee0b85a68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05210877deef3c048efbed09f5e96e3a') in 0.004976 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.848433 seconds.
+  path: Assets/Scenes/GreyBoxScene/Skybox/Materials/Skybox_Daytime.mat
+  artifactKey: Guid(71f14a2d79f732f4d9893ef1b911f4ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/GreyBoxScene/Skybox/Materials/Skybox_Daytime.mat using Guid(71f14a2d79f732f4d9893ef1b911f4ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4bf4fd7baa80fa175ded555bfa744f7') in 0.092441 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000725 seconds.
+  path: Assets/Scenes/GreyBoxScene/Skybox/Materials/Skybox_Sunset.mat
+  artifactKey: Guid(4067de1a02072244798361060c5e7325) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/GreyBoxScene/Skybox/Materials/Skybox_Sunset.mat using Guid(4067de1a02072244798361060c5e7325) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6ffe3ce85d03a437abbf3cbaa2a138d') in 0.026558 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 43.825196 seconds.
+  path: Assets/Scenes/GreyBoxScene/Skybox/Cubemaps/Materials
+  artifactKey: Guid(fd0806521643c1a4e82105f6608202a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/GreyBoxScene/Skybox/Cubemaps/Materials using Guid(fd0806521643c1a4e82105f6608202a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4628efa1b1d1803b4598f5ef3f31a37b') in 0.006267 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.091871 seconds.
+  path: Assets/Scenes/GreyBoxScene/Skybox/Cubemaps/Materials/daytime.mat
+  artifactKey: Guid(259cf8e43a5c6374aa6ff2c98be7cd35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/GreyBoxScene/Skybox/Cubemaps/Materials/daytime.mat using Guid(259cf8e43a5c6374aa6ff2c98be7cd35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53a2a5ef47ab1a89e0a5022f2d636e78') in 0.024608 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.432983 seconds.
+  path: Assets/Scenes/GreyBoxScene/Skybox/Materials
+  artifactKey: Guid(c24b7eb175a60b744b7defb86dbc1722) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/GreyBoxScene/Skybox/Materials using Guid(c24b7eb175a60b744b7defb86dbc1722) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2188e609da5df893bb3a9ed6afe6084e') in 0.005449 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.372371 seconds.
+  path: Assets/Scenes/GreyBoxScene/Skybox/Scene
+  artifactKey: Guid(570cba0f0f14e2c41a3870c6e4989832) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/GreyBoxScene/Skybox/Scene using Guid(570cba0f0f14e2c41a3870c6e4989832) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb020d3adafdc49581fd69f5c7fa75ec') in 0.005580 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 35.576806 seconds.
+  path: Assets/Scenes/GreyBoxScene/HDRI-II.hdr
+  artifactKey: Guid(a9802acece493054d86201875997d163) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/GreyBoxScene/HDRI-II.hdr using Guid(a9802acece493054d86201875997d163) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce1b7125f2e603a546ee821f9d9541e4') in 0.204701 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 122.591349 seconds.
+  path: Assets/Scenes/GreyBoxScene/Materials
+  artifactKey: Guid(24c707a6abae3234dbb94a6b3e952368) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/GreyBoxScene/Materials using Guid(24c707a6abae3234dbb94a6b3e952368) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87f63dd58c98f1742b663096fd4db6f9') in 0.005786 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 26.144976 seconds.
+  path: Assets/Scenes/GreyBoxScene/Materials/Teleporter.mat
+  artifactKey: Guid(000bc86f8ed8e044d9828791ed08a1eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/GreyBoxScene/Materials/Teleporter.mat using Guid(000bc86f8ed8e044d9828791ed08a1eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4647f6abe8effe313a44c7b89da4a11') in 0.062732 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 68.582761 seconds.
+  path: Assets/Scenes/GreyBoxScene/Materials/Teleporter.mat
+  artifactKey: Guid(000bc86f8ed8e044d9828791ed08a1eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/GreyBoxScene/Materials/Teleporter.mat using Guid(000bc86f8ed8e044d9828791ed08a1eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '031905b3e595dbc2a40f2d2efe881be6') in 0.064865 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000571 seconds.
+  path: Assets/Scenes/GreyBoxScene/Materials/TeleporterEmisson.mat
+  artifactKey: Guid(fd78665871ebab34ca4d14257fc513b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/GreyBoxScene/Materials/TeleporterEmisson.mat using Guid(fd78665871ebab34ca4d14257fc513b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b061392816df7c517f0e5fd919876e1d') in 0.026942 seconds 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
