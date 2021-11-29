@@ -180,14 +180,14 @@ MonoBehaviour:
     min: 0
   upperHemisphereLuxValue:
     m_OverrideState: 0
-    m_Value: 0.12519684
+    m_Value: 1.7247041
     min: 0
   upperHemisphereLuxColor:
     m_OverrideState: 0
-    m_Value: {x: 0.14206608, y: 0.4696419, z: 0.5}
+    m_Value: {x: 0.5, y: 0.38825858, z: 0.33693245}
   desiredLuxValue:
     m_OverrideState: 1
-    m_Value: 20000
+    m_Value: 40000
   updateMode:
     m_OverrideState: 0
     m_Value: 0
@@ -200,7 +200,7 @@ MonoBehaviour:
     m_Value: 0
   hdriSky:
     m_OverrideState: 1
-    m_Value: {fileID: 8900000, guid: a9802acece493054d86201875997d163, type: 3}
+    m_Value: {fileID: 8900000, guid: 1153dc89e66880c4eb7adc16ba588855, type: 3}
   enableDistortion:
     m_OverrideState: 0
     m_Value: 0
@@ -289,12 +289,12 @@ MonoBehaviour:
     m_OverrideState: 1
     m_Value: 1
   threshold:
-    m_OverrideState: 0
-    m_Value: 0
+    m_OverrideState: 1
+    m_Value: 0.2
     min: 0
   intensity:
     m_OverrideState: 1
-    m_Value: 0.2
+    m_Value: 0.4
     min: 0
     max: 1
   scatter:
@@ -368,8 +368,8 @@ MonoBehaviour:
     m_OverrideState: 1
     m_Value: 1
   meteringMode:
-    m_OverrideState: 0
-    m_Value: 2
+    m_OverrideState: 1
+    m_Value: 1
   luminanceSource:
     m_OverrideState: 0
     m_Value: 1
@@ -377,14 +377,14 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 0
   compensation:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 0
   limitMin:
-    m_OverrideState: 0
-    m_Value: -10
+    m_OverrideState: 1
+    m_Value: 4.5
   limitMax:
-    m_OverrideState: 0
-    m_Value: 10
+    m_OverrideState: 1
+    m_Value: 13
   curveMap:
     m_OverrideState: 0
     m_Value:
@@ -464,15 +464,15 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
   adaptationMode:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 1
   adaptationSpeedDarkToLight:
-    m_OverrideState: 0
-    m_Value: 3
+    m_OverrideState: 1
+    m_Value: 1
     min: 0.001
   adaptationSpeedLightToDark:
-    m_OverrideState: 0
-    m_Value: 1
+    m_OverrideState: 1
+    m_Value: 0.5
     min: 0.001
   weightTextureMask:
     m_OverrideState: 0
@@ -522,19 +522,19 @@ MonoBehaviour:
   active: 1
   m_AdvancedMode: 0
   quality:
-    m_OverrideState: 0
-    m_Value: 1
+    m_OverrideState: 1
+    m_Value: 3
   rayTracing:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 0
   intensity:
     m_OverrideState: 1
-    m_Value: 0.5
+    m_Value: 2
     min: 0
     max: 4
   directLightingStrength:
-    m_OverrideState: 0
-    m_Value: 0
+    m_OverrideState: 1
+    m_Value: 0.15
     min: 0
     max: 1
   radius:
@@ -574,7 +574,7 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 0
   m_MaximumRadiusInPixels:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 40
     min: 16
     max: 256

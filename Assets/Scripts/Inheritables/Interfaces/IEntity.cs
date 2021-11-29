@@ -10,4 +10,6 @@ public interface IEntity
     public void Initialize();
 
     public void TakeDamage(float damage);
+
+    public void KillEntity();
 }

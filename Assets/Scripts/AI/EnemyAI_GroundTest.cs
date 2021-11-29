@@ -22,6 +22,7 @@ public class EnemyAI_GroundTest : AI_NavMesh_Base
 
         SetState(State.Patrol);
     }
+    #region Patrol Logic
     //Patrol is very spotty, would like a peer review
     protected override void EnterPatrol()
     {
@@ -42,10 +43,19 @@ public class EnemyAI_GroundTest : AI_NavMesh_Base
 
         agent.SetDestination(patrolPos);
     }
-    //BIG ISSUE - The pathfinding currently doesn't compensate for height at all so I'll have to do some sort of raycast from the patrol point downwards to find closest ground (or have an alternate fix)
+    
     protected override void UpdatePatrol()
     {
         base.UpdatePatrol();
+
+        RaycastHit playerHit;
+        if(Physics.SphereCast(transform.position, patrolRadius, transform.forward, out playerHit, patrolRadius))
+        {
+            target = playerHit.transform.gameObject.GetComponent<PlayerController>().gameObject;
+
+            SetState(State.Chase);
+            return;
+        }
 
         if (pathDone)
         {
@@ -95,6 +105,24 @@ public class EnemyAI_GroundTest : AI_NavMesh_Base
 
         isPatrolling = false;
         isResting = false;   
+    }
+
+    protected override void ExitPatrol()
+    {
+        base.ExitPatrol();
+
+        isResting = false;
+
+        agent.SetDestination(target.transform.position);
+    }
+
+    #endregion
+
+    protected override void UpdateChase()
+    {
+        base.UpdateChase();
+
+        agent.SetDestination(target.transform.position);
     }
 
     private void OnDrawGizmos()

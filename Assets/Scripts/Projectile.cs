@@ -23,15 +23,17 @@ public class Projectile : MonoBehaviour
         transform.Translate(travelDir * travelSpeed * Time.deltaTime);
     }
 
-    private void OnTriggerEnter(Collider collision)
+    private void OnCollisionEnter(Collision collision)
     {
+        Debug.Log("Collided");
         if(collision != null)
         {
-            collision.gameObject.GetComponent<IEntity>().TakeDamage(damage);
+            if(collision.gameObject.GetComponent<IEntity>() != null)
+            {
+                collision.gameObject.GetComponent<IEntity>().TakeDamage(damage);
 
-            Debug.Log("Bullet hit entity");
-
-            Destroy(gameObject);
+                Debug.Log("Bullet hit entity");
+            }
         }
 
         Destroy(gameObject);

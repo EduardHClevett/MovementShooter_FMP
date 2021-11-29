@@ -20,7 +20,7 @@ MonoBehaviour:
   fireRate: 10
   burstCount: 0
   maxMagAmmo: 100
-  maxReserveAmmo: 300
+  maxReserveAmmo: 10000000
   reloadMode: 2
   reloadTime: 3
   weaponMesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
@@ -29,6 +29,6 @@ MonoBehaviour:
   meshPosition: {x: 0.35, y: -0.3, z: 0.5}
   projectile: {fileID: 1261468657680383683, guid: c02ff28c1a5d2af4d90a054013b41cdb, type: 3}
   muzzlePointOffset: {x: 0, y: 0, z: 0.75}
-  projectileVelocity: 30
+  projectileVelocity: 50
   currentMagAmmo: 100
-  currentReserveAmmo: 200
+  currentReserveAmmo: 10000000

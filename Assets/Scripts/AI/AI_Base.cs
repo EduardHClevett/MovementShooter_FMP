@@ -123,6 +123,14 @@ public class AI_Base : MonoBehaviour, IEntity
     {
         Debug.Log("Enemy hit!");
         currentHealth -= damage;
+
+        if (currentHealth <= 0)
+            KillEntity();
+    }
+
+    public virtual void KillEntity()
+    {
+        Destroy(gameObject);
     }
 
     //To be called when we want a delay on state change
