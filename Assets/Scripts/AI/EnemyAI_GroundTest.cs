@@ -49,12 +49,17 @@ public class EnemyAI_GroundTest : AI_NavMesh_Base
         base.UpdatePatrol();
 
         RaycastHit playerHit;
-        if(Physics.SphereCast(transform.position, patrolRadius, transform.forward, out playerHit, patrolRadius))
+        if(Physics.SphereCast(transform.position, patrolRadius, transform.forward, out playerHit, patrolRadius/2))
         {
+            Debug.Log("Spotted player!");
+
             target = playerHit.transform.gameObject.GetComponent<PlayerController>().gameObject;
 
-            SetState(State.Chase);
-            return;
+            if (target != null)
+            {
+                SetState(State.Chase);
+                return;
+            }
         }
 
         if (pathDone)
