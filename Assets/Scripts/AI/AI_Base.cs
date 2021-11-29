@@ -5,10 +5,11 @@ using UnityEngine.AI;
 
 public class AI_Base : MonoBehaviour, IEntity
 {
+    //Implementing Entity values
     public float maxHealth { get; set; } = 100;
     public float currentHealth { get; set; } = 100;
 
-
+    //Define AI States
     public enum State
     {
         Idle,
@@ -17,6 +18,7 @@ public class AI_Base : MonoBehaviour, IEntity
         Attack
     }
 
+    //Makes sure the state can only be set through this script, child scripts can change states using SetState
     public State currentState 
     { 
         get { return _currentState; } 
@@ -36,6 +38,7 @@ public class AI_Base : MonoBehaviour, IEntity
     public void SetState(State inState)
     {
         currentState = inState;
+        //Execute logic that should happen when a state is left
         switch(previousState)
         {
             case State.Idle:
@@ -51,7 +54,7 @@ public class AI_Base : MonoBehaviour, IEntity
                 ExitAttack();
                 break;
         }
-
+        //Execute logic that should happen when a state is entered
         switch (currentState)
         {
             case State.Idle:
@@ -74,6 +77,7 @@ public class AI_Base : MonoBehaviour, IEntity
 
     protected virtual void Update()
     {
+        //Calls the Update states according to the active state
         switch (currentState)
         {
             case State.Idle:
@@ -109,6 +113,7 @@ public class AI_Base : MonoBehaviour, IEntity
     protected virtual void UpdateChase() { }
     protected virtual void UpdateAttack() { }
 
+    //Entity function implementations
     public virtual void Initialize()
     {
         currentHealth = maxHealth;
@@ -116,9 +121,11 @@ public class AI_Base : MonoBehaviour, IEntity
 
     public virtual void TakeDamage(float damage)
     {
+        Debug.Log("Enemy hit!");
         currentHealth -= damage;
     }
 
+    //To be called when we want a delay on state change
     public void SetStateTimer(State inState, float time)
     {
         StartCoroutine(StateTimer(inState, time));

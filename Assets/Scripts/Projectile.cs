@@ -15,7 +15,7 @@ public class Projectile : MonoBehaviour
 
         travelDir = forwardVector;
 
-        Destroy(this.gameObject, 3);
+        Destroy(gameObject, 3);
     }
 
     private void Update()
@@ -23,8 +23,17 @@ public class Projectile : MonoBehaviour
         transform.Translate(travelDir * travelSpeed * Time.deltaTime);
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider collision)
     {
-        Destroy(this.gameObject);
+        if(collision != null)
+        {
+            collision.gameObject.GetComponent<IEntity>().TakeDamage(damage);
+
+            Debug.Log("Bullet hit entity");
+
+            Destroy(gameObject);
+        }
+
+        Destroy(gameObject);
     }
 }

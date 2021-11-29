@@ -1,9 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class AI_NavMesh_Base : AI_Base
 {
+    protected NavMeshAgent agent;
+
+    protected override void Start()
+    {
+        base.Start();
+
+        agent = GetComponent<NavMeshAgent>();
+    }
+
     protected override void Update()
     {
         base.Update();
@@ -14,10 +24,11 @@ public class AI_NavMesh_Base : AI_Base
     protected override void EnterIdle() 
     {
 
+
     }
     protected override void EnterPatrol() 
     {
-
+        
     }
     protected override void EnterChase() 
     {
