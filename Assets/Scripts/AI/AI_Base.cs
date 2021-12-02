@@ -9,6 +9,8 @@ public class AI_Base : MonoBehaviour, IEntity
     public float maxHealth { get; set; } = 100;
     public float currentHealth { get; set; } = 100;
 
+    private Dictionary<State, Coroutine> activeStateTimers = new Dictionary<State, Coroutine>();
+
     //Define AI States
     public enum State
     {
@@ -134,15 +136,33 @@ public class AI_Base : MonoBehaviour, IEntity
     }
 
     //To be called when we want a delay on state change
-    public void SetStateTimer(State inState, float time)
+    public bool SetStateTimer(State inState, float time)
     {
-        StartCoroutine(StateTimer(inState, time));
+        if(!activeStateTimers.ContainsKey(inState))
+        {
+            activeStateTimers.Add(inState, StartCoroutine(StateTimer(inState, time)));
+            return true;
+        }
+
+        return false;
     }
 
     private IEnumerator StateTimer(State inState, float time)
     {
         yield return new WaitForSeconds(time);
 
+        activeStateTimers.Remove(inState);
+
         SetState(inState);
+    }
+
+    protected void CancelStateTimer()
+    {
+        foreach(KeyValuePair<State, Coroutine> pair in activeStateTimers)
+        {
+            StopCoroutine(pair.Value);
+        }
+
+        activeStateTimers.Clear();
     }
 }

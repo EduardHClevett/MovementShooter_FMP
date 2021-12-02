@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PlayerController : MonoBehaviour
+public class PlayerController : MonoBehaviour, IEntity
 
 {
     #region Components
@@ -13,6 +13,9 @@ public class PlayerController : MonoBehaviour
     public Transform orientation;
 
     public PlayerInputs inputs;
+
+    public float maxHealth { get; set; } = 200f;
+    public float currentHealth { get; set; }
     #endregion
 
     #region Controls
@@ -351,6 +354,25 @@ public class PlayerController : MonoBehaviour
         isWallLeft = Physics.Raycast(transform.position, -orientation.right, 1f, wallLayer);
 
         if (!isWallLeft && !isWallRight) StopWallRun();
+    }
+
+    //Entity Implementation
+    public void Initialize()
+    {
+        currentHealth = maxHealth;
+    }
+
+    public void TakeDamage(float damage)
+    {
+        currentHealth -= damage;
+
+        if (currentHealth <= 0)
+            KillEntity();
+    }
+
+    public void KillEntity()
+    {
+        Debug.Log("Player ded");
     }
     #endregion
 }
