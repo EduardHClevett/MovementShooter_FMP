@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 8753.586, g: 15541.324, b: 20940.75, a: 1}
+  m_IndirectSpecularColor: {r: 8753.588, g: 15541.238, b: 20940.766, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1245,6 +1245,18 @@ PrefabInstance:
       propertyPath: playerCam
       value: 
       objectReference: {fileID: 565013405}
+    - target: {fileID: 3724559622472753696, guid: 1227a0bc4613ffd4b846538f7cb33077, type: 3}
+      propertyPath: slideDrag
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 3724559622472753696, guid: 1227a0bc4613ffd4b846538f7cb33077, type: 3}
+      propertyPath: slideForce
+      value: 3000
+      objectReference: {fileID: 0}
+    - target: {fileID: 3724559622472753696, guid: 1227a0bc4613ffd4b846538f7cb33077, type: 3}
+      propertyPath: moveImpulse
+      value: 5000
+      objectReference: {fileID: 0}
     - target: {fileID: 3724559622472753698, guid: 1227a0bc4613ffd4b846538f7cb33077, type: 3}
       propertyPath: m_Name
       value: Player
