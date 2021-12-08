@@ -1,16 +1,25 @@
 Using pre-set license
 Built from '2021.1/staging' branch; Version is '2021.1.17f1 (03b40fe07a36) revision 242703'; Using compiler version '192528614'; Build Type 'Release'
+<<<<<<< Updated upstream
 OS: 'Windows 10 Pro; OS build 19043.1348; Version 2009; 64bit' Language: 'en' Physical Memory: 16313 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
 D:\Unity Versions\2021.1.17f1\Editor\Unity.exe
+=======
+OS: 'Windows 10 Home; OS build 19042.1348; Version 2009; 64bit' Language: 'en' Physical Memory: 16366 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.1.17f1\Editor\Unity.exe
+>>>>>>> Stashed changes
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
+<<<<<<< Updated upstream
 E:/Github Repos/MovementShooter_FMP
 -logFile
 Logs/AssetImportWorker0.log
@@ -24,18 +33,41 @@ Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.1.17f1 (03b40fe07a36)
 [Subsystems] Discovering subsystems at path D:/Unity Versions/2021.1.17f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path E:/Github Repos/MovementShooter_FMP/Assets
+=======
+C:/Brief03/MovementShooter_FMP
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+60977
+Successfully changed project path to: C:/Brief03/MovementShooter_FMP
+C:/Brief03/MovementShooter_FMP
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 285.45 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.1.17f1 (03b40fe07a36)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.1.17f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Brief03/MovementShooter_FMP/Assets
+>>>>>>> Stashed changes
 GfxDevice: creating device client; threaded=0; jobified=0
 d3d12: loaded!
 Direct3D:
     Version:         Direct3D 12 [level 12.1]
+<<<<<<< Updated upstream
     Renderer:        NVIDIA GeForce RTX 2070 (ID=0x1f02)
     Vendor:          NVIDIA
     VRAM:            8031 MB
     App VRAM Budget: 7263 MB
+=======
+    Renderer:        NVIDIA GeForce GTX 1060 3GB (ID=0x1b84)
+    Vendor:          NVIDIA
+    VRAM:            2988 MB
+    App VRAM Budget: 2539 MB
+>>>>>>> Stashed changes
     Driver:          30.0.14.9649
 d3d12: Profiler is enabled, but stable power state is not. GPU timing errors are expected.
 
 Initialize mono
+<<<<<<< Updated upstream
 Mono path[0] = 'D:/Unity Versions/2021.1.17f1/Editor/Data/Managed'
 Mono path[1] = 'D:/Unity Versions/2021.1.17f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'D:/Unity Versions/2021.1.17f1/Editor/Data/MonoBleedingEdge/etc'
@@ -52,11 +84,30 @@ Mono: successfully reloaded assembly
 Domain Reload Profiling:
 	ReloadAssembly (1018ms)
 		BeginReloadAssembly (56ms)
+=======
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.1.17f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.1.17f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.1.17f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56208
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.1.17f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.005723 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 256.53 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.169 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3169ms)
+		BeginReloadAssembly (147ms)
+>>>>>>> Stashed changes
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
+<<<<<<< Updated upstream
 		EndReloadAssembly (541ms)
 			LoadAssemblies (55ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
@@ -71,12 +122,29 @@ Domain Reload Profiling:
 				BeforeProcessingInitializeOnLoad (2ms)
 				ProcessInitializeOnLoadAttributes (97ms)
 				ProcessInitializeOnLoadMethodAttributes (30ms)
+=======
+		EndReloadAssembly (1015ms)
+			LoadAssemblies (140ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (358ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (59ms)
+			SetupLoadedEditorAssemblies (508ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (11ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (257ms)
+				BeforeProcessingInitializeOnLoad (2ms)
+				ProcessInitializeOnLoadAttributes (178ms)
+				ProcessInitializeOnLoadMethodAttributes (59ms)
+>>>>>>> Stashed changes
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
+<<<<<<< Updated upstream
 Registered in 0.006325 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image E:\Github Repos\MovementShooter_FMP\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
@@ -126,6 +194,57 @@ System memory in use after: 307.0 MB.
 
 Unloading 30 unused Assets to reduce memory usage. Loaded Objects now: 6359.
 Total: 4.932000 ms (FindLiveObjects: 0.564900 ms CreateObjectMapping: 0.186700 ms MarkObjects: 4.115200 ms  DeleteObjects: 0.063800 ms)
+=======
+Registered in 0.290471 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Brief03\MovementShooter_FMP\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Brief03\MovementShooter_FMP\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 320.03 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+d3d12: upload buffer was full! Waited for COPY queue for 3.783 ms.
+d3d12: upload buffer was full! Waited for COPY queue for 2.020 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in 11.901 seconds
+Domain Reload Profiling:
+	ReloadAssembly (11902ms)
+		BeginReloadAssembly (325ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (37ms)
+		EndReloadAssembly (11435ms)
+			LoadAssemblies (243ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (962ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (196ms)
+			SetupLoadedEditorAssemblies (9841ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7055ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (320ms)
+				BeforeProcessingInitializeOnLoad (260ms)
+				ProcessInitializeOnLoadAttributes (1780ms)
+				ProcessInitializeOnLoadMethodAttributes (406ms)
+				AfterProcessingInitializeOnLoad (20ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (14ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.23 seconds
+Refreshing native plugins compatible for Editor in 1.77 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5910 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 297.9 MB.
+System memory in use after: 298.4 MB.
+
+Unloading 30 unused Assets to reduce memory usage. Loaded Objects now: 6374.
+Total: 9.513500 ms (FindLiveObjects: 0.889600 ms CreateObjectMapping: 0.422500 ms MarkObjects: 8.105200 ms  DeleteObjects: 0.093900 ms)
+>>>>>>> Stashed changes
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -139,6 +258,7 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
+<<<<<<< Updated upstream
   path: Assets/Prefabs
   artifactKey: Guid(e30b16bab9549bf4c851487baa8f5970) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Prefabs using Guid(e30b16bab9549bf4c851487baa8f5970) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b0a6375a2f2894189534f1deacdc3f6') in 0.013591 seconds 
@@ -765,4 +885,76 @@ Received Import Request.
   path: Assets/Scripts/Scriptable Objects/Weapons/ShotgunTest.asset
   artifactKey: Guid(b5179fd7f7501f54eaf1033364e4f7b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Scripts/Scriptable Objects/Weapons/ShotgunTest.asset using Guid(b5179fd7f7501f54eaf1033364e4f7b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a29a6a1174c5bda1f89bd06a4341027e') in 0.007864 seconds 
+=======
+  path: Assets/Scenes/GreyBoxScene/Models/Pillars/Pillar01.fbx
+  artifactKey: Guid(58b9b063b2c8ebd4ca77aca0fdb0a05e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/GreyBoxScene/Models/Pillars/Pillar01.fbx using Guid(58b9b063b2c8ebd4ca77aca0fdb0a05e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Launched and connected shader compiler UnityShaderCompiler.exe after 0.13 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.12 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.13 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.14 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.13 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.14 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.14 seconds
+ -> (artifact id: 'e3461097d16dfb8075a5f3388dc854bf') in 4.945918 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000771 seconds.
+  path: Assets/Scenes/GreyBoxScene/Models/Pillars/PowerStructure.fbx
+  artifactKey: Guid(c8f1303731b07d84b88f69b85087dbb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/GreyBoxScene/Models/Pillars/PowerStructure.fbx using Guid(c8f1303731b07d84b88f69b85087dbb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b05131d6586bccb166e4cb3f661a84e') in 0.176183 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000593 seconds.
+  path: Assets/Scenes/GreyBoxScene/Models/Pillars/Stairs01.fbx
+  artifactKey: Guid(5e0efce2a06811140b2b262e16be68a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/GreyBoxScene/Models/Pillars/Stairs01.fbx using Guid(5e0efce2a06811140b2b262e16be68a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0698ed9ddd9491ba7a73742a1fc047b2') in 0.041023 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000595 seconds.
+  path: Assets/Scenes/GreyBoxScene/Models/Pillars/BrokenParth01.fbx
+  artifactKey: Guid(47c9654a92b8d7e40a235a8fbbbafd7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/GreyBoxScene/Models/Pillars/BrokenParth01.fbx using Guid(47c9654a92b8d7e40a235a8fbbbafd7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc06b06eb6d15510874e119e0fc2fb68') in 0.048009 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000654 seconds.
+  path: Assets/Scenes/GreyBoxScene/Models/Pillars/Building01.fbx
+  artifactKey: Guid(920342134e7ae8743ba10df77eff888d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/GreyBoxScene/Models/Pillars/Building01.fbx using Guid(920342134e7ae8743ba10df77eff888d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '306cb6ec7dc199de632382ccf75b47eb') in 0.050644 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000672 seconds.
+  path: Assets/Scenes/GreyBoxScene/Models/Pillars/FloatingWallFloor.fbx
+  artifactKey: Guid(2757bba554f426247b975a16664e1b06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/GreyBoxScene/Models/Pillars/FloatingWallFloor.fbx using Guid(2757bba554f426247b975a16664e1b06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54353b2f40288347e35d3f8989572b55') in 0.046664 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000615 seconds.
+  path: Assets/Scenes/GreyBoxScene/Models/Pillars/Pillar02.fbx
+  artifactKey: Guid(8559e0b3fef9c02478e764f2f29dc0f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/GreyBoxScene/Models/Pillars/Pillar02.fbx using Guid(8559e0b3fef9c02478e764f2f29dc0f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95edbce9ebeb1de0e28a2dccec68e028') in 0.040970 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000572 seconds.
+  path: Assets/Scenes/GreyBoxScene/Models/Pillars/Stairs02.fbx
+  artifactKey: Guid(36536e36680c8a44b942e8a46b979f9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/GreyBoxScene/Models/Pillars/Stairs02.fbx using Guid(36536e36680c8a44b942e8a46b979f9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25d5d80f31e7dcdc001431f18b6c25c8') in 0.043951 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 31.326511 seconds.
+  path: Assets/Scenes/GreyBoxScene/Models/Pillars/DoubleSided.mat
+  artifactKey: Guid(972143694fd66e54880a03e6200e3a9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/GreyBoxScene/Models/Pillars/DoubleSided.mat using Guid(972143694fd66e54880a03e6200e3a9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c9421a008a07f1c368116f551cf0829') in 0.038566 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 369.152170 seconds.
+  path: Assets/Scenes/GreyBoxScene/Models/Pillars/Teleporter.fbx
+  artifactKey: Guid(8816e7b4d8fe9514d8e29a15baed00f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/GreyBoxScene/Models/Pillars/Teleporter.fbx using Guid(8816e7b4d8fe9514d8e29a15baed00f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79320085bec2f05ad63a3414491b178f') in 0.130526 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 445.586719 seconds.
+  path: Assets/Scenes/GreyBoxScene/Models/Pillars/DoubleSided.mat
+  artifactKey: Guid(972143694fd66e54880a03e6200e3a9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/GreyBoxScene/Models/Pillars/DoubleSided.mat using Guid(972143694fd66e54880a03e6200e3a9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08c30db72290a35a75981fb9d1563add') in 0.037913 seconds 
+>>>>>>> Stashed changes
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
