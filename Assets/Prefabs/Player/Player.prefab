@@ -155,18 +155,16 @@ MonoBehaviour:
     m_Bits: 8
   drag: 0.5
   maxSlopeAngle: 35
-  slideForce: 1000
-  slideDrag: 0.2
+  slideForce: 3000
+  slideDrag: 0.05
   jumpForce: 200
+  isWallLeft: 0
+  isWallRight: 0
+  isWallrunning: 0
   wallLayer:
     serializedVersion: 2
     m_Bits: 72
-  wallRunForce: 2000
-  maxWallRunTime: 2
-  maxWallSpeed: 50
-  isWallRunning: 0
-  maxWallRunCamTilt: 15
-  wallRunCamTilt: 0
+  wallJumpForce: 5000
 --- !u!54 &3724559622472753699
 Rigidbody:
   m_ObjectHideFlags: 0
