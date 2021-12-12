@@ -144,6 +144,9 @@ public class PlayerController : MonoBehaviour, IEntity
 
             rb.AddForce(orientation.transform.forward * input.y * moveImpulse * Time.deltaTime);
 
+            if (isWallLeft) rb.AddForce(-orientation.right * 1.25f * Time.deltaTime);
+            if (isWallRight) rb.AddForce(orientation.right * 1.25f * Time.deltaTime);
+
             if (canJump && jumping) Jump();
 
             return;
