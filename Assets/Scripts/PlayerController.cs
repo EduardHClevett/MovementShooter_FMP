@@ -180,7 +180,7 @@ public class PlayerController : MonoBehaviour, IEntity
         }
 
         //Reduce forward movement when crouching
-        if (grounded && crouching) multiplierV = 0;
+        if (grounded && crouching) multiplierV = 0.25f;
 
         //Add input forces
         rb.AddForce(orientation.transform.forward * input.y * moveImpulse * Time.deltaTime * multiplier * multiplierV);
@@ -211,13 +211,6 @@ public class PlayerController : MonoBehaviour, IEntity
             canJump = false;
 
             rb.AddForce(Vector2.up * jumpForce * 1.5f);
-
-            //Reset Y velocity on air jump
-            Vector3 vel = rb.velocity;
-            if (rb.velocity.y < 0.5f)
-                rb.velocity = new Vector3(vel.x, 0, vel.z);
-            else if (rb.velocity.y > 0)
-                rb.velocity = new Vector3(vel.x, vel.y / 2, vel.z);
 
             Invoke(nameof(ResetJump), jumpCooldown);
         }

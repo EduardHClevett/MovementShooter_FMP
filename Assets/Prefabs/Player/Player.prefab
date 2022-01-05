@@ -156,7 +156,7 @@ MonoBehaviour:
   drag: 0.5
   maxSlopeAngle: 35
   slideForce: 3000
-  slideDrag: 0.05
+  slideDrag: -0.25
   jumpForce: 200
   isWallLeft: 0
   isWallRight: 0
