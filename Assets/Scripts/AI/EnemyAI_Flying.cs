@@ -5,11 +5,17 @@ using UnityEngine;
 public class EnemyAI_Flying : AI_Base
 {
     #region Patrol Variables
-    public float patrolRadius = 10f, obstacleRadius = 5f, stoppingDistance, moveSpeed = 2f;
+    public float stoppingDistance = 0f, moveSpeed = 2f, scanRadius = 10f;
 
-    Vector3 patrolPos;
+    [SerializeField] Transform[] waypoints;
+
+    Transform currentWaypoint;
+
+    public Vector3 velocity = Vector3.zero;
 
     bool pathDone;
+
+    public WeaponContainer_AI weapon;
 
     [SerializeField] private bool _isResting;
     bool isResting
@@ -36,12 +42,6 @@ public class EnemyAI_Flying : AI_Base
         SetState(State.Patrol);
     }
 
-    protected override void Update()
-    {
-        base.Update();
-        //Will contain player detection, TODO later
-    }
-
     protected override void EnterIdle()
     {
         base.EnterIdle();
@@ -51,6 +51,32 @@ public class EnemyAI_Flying : AI_Base
             if (!SetStateTimer(State.Patrol, Random.Range(3f, 8f)))
             {
                 Debug.LogWarning("Failed to set new State!");
+            }
+        }
+    }
+
+    protected override void Update()
+    {
+        base.Update();
+
+        if (target == null)
+        {
+            RaycastHit playerHit;
+            if (Physics.SphereCast(transform.position, scanRadius, transform.forward, out playerHit, scanRadius))
+            {
+                PlayerController pc = playerHit.transform.GetComponent<PlayerController>();
+                if (pc != null)
+                {
+                    StopCoroutine(MoveEnemy(currentWaypoint.position));
+
+                    Debug.Log("Spotted Player!");
+
+                    target = pc.gameObject;
+
+                    SetState(State.Chase);
+
+                    CancelStateTimer();
+                }
             }
         }
     }
@@ -67,48 +93,22 @@ public class EnemyAI_Flying : AI_Base
     {
         base.EnterPatrol();
 
-        stoppingDistance = 0f;
-
-        //Set new patrol destination
         pathDone = false;
-        patrolPos = transform.position + (Random.insideUnitSphere * patrolRadius);
 
-        //Check if there are any obstacles in the way
-        RaycastHit hit;
-        if(Physics.Raycast(transform.position, patrolPos, out hit))
-        {
-            Debug.Log("Obstacle in the way!");
+        currentWaypoint = waypoints[Random.Range(0, waypoints.Length - 1)];
 
-            RaycastHit avoidanceHit;
-            if(!Physics.Raycast(transform.position, patrolPos, out avoidanceHit, obstacleRadius))
-            {
-                patrolPos = avoidanceHit.point;
-            }
-            else
-            {
-                isResting = true;
-                return;
-            }
-        }
-
-        StartCoroutine(MoveEnemy(patrolPos));
+        StartCoroutine(MoveEnemy(currentWaypoint.position));
     }
 
     protected override void UpdatePatrol()
     {
         base.UpdatePatrol();
-        if(pathDone)
-        {
-            isResting = true;
-            return;
-        }
 
         float destThreshold = 0.1f;
 
-        Vector2 dist = new Vector2(gameObject.transform.position.x - patrolPos.x, gameObject.transform.position.z - patrolPos.z);
-        if (dist.magnitude > destThreshold)
-            pathDone = false;
-        else pathDone = true;
+        Vector2 dist = new Vector2(gameObject.transform.position.x - currentWaypoint.position.x, gameObject.transform.position.z - currentWaypoint.position.z);
+        if (dist.magnitude <= destThreshold)
+        { pathDone = true; isResting = true; }
     }
 
     IEnumerator MoveEnemy(Vector3 destination)
@@ -117,23 +117,73 @@ public class EnemyAI_Flying : AI_Base
 
         while(!pathDone)
         {
-            transform.position = Vector3.Lerp(transform.position, destination, moveSpeed * Time.deltaTime);
+            transform.position = Vector3.SmoothDamp(transform.position, destination, ref velocity, moveSpeed, moveSpeed);
+
             yield return null;
         }
     }
+    #endregion
 
+    #region Chase Player
+    protected override void EnterChase()
+    {
+        base.EnterChase();
+
+        pathDone = false;
+
+        stoppingDistance = scanRadius * 0.75f;
+    }
+
+    protected override void UpdateChase()
+    {
+        base.UpdateChase();
+
+        StartCoroutine(MoveEnemy(target.transform.position));
+
+        if (Vector3.Distance(transform.position, target.transform.position) < stoppingDistance)
+            SetState(State.Attack);
+    }
+    #endregion
+    #region Attack Logic
+    protected override void EnterAttack()
+    {
+        base.EnterAttack();
+
+        pathDone = true;
+
+        weapon.isFiring = true;
+
+        SetStateTimer(previousState, 5f);
+    }
+
+    protected override void UpdateAttack()
+    {
+        base.UpdateAttack();
+
+        weapon.transform.LookAt(target.transform);
+        transform.LookAt(target.transform);
+    }
+
+    protected override void ExitAttack()
+    {
+        base.ExitAttack();
+
+        weapon.isFiring = false;
+
+        pathDone = false;
+    }
     #endregion
 
     #region Debug
     private void OnDrawGizmos()
-    {//Draw patrol radius
-        Gizmos.color = Color.magenta;
-        Gizmos.DrawWireSphere(transform.position, patrolRadius);
-
-        Gizmos.DrawWireCube(patrolPos, new Vector3(1, 1, 1));
-
+    {
         Gizmos.color = Color.cyan;
-        Gizmos.DrawWireSphere(transform.position, obstacleRadius);
+        if(currentWaypoint != null)
+            Gizmos.DrawCube(currentWaypoint.position, new Vector3(1, 1, 1));
+
+        Gizmos.color = Color.magenta;
+
+        Gizmos.DrawWireSphere(transform.position, scanRadius);
     }
     #endregion
 }
