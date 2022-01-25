@@ -32,6 +32,8 @@ public class EnemyAI_Flying : AI_Base
 
     #region Player Detection Variables
     GameObject target;
+
+    [SerializeField] private Vector3 moveDest = Vector3.zero;
     #endregion
 
     #region Idling and Default Functions
@@ -67,7 +69,7 @@ public class EnemyAI_Flying : AI_Base
                 PlayerController pc = playerHit.transform.GetComponent<PlayerController>();
                 if (pc != null)
                 {
-                    StopCoroutine(MoveEnemy(currentWaypoint.position));
+                    StopAllCoroutines();
 
                     Debug.Log("Spotted Player!");
 
@@ -113,11 +115,13 @@ public class EnemyAI_Flying : AI_Base
 
     IEnumerator MoveEnemy(Vector3 destination)
     {
-        transform.LookAt(destination);
-
         while(!pathDone)
         {
-            transform.position = Vector3.SmoothDamp(transform.position, destination, ref velocity, moveSpeed, moveSpeed);
+            transform.LookAt(destination);
+
+            moveDest = destination;
+
+            transform.position = Vector3.SmoothDamp(transform.position, moveDest, ref velocity, Time.deltaTime, moveSpeed);
 
             yield return null;
         }
@@ -131,16 +135,16 @@ public class EnemyAI_Flying : AI_Base
 
         pathDone = false;
 
-        stoppingDistance = scanRadius * 0.75f;
+        stoppingDistance = scanRadius;
+
+        StartCoroutine(MoveEnemy(target.transform.position));
     }
 
     protected override void UpdateChase()
     {
         base.UpdateChase();
 
-        StartCoroutine(MoveEnemy(target.transform.position));
-
-        if (Vector3.Distance(transform.position, target.transform.position) < stoppingDistance)
+        if (Vector3.Distance(transform.position, moveDest) <= stoppingDistance)
             SetState(State.Attack);
     }
     #endregion
@@ -184,6 +188,9 @@ public class EnemyAI_Flying : AI_Base
         Gizmos.color = Color.magenta;
 
         Gizmos.DrawWireSphere(transform.position, scanRadius);
+
+        Gizmos.color = Color.red;
+        Gizmos.DrawCube(moveDest, new Vector3(1, 1, 1));
     }
     #endregion
 }
