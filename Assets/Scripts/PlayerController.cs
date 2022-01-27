@@ -75,7 +75,9 @@ public class PlayerController : MonoBehaviour, IEntity
 
 
         inputs.InGame.Sprint.started += _ => maxSpeed = sprintMaxSpeed;
+        inputs.InGame.Sprint.started += _ => sprinting = true;
         inputs.InGame.Sprint.canceled += _ => maxSpeed = walkMaxSpeed;
+        inputs.InGame.Sprint.canceled += _ => sprinting = false;
 
         inputs.InGame.Crouch.started += _ => StartCrouch();
         inputs.InGame.Crouch.started += _ => crouching = true;
