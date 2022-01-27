@@ -35,8 +35,12 @@ public class WeaponContainer : MonoBehaviour
 
         weaponOne.currentMagAmmo = weaponOne.maxMagAmmo;
         weaponOne.currentReserveAmmo = weaponOne.maxReserveAmmo;
-        weaponTwo.currentMagAmmo = weaponTwo.maxMagAmmo;
-        weaponTwo.currentReserveAmmo = weaponTwo.maxReserveAmmo;
+
+        if(weaponTwo != null)
+        {
+            weaponTwo.currentMagAmmo = weaponTwo.maxMagAmmo;
+            weaponTwo.currentReserveAmmo = weaponTwo.maxReserveAmmo;
+        }
     }
 
     private void OnEnable()
