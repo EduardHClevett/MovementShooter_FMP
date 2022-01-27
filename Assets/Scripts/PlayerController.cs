@@ -25,6 +25,7 @@ public class PlayerController : MonoBehaviour, IEntity
     private float sensMultiplier = 1f;
 
     //Movement
+    private Vector2 controlInput;
     public float moveImpulse = 5000;
     public float walkMaxSpeed = 20;
     public float sprintMaxSpeed = 30;
@@ -35,6 +36,8 @@ public class PlayerController : MonoBehaviour, IEntity
     public float drag = 0.175f;
     private float threshold = 0.01f;
     public float maxSlopeAngle = 35f;
+
+    bool isDead;
 
     //Crouching and Sliding
     private Vector3 crouchScale = new Vector3(1, 0.5f, 1);
@@ -48,7 +51,9 @@ public class PlayerController : MonoBehaviour, IEntity
     public float jumpForce = 550f;
 
     //Inputs
-    bool jumping, sprinting, crouching;
+    bool jumping;
+    public bool sprinting { get; private set; }
+    public bool crouching { get; private set; }
 
     //Sliding
     private Vector3 normalVector = Vector3.up;
@@ -61,8 +66,14 @@ public class PlayerController : MonoBehaviour, IEntity
     public float wallJumpForce = 5000f;
 
     private RaycastHit wallHit;
+
+    [SerializeField] GameObject deathCanvas;
     #endregion
 
+    public Vector2 InputControls
+    {
+        get => controlInput;
+    }
     #region Functions
 
     void Awake()
@@ -136,6 +147,10 @@ public class PlayerController : MonoBehaviour, IEntity
 
     public void Movement(Vector2 input)
     {
+        if (isDead) return;
+
+        controlInput = input;
+
         //Get velocity relative to the direction the player is facing
         Vector2 mag = FindRelativeVelocity();
         float xMag = mag.x, yMag = mag.y;
@@ -372,6 +387,8 @@ public class PlayerController : MonoBehaviour, IEntity
     public void Initialize()
     {
         currentHealth = maxHealth;
+
+        isDead = false;
     }
 
     public void TakeDamage(float damage)
@@ -385,6 +402,18 @@ public class PlayerController : MonoBehaviour, IEntity
     public void KillEntity()
     {
         Debug.Log("Player ded");
+
+        isDead = true;
+
+        inputs.Disable();
+
+        GameObject.Find("Weapon").GetComponent<WeaponContainer>().input.Disable();
+
+        deathCanvas.SetActive(true);
+
+        Cursor.visible = true;
+
+        Cursor.lockState = CursorLockMode.None;
     }
     #endregion
     #region Debugs
