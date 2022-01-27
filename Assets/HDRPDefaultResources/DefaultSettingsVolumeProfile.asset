@@ -296,7 +296,7 @@ MonoBehaviour:
     min: 0
   intensity:
     m_OverrideState: 1
-    m_Value: 0.48
+    m_Value: 0.532
     min: 0
     max: 1
   scatter:
@@ -383,10 +383,10 @@ MonoBehaviour:
     m_Value: 0
   limitMin:
     m_OverrideState: 1
-    m_Value: 3.8430662
+    m_Value: 4.331754
   limitMax:
     m_OverrideState: 1
-    m_Value: 13
+    m_Value: 4.2036185
   curveMap:
     m_OverrideState: 0
     m_Value:
