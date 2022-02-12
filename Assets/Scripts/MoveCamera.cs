@@ -29,7 +29,7 @@ public class MoveCamera : MonoBehaviour
         }
         else { speedMult = 1; }
 
-        if (!pc.crouching && pc.InputControls!= Vector2.zero)
+        if (!pc.crouching && pc.InputControls!= Vector2.zero && pc.grounded)
         {
             theta = Time.timeSinceLevelLoad / (period / pc.InputControls.magnitude / speedMult);
         }

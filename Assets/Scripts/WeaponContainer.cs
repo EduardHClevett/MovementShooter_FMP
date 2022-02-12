@@ -24,8 +24,6 @@ public class WeaponContainer : MonoBehaviour
     [SerializeField]
     bool isFiring;
 
-    public Transform container;
-
     [Space, Header("UI Stuff")]
     public TextMeshProUGUI ammoTxt;
     public Image crosshair;

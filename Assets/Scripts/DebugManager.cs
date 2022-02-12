@@ -16,6 +16,6 @@ public class DebugManager : MonoBehaviour
 
     public void Update()
     {
-        velTxt.text = "Velocity: " + new Vector3(player.GetComponent<Rigidbody>().velocity.x, 0, player.GetComponent<Rigidbody>().velocity.y).magnitude;
+        velTxt.text = "Velocity: " + (int)new Vector3(player.GetComponent<Rigidbody>().velocity.x, 0, player.GetComponent<Rigidbody>().velocity.z).magnitude;
     }
 }
