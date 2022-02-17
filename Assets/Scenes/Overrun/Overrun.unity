@@ -1385,7 +1385,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh28288
+  m_Name: pb_Mesh28284
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -6746,6 +6746,8 @@ MonoBehaviour:
   detectionRadius: 150
   poolTag: Ground
   offset: {x: 5, y: 1, z: 5}
+  enemyToSpawn: {fileID: 1400030264697697333, guid: 50bf3aa83fa115d47ad71d1b6d330e1b, type: 3}
+  timesToSpawn: 5
 --- !u!114 &1995148284
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6753,11 +6755,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1995148282}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c63ad88464654b04fad6abf1fdd3f736, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  objToSpawn: {fileID: 0}
   pools:
   - tag: Ground
     prefab: {fileID: 1400030264697697333, guid: 50bf3aa83fa115d47ad71d1b6d330e1b, type: 3}

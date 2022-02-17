@@ -13,6 +13,8 @@ public class EnemyPooler : MonoBehaviour
         public int size;
     }
 
+    [SerializeField] GameObject objToSpawn;
+
     public Dictionary<string, Queue<GameObject>> poolDictionary;
     public List<Pool> pools;
     private void Start()
@@ -41,16 +43,21 @@ public class EnemyPooler : MonoBehaviour
         if (!poolDictionary.ContainsKey(tag))
             return null;
 
-        GameObject objToSpawn = poolDictionary[tag].Dequeue();
+        if(poolDictionary[tag].Count > 0)
+        {
+            objToSpawn = poolDictionary[tag].Dequeue();
 
-        objToSpawn.SetActive(true);
+            objToSpawn.SetActive(true);
 
-        objToSpawn.transform.position = position;
-        objToSpawn.transform.rotation = rotation;
+            objToSpawn.transform.position = position;
+            objToSpawn.transform.rotation = rotation;
 
-        objToSpawn.GetComponent<NavMeshAgent>().Warp(position);
+            if (!objToSpawn.GetComponent<NavMeshAgent>().isOnNavMesh)
+                objToSpawn.GetComponent<NavMeshAgent>().Warp(objToSpawn.transform.position);
+        }
+        
 
-        poolDictionary[tag].Enqueue(objToSpawn);
+        //poolDictionary[tag].Enqueue(objToSpawn);
 
         return objToSpawn;
     }

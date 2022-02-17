@@ -14,6 +14,10 @@ public class EnemySpawner : MonoBehaviour
 
     public Vector3 offset;
 
+    [SerializeField] GameObject enemyToSpawn;
+
+    public int timesToSpawn = 5;
+
     private void Awake()
     {
         pooler = GetComponent<EnemyPooler>();
@@ -22,7 +26,7 @@ public class EnemySpawner : MonoBehaviour
     private void FixedUpdate()
     {
         RaycastHit hit;
-        if(Physics.SphereCast(transform.position, detectionRadius, transform.up, out hit))
+        if(Physics.SphereCast(transform.position, detectionRadius, transform.forward, out hit))
         {
             PlayerController pc = hit.collider.GetComponent<PlayerController>();
 
@@ -33,7 +37,7 @@ public class EnemySpawner : MonoBehaviour
 
     IEnumerator StartSpawn()
     {
-        for(int i = 0; i < pooler.pools[0].size; i++)
+        for(int i = 0; i < timesToSpawn; i++)
         {
 
             Vector3 spawnPos;
@@ -50,7 +54,9 @@ public class EnemySpawner : MonoBehaviour
                 spawnPos = hit.point + offset; 
             }
 
-            pooler.SpawnFromPool(poolTag, spawnPos, Quaternion.identity).transform.position += Random.insideUnitSphere * spawnRadius;
+            //pooler.SpawnFromPool(poolTag, spawnPos, Quaternion.identity).transform.position += Random.insideUnitSphere * spawnRadius;
+
+            Instantiate(enemyToSpawn, spawnPos, Quaternion.identity);
 
             yield return new WaitForSeconds(2);
         }
