@@ -7,9 +7,9 @@ public class AI_NavMesh_Base : AI_Base
 {
     protected NavMeshAgent agent;
 
-    protected override void Start()
+    protected override void Awake()
     {
-        base.Start();
+        base.Awake();
 
         agent = GetComponent<NavMeshAgent>();
     }
@@ -18,6 +18,7 @@ public class AI_NavMesh_Base : AI_Base
     {
         base.Update();
     }
+
 
     #region State Manager
     //On Enter Functions

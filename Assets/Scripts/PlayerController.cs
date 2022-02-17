@@ -61,7 +61,8 @@ public class PlayerController : MonoBehaviour, IEntity
 
     //Wallrunning
     [SerializeField]
-    private bool isWallLeft, isWallRight, isWallrunning;
+    private bool isWallLeft, isWallRight;
+    public bool isWallrunning { get; private set; }
     public LayerMask wallLayer;
     public float wallJumpForce = 5000f;
 
@@ -166,6 +167,11 @@ public class PlayerController : MonoBehaviour, IEntity
             if (isWallLeft) finalForce += (-orientation.right * 1.25f * Time.deltaTime);
             if (isWallRight)finalForce += (orientation.right * 1.25f * Time.deltaTime);
 
+            if(rb.velocity.y < 0)
+                rb.velocity = new Vector3(rb.velocity.x, 0, rb.velocity.z);
+
+            rb.AddForce(finalForce);
+
             if (canJump && jumping) Jump();
 
             return;
@@ -179,13 +185,6 @@ public class PlayerController : MonoBehaviour, IEntity
 
         //Jump
         if (canJump && jumping) Jump();
-        
-        //Add force when sliding down a ramp so the player can build speed
-        if(crouching && grounded && canJump)
-        {
-            finalForce += (Vector3.down * Time.deltaTime * 3000);
-            return;
-        }
 
         input = ClampSpeed(input, xMag, yMag);
 
@@ -198,12 +197,12 @@ public class PlayerController : MonoBehaviour, IEntity
             multiplierV = 0.5f;
         }
 
-        //Reduce forward movement when crouching
+        //Reduce movement speed when crouching
         if (grounded && crouching) multiplierV = 0.25f;
 
         //Add input forces
         finalForce += (orientation.transform.forward * input.y * moveImpulse * Time.deltaTime * multiplier * multiplierV);
-        finalForce += (orientation.transform.right * input.x * moveImpulse * Time.deltaTime * multiplier);
+        finalForce += (orientation.transform.right * input.x * moveImpulse * Time.deltaTime * multiplier * multiplierV);
 
         rb.AddForce(finalForce);
     }
@@ -264,12 +263,14 @@ public class PlayerController : MonoBehaviour, IEntity
 
         Vector3 dragForce = new Vector3();
 
+        
         if(crouching)
         {
-            rb.AddForce(moveImpulse * Time.deltaTime * -rb.velocity.normalized * drag);
+            rb.AddForce(moveImpulse * Time.deltaTime * -rb.velocity.normalized * slideDrag);
             
-            return;
+            //return;
         }
+        
 
         if (Mathf.Abs(mag.x) > threshold && Mathf.Abs(x) < 0.05f || (mag.x < -threshold && x > 0) || (mag.x > threshold && x < 0))
             dragForce += (moveImpulse * orientation.transform.right * Time.deltaTime * -mag.x * drag);
