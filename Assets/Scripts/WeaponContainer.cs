@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using TMPro;
+using UnityEngine.UI;
 
 public class WeaponContainer : MonoBehaviour
 {
@@ -21,6 +23,12 @@ public class WeaponContainer : MonoBehaviour
     bool isReloading;
     [SerializeField]
     bool isFiring;
+
+    [Space, Header("UI Stuff")]
+    public TextMeshProUGUI ammoTxt;
+    public Image crosshair;
+
+    Vector3 firingDir;
 
     private void Awake()
     {
@@ -109,6 +117,39 @@ public class WeaponContainer : MonoBehaviour
                     }
             }
         }
+
+        ammoTxt.text = (currentWeapon.currentMagAmmo + "/" + currentWeapon.currentReserveAmmo);
+
+        Camera cam = Camera.main;
+
+        RaycastHit camRay;
+
+        bool hit = Physics.Raycast(cam.transform.position, cam.transform.forward, out camRay);
+
+        if(hit)
+        {
+            if (camRay.collider.tag == "Player") return;
+
+
+            firingDir = (camRay.point - muzzlePoint.position).normalized;
+
+            Debug.DrawLine(muzzlePoint.position, camRay.point, Color.red);
+
+            //Debug.Log(firingDir);
+            Debug.Log(camRay.collider.name);
+        }
+        else 
+        {
+            Vector3 screenCenter;
+
+            screenCenter = cam.ScreenToWorldPoint(new Vector3(cam.pixelWidth / 2, cam.pixelHeight / 2, 1000));
+
+
+            firingDir = (screenCenter - muzzlePoint.position).normalized; 
+        }
+
+
+
     }
 
     IEnumerator Fire(int repeats = 1)
@@ -129,9 +170,7 @@ public class WeaponContainer : MonoBehaviour
 
                 GameObject bullet = Instantiate(currentWeapon.projectile, muzzlePoint.position, Quaternion.identity);
 
-                Vector3 dir = muzzlePoint.forward;
-
-                bullet.GetComponent<Projectile>().SetStats(dir, currentWeapon.damage, currentWeapon.projectileVelocity);
+                bullet.GetComponent<Projectile>().SetStats(firingDir, currentWeapon.damage, currentWeapon.projectileVelocity);
 
                 currentWeapon.currentMagAmmo--;
 

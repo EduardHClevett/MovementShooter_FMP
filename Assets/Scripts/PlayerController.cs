@@ -25,6 +25,7 @@ public class PlayerController : MonoBehaviour, IEntity
     private float sensMultiplier = 1f;
 
     //Movement
+    private Vector2 controlInput;
     public float moveImpulse = 5000;
     public float walkMaxSpeed = 20;
     public float sprintMaxSpeed = 30;
@@ -35,6 +36,8 @@ public class PlayerController : MonoBehaviour, IEntity
     public float drag = 0.175f;
     private float threshold = 0.01f;
     public float maxSlopeAngle = 35f;
+
+    bool isDead;
 
     //Crouching and Sliding
     private Vector3 crouchScale = new Vector3(1, 0.5f, 1);
@@ -48,7 +51,9 @@ public class PlayerController : MonoBehaviour, IEntity
     public float jumpForce = 550f;
 
     //Inputs
-    bool jumping, sprinting, crouching;
+    bool jumping;
+    public bool sprinting { get; private set; }
+    public bool crouching { get; private set; }
 
     //Sliding
     private Vector3 normalVector = Vector3.up;
@@ -61,8 +66,14 @@ public class PlayerController : MonoBehaviour, IEntity
     public float wallJumpForce = 5000f;
 
     private RaycastHit wallHit;
+
+    [SerializeField] GameObject deathCanvas;
     #endregion
 
+    public Vector2 InputControls
+    {
+        get => controlInput;
+    }
     #region Functions
 
     void Awake()
@@ -136,6 +147,12 @@ public class PlayerController : MonoBehaviour, IEntity
 
     public void Movement(Vector2 input)
     {
+        if (isDead) return;
+
+        controlInput = input;
+
+        Vector3 finalForce = new Vector3();
+
         //Get velocity relative to the direction the player is facing
         Vector2 mag = FindRelativeVelocity();
         float xMag = mag.x, yMag = mag.y;
@@ -144,10 +161,10 @@ public class PlayerController : MonoBehaviour, IEntity
         {
             input = ClampSpeed(input, xMag, yMag);
 
-            rb.AddForce(orientation.transform.forward * input.y * moveImpulse * Time.deltaTime);
+            finalForce += (orientation.transform.forward * input.y * moveImpulse * Time.deltaTime);
 
-            if (isWallLeft) rb.AddForce(-orientation.right * 1.25f * Time.deltaTime);
-            if (isWallRight) rb.AddForce(orientation.right * 1.25f * Time.deltaTime);
+            if (isWallLeft) finalForce += (-orientation.right * 1.25f * Time.deltaTime);
+            if (isWallRight)finalForce += (orientation.right * 1.25f * Time.deltaTime);
 
             if (canJump && jumping) Jump();
 
@@ -155,7 +172,7 @@ public class PlayerController : MonoBehaviour, IEntity
         }
 
         //Added gravity
-        rb.AddForce(Vector3.down * Time.deltaTime * 10);
+        finalForce += (Vector3.down * Time.deltaTime * 10);
 
         //Adding relative counter-impulses to make movement feel snappier
         Drag(input.x, input.y, mag);
@@ -166,7 +183,7 @@ public class PlayerController : MonoBehaviour, IEntity
         //Add force when sliding down a ramp so the player can build speed
         if(crouching && grounded && canJump)
         {
-            rb.AddForce(Vector3.down * Time.deltaTime * 3000);
+            finalForce += (Vector3.down * Time.deltaTime * 3000);
             return;
         }
 
@@ -185,8 +202,10 @@ public class PlayerController : MonoBehaviour, IEntity
         if (grounded && crouching) multiplierV = 0.25f;
 
         //Add input forces
-        rb.AddForce(orientation.transform.forward * input.y * moveImpulse * Time.deltaTime * multiplier * multiplierV);
-        rb.AddForce(orientation.transform.right * input.x * moveImpulse * Time.deltaTime * multiplier);
+        finalForce += (orientation.transform.forward * input.y * moveImpulse * Time.deltaTime * multiplier * multiplierV);
+        finalForce += (orientation.transform.right * input.x * moveImpulse * Time.deltaTime * multiplier);
+
+        rb.AddForce(finalForce);
     }
 
     Vector2 ClampSpeed(Vector2 input, float xMag, float yMag)
@@ -243,16 +262,19 @@ public class PlayerController : MonoBehaviour, IEntity
     {
         if (!grounded || jumping) return;
 
+        Vector3 dragForce = new Vector3();
+
         if(crouching)
         {
-            rb.AddForce(moveImpulse * Time.deltaTime * -rb.velocity.normalized * slideDrag);
+            rb.AddForce(moveImpulse * Time.deltaTime * -rb.velocity.normalized * drag);
+            
             return;
         }
 
         if (Mathf.Abs(mag.x) > threshold && Mathf.Abs(x) < 0.05f || (mag.x < -threshold && x > 0) || (mag.x > threshold && x < 0))
-            rb.AddForce(moveImpulse * orientation.transform.right * Time.deltaTime * -mag.x * drag);
+            dragForce += (moveImpulse * orientation.transform.right * Time.deltaTime * -mag.x * drag);
         if (Mathf.Abs(mag.y) > threshold && Mathf.Abs(y) < 0.05f || (mag.y < -threshold && y > 0) || (mag.y > threshold && y < 0))
-            rb.AddForce(moveImpulse * orientation.transform.forward * Time.deltaTime * -mag.y * drag);
+            dragForce += (moveImpulse * orientation.transform.forward * Time.deltaTime * -mag.y * drag);
 
         if(Mathf.Sqrt((Mathf.Pow(rb.velocity.x, 2) + Mathf.Pow(rb.velocity.z, 2))) > maxSpeed)
         {
@@ -260,6 +282,8 @@ public class PlayerController : MonoBehaviour, IEntity
             Vector3 n = rb.velocity.normalized * maxSpeed;
             rb.velocity = new Vector3(n.x, fallSpeed, n.z);
         }
+
+        rb.AddForce(dragForce);
     }
 
     public Vector2 FindRelativeVelocity()
@@ -372,6 +396,8 @@ public class PlayerController : MonoBehaviour, IEntity
     public void Initialize()
     {
         currentHealth = maxHealth;
+
+        isDead = false;
     }
 
     public void TakeDamage(float damage)
@@ -385,6 +411,18 @@ public class PlayerController : MonoBehaviour, IEntity
     public void KillEntity()
     {
         Debug.Log("Player ded");
+
+        isDead = true;
+
+        inputs.Disable();
+
+        GameObject.Find("Weapon").GetComponent<WeaponContainer>().input.Disable();
+
+        deathCanvas.SetActive(true);
+
+        Cursor.visible = true;
+
+        Cursor.lockState = CursorLockMode.None;
     }
     #endregion
     #region Debugs
