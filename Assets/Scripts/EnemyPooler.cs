@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class EnemyPooler : MonoBehaviour
 {
@@ -25,6 +26,8 @@ public class EnemyPooler : MonoBehaviour
             for(int i = 0; i < pool.size; i++)
             {
                 GameObject obj = Instantiate(pool.prefab);
+                if (obj.GetComponent<AI_Base>())
+                    obj.GetComponent<AI_Base>().isPooled = true;
                 obj.SetActive(false);
                 objectPool.Enqueue(obj);
             }
@@ -33,5 +36,22 @@ public class EnemyPooler : MonoBehaviour
         }
     }
 
+    public GameObject SpawnFromPool(string tag, Vector3 position, Quaternion rotation)
+    {
+        if (!poolDictionary.ContainsKey(tag))
+            return null;
 
+        GameObject objToSpawn = poolDictionary[tag].Dequeue();
+
+        objToSpawn.SetActive(true);
+
+        objToSpawn.transform.position = position;
+        objToSpawn.transform.rotation = rotation;
+
+        objToSpawn.GetComponent<NavMeshAgent>().Warp(position);
+
+        poolDictionary[tag].Enqueue(objToSpawn);
+
+        return objToSpawn;
+    }
 }

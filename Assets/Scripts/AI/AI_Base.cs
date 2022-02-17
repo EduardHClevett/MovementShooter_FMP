@@ -11,6 +11,8 @@ public class AI_Base : MonoBehaviour, IEntity
 
     private Dictionary<State, Coroutine> activeStateTimers = new Dictionary<State, Coroutine>();
 
+    public bool isPooled;
+
     //Define AI States
     public enum State
     {
@@ -77,6 +79,9 @@ public class AI_Base : MonoBehaviour, IEntity
     protected virtual void Start() { }
     protected virtual void Awake() { }
 
+    protected virtual void OnEnable() { }
+    protected virtual void OnDisable() { }
+
     protected virtual void Update()
     {
         //Calls the Update states according to the active state
@@ -132,7 +137,10 @@ public class AI_Base : MonoBehaviour, IEntity
 
     public virtual void KillEntity()
     {
-        Destroy(gameObject);
+        if (!isPooled)
+            Destroy(gameObject);
+        else
+            gameObject.SetActive(false);
     }
 
     //To be called when we want a delay on state change

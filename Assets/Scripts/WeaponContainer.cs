@@ -134,9 +134,6 @@ public class WeaponContainer : MonoBehaviour
             firingDir = (camRay.point - muzzlePoint.position).normalized;
 
             Debug.DrawLine(muzzlePoint.position, camRay.point, Color.red);
-
-            //Debug.Log(firingDir);
-            Debug.Log(camRay.collider.name);
         }
         else 
         {
