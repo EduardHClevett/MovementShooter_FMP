@@ -189,7 +189,7 @@ MonoBehaviour:
     m_Value: {x: 0.08183669, y: 0.08882929, z: 0.5}
   desiredLuxValue:
     m_OverrideState: 1
-    m_Value: 150
+    m_Value: 75
   updateMode:
     m_OverrideState: 0
     m_Value: 0
@@ -207,7 +207,7 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 0
   procedural:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 1
   flowmap:
     m_OverrideState: 0
@@ -216,12 +216,12 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 1
   scrollDirection:
-    m_OverrideState: 0
-    m_Value: 0
+    m_OverrideState: 1
+    m_Value: 1
     min: 0
     max: 360
   scrollSpeed:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 2
     min: 0
   enableBackplate:
@@ -296,7 +296,7 @@ MonoBehaviour:
     min: 0
   intensity:
     m_OverrideState: 1
-    m_Value: 0.36
+    m_Value: 0.1
     min: 0
     max: 1
   scatter:
@@ -383,10 +383,10 @@ MonoBehaviour:
     m_Value: 0
   limitMin:
     m_OverrideState: 1
-    m_Value: 7.3714285
+    m_Value: 1.5
   limitMax:
     m_OverrideState: 1
-    m_Value: 4.2036185
+    m_Value: 13
   curveMap:
     m_OverrideState: 0
     m_Value:
@@ -466,8 +466,8 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
   adaptationMode:
-    m_OverrideState: 1
-    m_Value: 1
+    m_OverrideState: 0
+    m_Value: 0
   adaptationSpeedDarkToLight:
     m_OverrideState: 1
     m_Value: 1

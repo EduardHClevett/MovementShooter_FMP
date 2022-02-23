@@ -417,8 +417,6 @@ public class PlayerController : MonoBehaviour, IEntity
 
         inputs.Disable();
 
-        GameObject.Find("Weapon").GetComponent<WeaponContainer>().input.Disable();
-
         deathCanvas.SetActive(true);
 
         Cursor.visible = true;
