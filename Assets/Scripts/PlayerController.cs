@@ -112,6 +112,8 @@ public class PlayerController : MonoBehaviour, IEntity
         playerScale = transform.localScale;
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+
+        currentHealth = maxHealth;
     }
 
     private void FixedUpdate()
