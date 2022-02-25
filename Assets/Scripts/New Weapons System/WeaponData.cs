@@ -2,8 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum WeaponType { Pistol, SMG, AssaultRifle, SniperRifle };
-public enum ReloadType { Magazine, Insertion };
+public enum WeaponType { Pistol, SMG, AssaultRifle, SniperRifle, Shotgun, RocketLauncher };
+public enum ReloadType { Magazine, Insertion, Recharge };
 public enum FireMode { FullAuto, BurstFire, SemiAuto };
 
 [System.Serializable]

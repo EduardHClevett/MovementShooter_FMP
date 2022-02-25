@@ -16,7 +16,7 @@ public class EnemyAI_Ground : AI_NavMesh_Base
 
     Vector3 patrolPos;
 
-    public WeaponContainer_AI weapon;
+    public WeaponData_AI weapon;
 
     bool isResting
     {
@@ -40,6 +40,8 @@ public class EnemyAI_Ground : AI_NavMesh_Base
         target = GameObject.Find("Player");
 
         SetState(State.Chase);
+
+        weapon.target = target.transform;
     }
 
 

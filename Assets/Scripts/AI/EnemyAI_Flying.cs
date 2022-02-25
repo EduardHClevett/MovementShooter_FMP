@@ -15,7 +15,7 @@ public class EnemyAI_Flying : AI_Base
 
     bool pathDone;
 
-    public WeaponContainer_AI weapon;
+    public WeaponData_AI weapon;
 
     [SerializeField] private bool _isResting;
     bool isResting

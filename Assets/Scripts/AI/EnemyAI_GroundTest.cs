@@ -14,7 +14,7 @@ public class EnemyAI_GroundTest : AI_NavMesh_Base
 
     Vector3 patrolPos;
 
-    public WeaponContainer_AI weapon;
+    public WeaponData_AI weapon;
 
     bool isResting
     {
