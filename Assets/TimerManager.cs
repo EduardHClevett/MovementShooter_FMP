@@ -8,11 +8,11 @@ public class TimerManager : MonoBehaviour
 {
     public static TimerManager instance;
 
-    public TextMeshProUGUI timerTxt;
+    public TextMeshProUGUI timerTxt,bestTimeTxt;
+    
+    TimeSpan currentTime, bestTime, previousTime;
 
-    TimeSpan currentTime;
-
-    bool timerGoing;
+    public bool timerGoing;
     private float elapsedTime;
 
     private void Awake()
@@ -28,6 +28,8 @@ public class TimerManager : MonoBehaviour
         timerGoing = false;
 
         timerTxt.enabled = false;
+
+        bestTime = TimeSpan.MaxValue;
     }
 
     public void BeginTimer()
@@ -58,6 +60,8 @@ public class TimerManager : MonoBehaviour
 
             string timeStr = currentTime.ToString("mm':'ss'.'ff");
 
+            timerTxt.text = timeStr;
+
             yield return null;
         }
     }
@@ -71,11 +75,22 @@ public class TimerManager : MonoBehaviour
 
     public void FinishTimer()
     {
+        EndTimer();
 
+        previousTime = currentTime;
+
+        if(bestTime == null || previousTime < bestTime)
+        {
+            bestTime = previousTime;
+
+            string bestTimeStr = "Best Time: " + bestTime.ToString("mm':'ss'.'ff");
+
+            bestTimeTxt.text = bestTimeStr;
+        }
     }
 
     public void CancelTimer()
     {
-
+        EndTimer();
     }
 }
