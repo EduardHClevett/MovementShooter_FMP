@@ -36,6 +36,7 @@ public class PlayerController : MonoBehaviour, IEntity
     public float drag = 0.175f;
     private float threshold = 0.01f;
     public float maxSlopeAngle = 35f;
+    [SerializeField] private float addedGravity = 10f;
 
     bool isDead;
 
@@ -160,17 +161,16 @@ public class PlayerController : MonoBehaviour, IEntity
         Vector2 mag = FindRelativeVelocity();
         float xMag = mag.x, yMag = mag.y;
 
-        if (isWallrunning)
+        if (isWallrunning && !grounded)
         {
             input = ClampSpeed(input, xMag, yMag);
 
             finalForce += (orientation.transform.forward * input.y * moveImpulse * Time.deltaTime);
 
             if (isWallLeft) finalForce += (-orientation.right * 1.25f * Time.deltaTime);
-            if (isWallRight)finalForce += (orientation.right * 1.25f * Time.deltaTime);
+            if (isWallRight) finalForce += (orientation.right * 1.25f * Time.deltaTime);
 
-            if(rb.velocity.y < 0)
-                rb.velocity = new Vector3(rb.velocity.x, 0, rb.velocity.z);
+            rb.velocity = new Vector3(rb.velocity.x, -.1f, rb.velocity.z);
 
             rb.AddForce(finalForce);
 
@@ -180,7 +180,7 @@ public class PlayerController : MonoBehaviour, IEntity
         }
 
         //Added gravity
-        finalForce += (Vector3.down * Time.deltaTime * 10);
+        finalForce += (Vector3.down * Time.deltaTime * addedGravity);
 
         //Adding relative counter-impulses to make movement feel snappier
         Drag(input.x, input.y, mag);
@@ -222,7 +222,7 @@ public class PlayerController : MonoBehaviour, IEntity
 
     void Jump()
     {
-        if(isWallrunning)
+        if(isWallrunning && !grounded)
         {
             WallJump();
             return;
@@ -391,6 +391,8 @@ public class PlayerController : MonoBehaviour, IEntity
             rb.AddForce(-orientation.right * wallJumpForce * Time.deltaTime);
             rb.AddForce(orientation.up * wallJumpForce * Time.deltaTime);
         }
+
+
     }
 
 
