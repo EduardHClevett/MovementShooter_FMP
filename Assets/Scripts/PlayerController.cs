@@ -27,8 +27,7 @@ public class PlayerController : MonoBehaviour, IEntity
     //Movement
     private Vector2 controlInput;
     public float moveImpulse = 5000;
-    public float walkMaxSpeed = 20;
-    public float sprintMaxSpeed = 30;
+
     float maxSpeed = 20;
     public bool grounded;
     public LayerMask groundLayer;
@@ -53,7 +52,6 @@ public class PlayerController : MonoBehaviour, IEntity
 
     //Inputs
     bool jumping;
-    public bool sprinting { get; private set; }
     public bool crouching { get; private set; }
 
     //Sliding
@@ -65,7 +63,8 @@ public class PlayerController : MonoBehaviour, IEntity
     private bool isWallLeft, isWallRight;
     public bool isWallrunning { get; private set; }
     public LayerMask wallLayer;
-    public float wallJumpForce = 5000f;
+    public float wallJumpForceVertical = 5000f;
+    public float wallJumpForceHorizontal = 5000f;
 
     private RaycastHit wallHit;
 
@@ -85,12 +84,6 @@ public class PlayerController : MonoBehaviour, IEntity
 
         inputs.InGame.Jump.started += _ => jumping = true;
         inputs.InGame.Jump.canceled += _ => jumping = false;
-
-
-        inputs.InGame.Sprint.started += _ => maxSpeed = sprintMaxSpeed;
-        inputs.InGame.Sprint.started += _ => sprinting = true;
-        inputs.InGame.Sprint.canceled += _ => maxSpeed = walkMaxSpeed;
-        inputs.InGame.Sprint.canceled += _ => sprinting = false;
 
         inputs.InGame.Crouch.started += _ => StartCrouch();
         inputs.InGame.Crouch.started += _ => crouching = true;
@@ -137,7 +130,7 @@ public class PlayerController : MonoBehaviour, IEntity
         transform.localScale = crouchScale;
         transform.position = new Vector3(transform.position.x, transform.position.y - 0.5f, transform.position.z);
 
-        if(rb.velocity.magnitude > 0.5f && grounded && sprinting)
+        if(rb.velocity.magnitude > 0.5f && grounded)
         {
             rb.AddForce(orientation.transform.forward * slideForce);
         }
@@ -380,16 +373,16 @@ public class PlayerController : MonoBehaviour, IEntity
     {
         if(isWallLeft)
         {
-            rb.AddForce(orientation.forward * wallJumpForce * Time.deltaTime);
-            rb.AddForce(orientation.right * wallJumpForce * Time.deltaTime);
-            rb.AddForce(orientation.up * wallJumpForce * Time.deltaTime);
+            rb.AddForce(orientation.forward * wallJumpForceHorizontal * Time.deltaTime);
+            rb.AddForce(orientation.right * wallJumpForceHorizontal * Time.deltaTime);
+            rb.AddForce(orientation.up * wallJumpForceVertical * Time.deltaTime);
         }
 
         if(isWallRight)
         {
-            rb.AddForce(orientation.forward * wallJumpForce * Time.deltaTime);
-            rb.AddForce(-orientation.right * wallJumpForce * Time.deltaTime);
-            rb.AddForce(orientation.up * wallJumpForce * Time.deltaTime);
+            rb.AddForce(orientation.forward * wallJumpForceHorizontal * Time.deltaTime);
+            rb.AddForce(-orientation.right * wallJumpForceHorizontal * Time.deltaTime);
+            rb.AddForce(orientation.up * wallJumpForceVertical * Time.deltaTime);
         }
 
 

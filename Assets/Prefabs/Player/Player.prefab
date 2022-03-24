@@ -147,17 +147,16 @@ MonoBehaviour:
   playerCam: {fileID: 0}
   orientation: {fileID: 3724559621783370874}
   moveImpulse: 5000
-  walkMaxSpeed: 10
-  sprintMaxSpeed: 20
   grounded: 1
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
   drag: 0.5
   maxSlopeAngle: 35
+  addedGravity: 900
   slideForce: 1500
-  slideDrag: -0.25
-  jumpForce: 400
+  slideDrag: 0.4
+  jumpForce: 600
   isWallLeft: 0
   isWallRight: 0
   wallLayer:
