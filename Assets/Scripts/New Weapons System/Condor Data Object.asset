@@ -10,18 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e7f62a16935a474fa1ae387153827fb, type: 3}
-  m_Name: Pistol Data Object
+  m_Name: Condor Data Object
   m_EditorClassIdentifier: 
-  weaponName: Pistol
-  damage: 10
+  weaponName: Condor
+  damage: 25
   headshotMultiplier: 1.5
-  fireRate: 5
-  bulletVelocity: 15
+  fireRate: 1.5
+  bulletVelocity: 25
   spread: 3
   recoil: 5
-  reloadTime: 5
-  magCapacity: 15
+  reloadTime: 3
+  magCapacity: 7
   extraMags: 8
-  startReserves: 60
-  maxReserves: 120
-  pellets: 1
+  startReserves: 35
+  burstCount: 0
