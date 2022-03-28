@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public enum WeaponType { Pistol, SMG, AssaultRifle, SniperRifle, Shotgun, RocketLauncher };
 public enum ReloadType { Magazine, Insertion, Recharge };
@@ -38,7 +39,10 @@ public class WeaponData : MonoBehaviour
     public Camera cam;
     public WeaponManagerNew weaponManager;
     public PlayerInputs input;
-
+    
+    [Header("UI")]
+    public TextMeshProUGUI ammoTxt;
+    
     [Header("Internal References")]
     public Transform muzzlePoint;
     public ParticleSystem muzzleFlash;
@@ -222,8 +226,12 @@ public class WeaponData : MonoBehaviour
             if(fireMode != FireMode.FullAuto)
             {
                 isFiring = false;
+                UpdateUI();
+
                 yield break;
             }
+
+            UpdateUI();
         }   
     }
 
@@ -266,6 +274,8 @@ public class WeaponData : MonoBehaviour
         isReloading = false;
         
         shotsFired = 0;
+
+        UpdateUI();
     }
 
     public void DrawObj()
@@ -297,5 +307,10 @@ public class WeaponData : MonoBehaviour
         isEnabled = false;
 
         gameObject.SetActive(false);
+    }
+
+    public void UpdateUI()
+    {
+        ammoTxt.text = currentMag + "/" + currentReserve;
     }
 }

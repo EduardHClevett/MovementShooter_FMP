@@ -23,12 +23,6 @@ public class MoveCamera : MonoBehaviour
 
         float speedMult = 1;
 
-        if(pc.sprinting)
-        {
-            speedMult = (pc.sprintMaxSpeed / pc.walkMaxSpeed) * 0.75f;
-        }
-        else { speedMult = 1; }
-
         if (!pc.crouching && pc.InputControls!= Vector2.zero && pc.grounded && !pc.isWallrunning)
         {
             theta = Time.timeSinceLevelLoad / (period / pc.InputControls.magnitude / speedMult);

@@ -14,6 +14,9 @@ public class EnemySpawner : MonoBehaviour
 
     public Vector3 offset;
 
+    [SerializeField]
+    bool spawnRunning = false;
+
     [SerializeField] GameObject enemyToSpawn;
 
     public int timesToSpawn = 5;
@@ -30,13 +33,18 @@ public class EnemySpawner : MonoBehaviour
         {
             PlayerController pc = hit.collider.GetComponent<PlayerController>();
 
-            if (pc)
+            if (pc && !spawnRunning)
                 StartCoroutine(StartSpawn());
         }
     }
 
     IEnumerator StartSpawn()
     {
+
+        Debug.Log("Spawing Enemies!");
+
+        spawnRunning = true;
+
         for(int i = 0; i < timesToSpawn; i++)
         {
 

@@ -48,6 +48,9 @@ public class WeaponManagerNew : MonoBehaviour
         yield return new WaitForSeconds(0.1f);
         currentWeapon.GetComponent<WeaponData>().DrawObj();
 
+        yield return new WaitForEndOfFrame();
+        currentWeapon.GetComponent<WeaponData>().UpdateUI();
+
         yield break;
     }
 

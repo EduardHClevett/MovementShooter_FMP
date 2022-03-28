@@ -27,8 +27,7 @@ public class PlayerController : MonoBehaviour, IEntity
     //Movement
     private Vector2 controlInput;
     public float moveImpulse = 5000;
-    public float walkMaxSpeed = 20;
-    public float sprintMaxSpeed = 30;
+
     float maxSpeed = 20;
     public bool grounded;
     public LayerMask groundLayer;
@@ -36,6 +35,7 @@ public class PlayerController : MonoBehaviour, IEntity
     public float drag = 0.175f;
     private float threshold = 0.01f;
     public float maxSlopeAngle = 35f;
+    [SerializeField] private float addedGravity = 10f;
 
     bool isDead;
 
@@ -52,7 +52,6 @@ public class PlayerController : MonoBehaviour, IEntity
 
     //Inputs
     bool jumping;
-    public bool sprinting { get; private set; }
     public bool crouching { get; private set; }
 
     //Sliding
@@ -64,7 +63,8 @@ public class PlayerController : MonoBehaviour, IEntity
     private bool isWallLeft, isWallRight;
     public bool isWallrunning { get; private set; }
     public LayerMask wallLayer;
-    public float wallJumpForce = 5000f;
+    public float wallJumpForceVertical = 5000f;
+    public float wallJumpForceHorizontal = 5000f;
 
     private RaycastHit wallHit;
 
@@ -84,12 +84,6 @@ public class PlayerController : MonoBehaviour, IEntity
 
         inputs.InGame.Jump.started += _ => jumping = true;
         inputs.InGame.Jump.canceled += _ => jumping = false;
-
-
-        inputs.InGame.Sprint.started += _ => maxSpeed = sprintMaxSpeed;
-        inputs.InGame.Sprint.started += _ => sprinting = true;
-        inputs.InGame.Sprint.canceled += _ => maxSpeed = walkMaxSpeed;
-        inputs.InGame.Sprint.canceled += _ => sprinting = false;
 
         inputs.InGame.Crouch.started += _ => StartCrouch();
         inputs.InGame.Crouch.started += _ => crouching = true;
@@ -136,7 +130,7 @@ public class PlayerController : MonoBehaviour, IEntity
         transform.localScale = crouchScale;
         transform.position = new Vector3(transform.position.x, transform.position.y - 0.5f, transform.position.z);
 
-        if(rb.velocity.magnitude > 0.5f && grounded && sprinting)
+        if(rb.velocity.magnitude > 0.5f && grounded)
         {
             rb.AddForce(orientation.transform.forward * slideForce);
         }
@@ -160,17 +154,16 @@ public class PlayerController : MonoBehaviour, IEntity
         Vector2 mag = FindRelativeVelocity();
         float xMag = mag.x, yMag = mag.y;
 
-        if (isWallrunning)
+        if (isWallrunning && !grounded)
         {
             input = ClampSpeed(input, xMag, yMag);
 
             finalForce += (orientation.transform.forward * input.y * moveImpulse * Time.deltaTime);
 
             if (isWallLeft) finalForce += (-orientation.right * 1.25f * Time.deltaTime);
-            if (isWallRight)finalForce += (orientation.right * 1.25f * Time.deltaTime);
+            if (isWallRight) finalForce += (orientation.right * 1.25f * Time.deltaTime);
 
-            if(rb.velocity.y < 0)
-                rb.velocity = new Vector3(rb.velocity.x, 0, rb.velocity.z);
+            rb.velocity = new Vector3(rb.velocity.x, -.1f, rb.velocity.z);
 
             rb.AddForce(finalForce);
 
@@ -180,7 +173,7 @@ public class PlayerController : MonoBehaviour, IEntity
         }
 
         //Added gravity
-        finalForce += (Vector3.down * Time.deltaTime * 10);
+        finalForce += (Vector3.down * Time.deltaTime * addedGravity);
 
         //Adding relative counter-impulses to make movement feel snappier
         Drag(input.x, input.y, mag);
@@ -222,7 +215,7 @@ public class PlayerController : MonoBehaviour, IEntity
 
     void Jump()
     {
-        if(isWallrunning)
+        if(isWallrunning && !grounded)
         {
             WallJump();
             return;
@@ -380,17 +373,19 @@ public class PlayerController : MonoBehaviour, IEntity
     {
         if(isWallLeft)
         {
-            rb.AddForce(orientation.forward * wallJumpForce * Time.deltaTime);
-            rb.AddForce(orientation.right * wallJumpForce * Time.deltaTime);
-            rb.AddForce(orientation.up * wallJumpForce * Time.deltaTime);
+            rb.AddForce(orientation.forward * wallJumpForceHorizontal * Time.deltaTime);
+            rb.AddForce(orientation.right * wallJumpForceHorizontal * Time.deltaTime);
+            rb.AddForce(orientation.up * wallJumpForceVertical * Time.deltaTime);
         }
 
         if(isWallRight)
         {
-            rb.AddForce(orientation.forward * wallJumpForce * Time.deltaTime);
-            rb.AddForce(-orientation.right * wallJumpForce * Time.deltaTime);
-            rb.AddForce(orientation.up * wallJumpForce * Time.deltaTime);
+            rb.AddForce(orientation.forward * wallJumpForceHorizontal * Time.deltaTime);
+            rb.AddForce(-orientation.right * wallJumpForceHorizontal * Time.deltaTime);
+            rb.AddForce(orientation.up * wallJumpForceVertical * Time.deltaTime);
         }
+
+
     }
 
 
