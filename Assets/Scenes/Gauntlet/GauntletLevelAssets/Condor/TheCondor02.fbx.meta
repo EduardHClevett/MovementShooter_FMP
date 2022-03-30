@@ -1,0 +1,177 @@
+fileFormatVersion: 2
+guid: be06f8e01c932b6428b8d37d01412c78
+ModelImporter:
+  serializedVersion: 21100
+  internalIDToNameTable:
+  - first:
+      74: -2176659136841254654
+    second: Grip|SHOOT
+  - first:
+      74: -6807217942954517270
+    second: MainBone|BarrelHousingAction
+  - first:
+      74: -7514886337290496480
+    second: MainBone|SHOOT
+  - first:
+      74: -1251921628351814555
+    second: MainBone|SlideAction
+  - first:
+      74: -4478456564791814863
+    second: MainBone|TriggerPull
+  - first:
+      74: 7642335829009058078
+    second: SlideBone|BarrelHousingAction
+  - first:
+      74: -856117533893615436
+    second: SlideBone|SHOOT
+  - first:
+      74: -4392406743153782986
+    second: SlideBone|SlideAction
+  - first:
+      74: 5550414572516629649
+    second: SlideBone|TriggerPull
+  - first:
+      74: -1638708130664225694
+    second: TriggerBone|BarrelHousingAction
+  - first:
+      74: 254538456619343132
+    second: TriggerBone|SHOOT
+  - first:
+      74: -6429710495921798984
+    second: TriggerBone|SlideAction
+  - first:
+      74: 5373156705092802508
+    second: TriggerBone|TriggerPull
+  - first:
+      74: 7334527191400135035
+    second: BarrelHousingBone|BarrelHousingAction
+  - first:
+      74: -1900439955620130216
+    second: BarrelHousingBone|SHOOT
+  - first:
+      74: -5460545676692828612
+    second: BarrelHousingBone|SlideAction
+  - first:
+      74: 9089261674593831884
+    second: BarrelHousingBone|TriggerPull
+  - first:
+      74: -9047456053222160753
+    second: BarrelBone|BarrelHousingAction
+  - first:
+      74: 910245895950344863
+    second: BarrelBone|SHOOT
+  - first:
+      74: -7973730230632662695
+    second: BarrelBone|SlideAction
+  - first:
+      74: 3647741296203320104
+    second: BarrelBone|TriggerPull
+  - first:
+      74: 8233874661684452222
+    second: BaseBone|BarrelHousingAction
+  - first:
+      74: -6536752303869757760
+    second: BaseBone|SHOOT
+  - first:
+      74: 164380422780813650
+    second: BaseBone|SlideAction
+  - first:
+      74: 3081773297622018650
+    second: BaseBone|TriggerPull
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
