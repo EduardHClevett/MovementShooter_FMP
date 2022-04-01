@@ -8,7 +8,8 @@ public class TimerManager : MonoBehaviour
 {
     public static TimerManager instance;
 
-    public TextMeshProUGUI timerTxt,bestTimeTxt;
+    public TextMeshProUGUI timerTxt;
+    public TextMeshPro bestTimeTxt;
     
     TimeSpan currentTime, bestTime, previousTime;
 

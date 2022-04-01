@@ -188,8 +188,8 @@ public class PlayerController : MonoBehaviour, IEntity
         //Air movement modifiers
         if(!grounded)
         {
-            multiplier = 0.5f;
-            multiplierV = 0.5f;
+            multiplier = 0.9f;
+            multiplierV = 0.9f;
         }
 
         //Reduce movement speed when crouching
@@ -323,7 +323,7 @@ public class PlayerController : MonoBehaviour, IEntity
             }
         }
 
-        float delay = 3f;
+        float delay = 10f;
         if(!cancelGrounded)
         {
             cancelGrounded = true;

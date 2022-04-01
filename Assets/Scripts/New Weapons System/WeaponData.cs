@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 public enum WeaponType { Pistol, SMG, AssaultRifle, SniperRifle, Shotgun, RocketLauncher };
@@ -42,6 +43,7 @@ public class WeaponData : MonoBehaviour
     
     [Header("UI")]
     public TextMeshProUGUI ammoTxt;
+    public Image reticle;
     
     [Header("Internal References")]
     public Transform muzzlePoint;
@@ -238,12 +240,14 @@ public class WeaponData : MonoBehaviour
     void StartADS()
     {
         isAiming = true;
+        reticle.enabled = false;
         transform.localPosition = aimPos.position;
         transform.localRotation = aimPos.rotation;
     }
     void StopADS()
     {
         isAiming = false;
+        reticle.enabled = true;
         transform.localPosition = originalPos.position;
         transform.localRotation = originalPos.rotation;
     }
