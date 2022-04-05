@@ -30,7 +30,14 @@ public class TimerManager : MonoBehaviour
 
         timerTxt.enabled = false;
 
-        bestTime = TimeSpan.MaxValue;
+        if (PlayerPrefs.GetFloat("BestTime") == 0)
+            bestTime = TimeSpan.MaxValue;
+        else
+        {
+            bestTime = TimeSpan.FromMilliseconds(PlayerPrefs.GetFloat("BestTime"));
+
+            bestTimeTxt.text = "Best Time: " + bestTime.ToString("mm':'ss'.'ff");
+        }
     }
 
     public void BeginTimer()
@@ -87,6 +94,8 @@ public class TimerManager : MonoBehaviour
             string bestTimeStr = "Best Time: " + bestTime.ToString("mm':'ss'.'ff");
 
             bestTimeTxt.text = bestTimeStr;
+
+            PlayerPrefs.SetFloat("BestTime", (float)bestTime.TotalMilliseconds);
         }
     }
 
