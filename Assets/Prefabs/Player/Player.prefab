@@ -154,7 +154,7 @@ MonoBehaviour:
   drag: 0.5
   maxSlopeAngle: 35
   addedGravity: 900
-  slideForce: 1500
+  slideForce: 3000
   slideDrag: 0.4
   jumpForce: 600
   isWallLeft: 0
@@ -162,7 +162,8 @@ MonoBehaviour:
   wallLayer:
     serializedVersion: 2
     m_Bits: 72
-  wallJumpForce: 10000
+  wallJumpForceVertical: 50000
+  wallJumpForceHorizontal: 5000
   deathCanvas: {fileID: 0}
 --- !u!54 &3724559622472753699
 Rigidbody:
