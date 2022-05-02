@@ -289,14 +289,14 @@ MonoBehaviour:
   m_AdvancedMode: 0
   quality:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 2
   threshold:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 0.26
     min: 0
   intensity:
     m_OverrideState: 1
-    m_Value: 0.3
+    m_Value: 0.4
     min: 0
     max: 1
   scatter:
@@ -305,8 +305,8 @@ MonoBehaviour:
     min: 0
     max: 1
   tint:
-    m_OverrideState: 0
-    m_Value: {r: 1, g: 1, b: 1, a: 1}
+    m_OverrideState: 1
+    m_Value: {r: 0.42116603, g: 0.24705878, b: 0.99215686, a: 1}
     hdr: 0
     showAlpha: 0
     showEyeDropper: 1
@@ -325,7 +325,7 @@ MonoBehaviour:
     m_Value: 2
   m_HighQualityPrefiltering:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 1
   m_HighQualityFiltering:
     m_OverrideState: 1
     m_Value: 1
@@ -601,12 +601,12 @@ MonoBehaviour:
     m_Value: 0
   intensity:
     m_OverrideState: 1
-    m_Value: 2.19
+    m_Value: 3.55
     min: 0
     max: 4
   directLightingStrength:
     m_OverrideState: 1
-    m_Value: 0.15
+    m_Value: 0.549
     min: 0
     max: 1
   radius:
@@ -798,7 +798,7 @@ MonoBehaviour:
     m_OverrideState: 1
     m_Value: 1
   colorMode:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 1
   color:
     m_OverrideState: 0
@@ -807,8 +807,8 @@ MonoBehaviour:
     showAlpha: 0
     showEyeDropper: 1
   tint:
-    m_OverrideState: 0
-    m_Value: {r: 1, g: 1, b: 1, a: 1}
+    m_OverrideState: 1
+    m_Value: {r: 1, g: 0.5235849, b: 0.96642435, a: 1}
     hdr: 1
     showAlpha: 0
     showEyeDropper: 1
@@ -831,13 +831,13 @@ MonoBehaviour:
     min: 0
   baseHeight:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 363.8
   maximumHeight:
     m_OverrideState: 1
-    m_Value: 500
+    m_Value: 2517.9
   meanFreePath:
     m_OverrideState: 1
-    m_Value: 400
+    m_Value: 457.65
     min: 1
   enableVolumetricFog:
     m_OverrideState: 0
